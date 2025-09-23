@@ -1,6 +1,9 @@
 #### {.outline }
 
-<!-- Update path as needed or consider using ottrpal::include_slide() with a publicly viewable slide deck. See image here for example: https://www.opencasestudies.org/ocs-bp-school-shootings-dashboard/ --!>
+<!--
+Update path as needed or consider using ottrpal::include_slide() with a publicly viewable slide deck.
+See image here for example: https://www.opencasestudies.org/ocs-bp-school-shootings-dashboard/
+-->
 
 ```{r, echo = FALSE, out.width = "800 px"}
 knitr::include_graphics(here::here("img", "mainplot.png"))

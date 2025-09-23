@@ -1,9 +1,13 @@
-<!-- load all the packages used in the case study analysis in the code chunk below (try to use tidyverse over base R). Fill out the table and add rows as necessary providing a link to the source and briefly explaining its use for each package--!>
+<!--
+load all the packages used in the case study analysis in the code chunk below
+(try to use tidyverse over base R).
+Fill out the table and add rows as necessary providing a link to the source and briefly explaining its use for each package
+-->
 
 We will begin by loading the packages that we will need:
 
 ```{r}
-#add library() calls here
+#add library() calls
 library(here)
 ```
 

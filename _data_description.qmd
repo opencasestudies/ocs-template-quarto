@@ -1,4 +1,7 @@
-<!-- Describe the data to be analyzed and where it came from. You may want to include a table about file or variable info.--!>
+<!--
+Describe the data to be analyzed and where it came from.
+You may want to include a table about file or variable info.
+-->
 
 # **What are the data?**
 ***

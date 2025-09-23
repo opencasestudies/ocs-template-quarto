@@ -1,4 +1,6 @@
-<!-- The reference block should be updated to reflect how this case study should be cited --!>
+<!--
+The reference block should be updated to reflect how this case study should be cited
+-->
 
 #### {.reference_block}
 

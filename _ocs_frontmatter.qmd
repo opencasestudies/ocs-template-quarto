@@ -1,4 +1,6 @@
-<!-- This file should not need updates generally--!>
+<!--
+This file should not need updates generally
+-->
 
 #### {.disclaimer_block}
 
@@ -12,4 +14,6 @@ This work is licensed under the Creative Commons Attribution-NonCommerical 3.0 [
 
 ####
 
-<!-- Add any info about funding? -->
+<!--
+Add any info about funding?
+-->

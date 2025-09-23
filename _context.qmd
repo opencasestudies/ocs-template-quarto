@@ -1,4 +1,6 @@
-<!-- More details on the background on the case study topic as well its relation to biomedical science --!>
+<!--
+More details on the background on the case study topic as well its relation to biomedical science
+-->
 
 # **Context**
 ***

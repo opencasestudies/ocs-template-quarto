@@ -4,7 +4,10 @@ output:
   html_document
 ---
 
-<!-- Update the various qmd documents below with each component of a Bio-OCS case study. Besides filling in the title in the header of this document, no other changes should be necessary within this file. --!>
+<!--
+  Update the various qmd documents below with each component of a Bio-OCS case study.
+  Besides filling in the title in the header of this document, no other changes should be necessary within this file.
+-->
 
 {{< include _main_image.qmd >}}
 

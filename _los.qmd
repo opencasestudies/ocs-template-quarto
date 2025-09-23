@@ -1,7 +1,10 @@
 # **Learning Objectives**
 ***
 
-<!-- Replace the shell content and enumerate the learning objectives in the referenced qmd files. For an example of this section, see this previous Open Case Study: https://www.opencasestudies.org/ocs-bp-co2-emissions/#Learning_Objectives-->
+<!--
+Replace the shell content and enumerate the learning objectives in the referenced qmd files.
+For an example of this section, see this previous Open Case Study: https://www.opencasestudies.org/ocs-bp-co2-emissions/#Learning_Objectives
+-->
 
 In this case study, we will explore {}.
 

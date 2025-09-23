@@ -1,24 +1,47 @@
-<!-- Update the file paths as needed throughout--!>
+<!--
+Update the file paths as needed throughout
+-->
 
-<!-- This file has data import, data exploration/wrangling, data visualization, and data analysis sections. At the end of each section, save incremental data so that users can pause and come back later --!>
+<!--
+This file has ....
+data import,
+data exploration/wrangling,
+data visualization,
+and data analysis sections.
+
+At the end of each section, save incremental data so that users can pause and come back later
+-->
 
 # **Data Import**
 ***
-<!-- Describe how to import the case study data files into R or Python --!>
 
-<!-- Within your case study project folder, put the data files as they came from the source into a 'data/raw/' subfolder and use the `here` package. See the following example: --!>
+<!--
+Describe how to import the case study data files into R or Python
+-->
+
+<!--
+Within your case study project folder,
+put the data files as they came from the source into a 'data/raw/' subfolder
+and use the `here` package. See the following example and update with your data:
+-->
 
 ```{r}
 pm <-readr::read_csv(here("data", "raw", "pm25_data.csv"))
 ```
 
-<!-- At the end of the data import section, save the imported data as .rda files to allow users to stop and pick up where they left off: --!>
+<!--
+At the end of the data import section, save the imported data as .rda files
+to allow users to stop and pick up where they left off:
+-->
 
 ```{r}
 save(pm, file = here::here("data", "imported", "pm25_data_imported.rda"))
 ```
 
-<!-- NOTE that depending on the size of the data for Bio-OCS, the data may not be in the case study project folder directly and may need to be imported from an external source --!>
+<!--
+NOTE that depending on the size of the data for Bio-OCS, the data may not be in the case study project folder directly
+and may need to be imported from an external source
+-->
 
 ***
 
@@ -44,7 +67,12 @@ load(here::here("data", "imported", "co2_data_imported.rda"))
 </details>
 ***
 
-<!-- Use this section to walk through any exploration of the data conducted pre-analysis. Then, explain step-by-step the data wrangling process used to prepare the data for analysis. Note that not all case studies include a data exploration. Data exploration and wrangling may also be split into two sections. --!>
+<!--
+Use this section to walk through any exploration of the data conducted pre-analysis.
+Then, explain step-by-step the data wrangling process used to prepare the data for analysis.
+Note that not all case studies include a data exploration.
+Data exploration and wrangling may also be split into two sections.
+-->
 
 To allow users to skip import and wrangling we will save the data as an RDA file as well as a CSV file as this is often useful to send our data to collaborators. We will save this in a “wrangled” subdirectory of our “data” directory of our working directory.
 
@@ -53,7 +81,9 @@ save(pm, file = here::here("data", "wrangled", "wrangled_data.rda"))
 readr::write_csv(pm, path = here::here("data","wrangled", "wrangled_data.csv"))
 ```
 
-<!-- Replace `pm` with the name of the data object created at the end of data wrangling. --!>
+<!--
+Replace `pm` with the name of the data object created at the end of data wrangling.
+-->
 
 ***
 
@@ -79,9 +109,15 @@ load(here::here("data", "wrangled", "wrangled_data.rda"))
 </details>
 ***
 
-<!-- Use this section to walk through step by step how the wrangled data was visualized. Explain how these visualizations improve understanding and help extract insights. --!>
+<!--
+Use this section to walk through step by step how the wrangled data was visualized.
+Explain how these visualizations improve understanding and help extract insights.
+-->
 
-<!-- If any further wrangling was conducted in this section, please save the most recent version of the data similar to previous sections. --!>
+<!--
+If any further wrangling was conducted in this section,
+please save the most recent version of the data similar to previous sections.
+-->
 
 ***
 
@@ -107,6 +143,9 @@ load(here::here("data", "wrangled", "wrangled_data.rda"))
 </details>
 ***
 
-<!-- Use this section to walk through the methods and code used in the data analysis step-by-step. Explain how this analysis helps answer the main questions posed earlier in the case study. --!>
+<!--
+Use this section to walk through the methods and code used in the data analysis step-by-step.
+Explain how this analysis helps answer the main questions posed earlier in the case study.
+-->
 
 ***
