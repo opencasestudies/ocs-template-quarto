@@ -1,0 +1,13 @@
+<!-- Describe the main biological questions for this case study. What will our analysis aim to answer? There can be more than 2. See this previous case study as an example: https://www.opencasestudies.org/ocs-bp-co2-emissions/#Main_Questions --!>
+
+# **Main Question**
+***
+
+#### {.main_question_block}
+<b><u> Our main question: </u></b>
+
+1. Question 1
+1. Question 2
+
+####
+***

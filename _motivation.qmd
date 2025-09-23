@@ -1,0 +1,7 @@
+<!-- Describe the biological motivation for this case study. Include relevant explanatory images and references throughout. See this previous case study as an example: https://www.opencasestudies.org/ocs-bp-co2-emissions/#Motivation --!>
+
+# **Motivation**
+***
+This case study explores {}...
+
+***

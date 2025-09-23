@@ -1,0 +1,7 @@
+<u>**Statistical Learning Objectives:**</u>
+
+<!-- Enumerate the Statistical specific learning objectives here. (Can have more than 3). For an example, see this previous Open Case Study: https://www.opencasestudies.org/ocs-bp-co2-emissions/#Learning_Objectives --!>
+
+1. {Fill In}
+1. {Fill In}
+1. {Fill In}
