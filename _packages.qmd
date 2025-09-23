@@ -4,6 +4,7 @@ We will begin by loading the packages that we will need:
 
 ```{r}
 #add library() calls here
+library(here)
 ```
 
 Package    | Use
