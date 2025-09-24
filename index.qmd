@@ -7,6 +7,7 @@ output:
 <!--
   Update the various qmd documents below with each component of a Bio-OCS case study.
   Besides filling in the title in the header of this document, no other changes should be necessary within this file.
+  You may chose to remove the data exploration step if it's not necessary.
 -->
 
 {{< include _main_image.qmd >}}
@@ -31,7 +32,18 @@ output:
 
 {{< include _data_description.qmd >}}
 
-{{< include _data_and_analysis.qmd >}}
+{{< include _data_import.qmd >}}
+
+<!--
+  Not all case studies will require a data exploration section
+-->
+{{< include _data_exploration.qmd >}}
+
+{{< include _data_wrangling.qmd >}}
+
+{{< include _data_visualization.qmd >}}
+
+{{< include _data_analysis.qmd >}}
 
 {{< include _summary.qmd >}}
 
