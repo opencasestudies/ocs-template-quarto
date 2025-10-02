@@ -15,5 +15,5 @@ This work is licensed under the Creative Commons Attribution-NonCommerical 3.0 [
 ####
 
 <!--
-Add any info about funding?
+Funding info should be included here
 -->

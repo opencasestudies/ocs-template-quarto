@@ -6,5 +6,5 @@ Fill in any Acknowledgments using an example from a previous case study if neede
 -->
 
 <!--
-Should funding info be included here?
+Funding info should be included here
 -->

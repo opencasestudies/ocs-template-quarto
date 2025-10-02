@@ -11,5 +11,5 @@ If the data isn't in the main github repository, be sure to describe and link to
 -->
 
 <!--
-Include OCSData package information?
+Include bioOCSdata package information once ready/applicable
 -->
