@@ -4,27 +4,6 @@ output:
   html_document
 ---
 
-<script>
-$(document).ready(function() {
-  // Prepend a div with the logo to the parent of the #TOC element
-  $('#TOC').parent().prepend('<div id="nav_logo"><img src="img/Bio-OCS_Logo.png"></div>');
-});
-</script>
-
-<style>
-/* Adjust the margin-top of the TOC to make space for the logo */
-#TOC {
-  margin-top: 240px; /* Adjust this value as needed */
-}
-
-/* Style the logo container */
-#nav_logo {
-  position: fixed; /* Fix the logo to the top of the viewport */
-  width: 240px; /* Adjust the width as needed */
-  margin-top: 10px; /* Add some space from the top edge */
-}
-</style>
-
 <!--
   Update the various qmd documents below with each component of a Bio-OCS case study.
   Besides filling in the title in the header of this document, no other changes should be necessary within this file.
