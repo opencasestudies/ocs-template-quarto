@@ -2,8 +2,9 @@
 title: "**Biomedical Open Case Studies: {Title}**"
 output:
   html_document
-logo: medium
 ---
+
+{{< brand logo medium >}}
 
 <!--
   Update the various qmd documents below with each component of a Bio-OCS case study.
