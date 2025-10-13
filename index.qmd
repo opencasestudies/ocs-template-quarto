@@ -21,6 +21,12 @@ format:
         .toc-wrapper {
           margin-left: 220px; /* Logo width + padding */
         }
+
+        /* Header styling */
+        header {
+          height: auto;
+          padding-top: 120px;  /* Space for fixed-position logo */
+        }
       </style>
 ---
 
