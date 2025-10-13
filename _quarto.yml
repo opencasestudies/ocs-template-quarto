@@ -11,7 +11,3 @@ format:
     css: styles.css
     toc: true
     toc-location: left
-  pdf:
-    toc: true
-  word:
-    toc: true
