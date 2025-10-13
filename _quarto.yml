@@ -5,6 +5,8 @@ project:
 website:
   title: "Open Case Study"
 
+brand: _brand.yml
+
 format:
   html:
     theme: cosmo
