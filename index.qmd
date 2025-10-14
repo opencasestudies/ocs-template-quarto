@@ -10,6 +10,7 @@ remotes::install_github("benmarwick/wordcountaddin", type = "source", dependenci
 remotes::install_github("alistaire47/read.so")
 library(wordcountaddin)
 library(read.so)
+library(tidyverse)
 
 #quarto:::perf_timer_reset_all()
 #quarto:::perf_timer_start("render")
