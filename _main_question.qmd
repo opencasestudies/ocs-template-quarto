@@ -7,11 +7,11 @@ See this previous case study as an example: https://www.opencasestudies.org/ocs-
 # **Main Question**
 ***
 
-#### {.main_question_block}
+::: {.main_question_block}
 <b><u> Our main question: </u></b>
 
 1. Question 1
 1. Question 2
 
-####
+:::
 ***
