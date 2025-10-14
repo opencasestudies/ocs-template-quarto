@@ -4,6 +4,16 @@ output:
   html_document
 ---
 
+```{r setup, include=FALSE}
+#word count add in needed
+remotes::install_github("alistaire47/read.so")
+
+library(read.so)
+
+quarto:::perf_timer_reset_all()
+quarto:::perf_timer_start("render")
+```
+
 <!--
   Update the various qmd documents below with each component of a Bio-OCS case study.
   Besides filling in the title in the header of this document, no other changes should be necessary within this file.
@@ -56,6 +66,12 @@ output:
 
 ```{r}
 devtools::session_info()
+```
+
+```{r, echo=FALSE}
+quarto:::perf_timer_stop("render")
+pts = quarto:::perf_timer_summary()
+cat("About", round(pts$time[1]/1000 + 5), "-", round(pts$time[1]/1000 + 15),"seconds")
 ```
 
 {{< include _acknowledgements.qmd >}}
