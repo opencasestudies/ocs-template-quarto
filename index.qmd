@@ -1,7 +1,5 @@
 ---
 title: "**Biomedical Open Case Studies: {Title}**"
-output:
-  html_document
 ---
 
 <!--

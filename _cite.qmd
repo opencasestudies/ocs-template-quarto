@@ -2,10 +2,10 @@
 The reference block should be updated to reflect how this case study should be cited
 -->
 
-#### {.reference_block}
+::: {.reference_block}
 
 To cite this case study, please use:
 
 {Fill In Authors}. {(YEAR)}. {github source url}. {Title} {(Version)}.
 
-####
+:::
