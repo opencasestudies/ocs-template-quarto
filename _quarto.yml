@@ -28,7 +28,6 @@ website:
     logo-href: "https://www.opencasestudies.org/"
     foreground: "#1B365D"
     logo: "resources/images/actions.png"
-    logo-href: "https://www.opencasestudies.org/"
     foreground: "#1B365D"
 
  page-footer:
