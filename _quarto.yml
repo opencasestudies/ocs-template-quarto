@@ -4,6 +4,8 @@ project:
 
 website:
   title: "Open Case Study"
+  navbar:
+    search: true
 
 brand: _brand.yml
 format:
