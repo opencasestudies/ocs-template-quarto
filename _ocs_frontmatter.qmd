@@ -1,5 +1,10 @@
 <!--
-This file should not need updates generally
+The disclaimer block, license block, and funding info generally will not need updated
+
+Please update the access information (e.g., github link and data access)
+as well as any system or server requirements to work with the data
+
+This also includes information on estimated reading time and readability. This should not need updated.
 -->
 
 ::: {.disclaimer_block}
@@ -17,3 +22,63 @@ This work is licensed under the Creative Commons Attribution-NonCommerical 3.0 [
 <!--
 Funding info should be included here
 -->
+
+---
+
+<!--
+UPDATE: ACCESS Information (github source and data)
+In this space, provide an open access link to the case study source files.
+This is necessary for users to get access to case study data, at a minimum.
+See the following example from a previous case study (prior to Motivation section): https://www.opencasestudies.org/ocs-bp-co2-emissions/
+-->
+
+To access the GitHub repository for this case study see here: {LINK}
+
+<!--
+If the data isn't in the main github repository, be sure to describe and link to the open source location of the data and how to access it
+-->
+
+<!--
+Include bioOCSdata package information once ready/applicable
+-->
+
+---
+
+<!--
+UPDATE: SYSTEM, SERVER, or MOCK COMPUTING Information:
+
+In this space, provide any necessary system requirements or instructions on how to access a server (if necessary)
+or submit a mock computing job within the learnr environment in order to receive pre-processed datasets (if necessary).
+In essence this section is useful to provide information to learners on how to work with the data and follow along with this case study.
+This section may not be needed for all case studies and can be removed if not
+-->
+
+---
+
+The total reading time for this case study is calculated via [koRpus](https://github.com/unDocUMeantIt/koRpus) and shown below:
+
+```{r, echo=FALSE, message = FALSE, warning = FALSE}
+readtable = text_stats("index.qmd") # producing reading time markdown table
+readtime = read.so::read.md(readtable) %>% dplyr::select(Method, koRpus) %>% # reading table into dataframe, selecting relevant factors
+  dplyr::filter(Method == "Reading time") %>% # dropping unnecessary rows
+  dplyr::mutate(koRpus = paste(round(as.numeric(stringr::str_split(koRpus, " ")[[1]][1])), "minutes")) %>% # rounding reading time estimate
+  dplyr::mutate(Method = "koRpus") %>% dplyr::relocate(koRpus, .before = Method) %>% dplyr::rename(`Reading Time` = koRpus) # reorganizing table
+knitr::kable(readtime, format="markdown")
+```
+
+***
+
+**Readability Score: **
+
+A readability index estimates the reading difficulty level of a particular text. Flesch-Kincaid, FORCAST, and SMOG are three common readability indices that were calculated for this case study via [koRpus](https://github.com/unDocUMeantIt/koRpus). These indices provide an estimation of the minimum reading level required to comprehend this case study by grade and age.
+
+```{r, echo=FALSE, message = FALSE, warning = FALSE}
+rt = wordcountaddin::readability("index.qmd", quiet=TRUE) # producing readability markdown table
+df = read.so::read.md(rt) %>% dplyr::select(index, grade, age) %>%  # reading table into dataframe, selecting relevant factors
+  tidyr::drop_na() %>% dplyr::mutate(grade = round(as.numeric(grade)), # dropping rows with missing values, rounding age and grade columns
+                                     age = round(as.numeric(age))
+                                     )
+knitr::kable(df, format="markdown")
+```
+
+***

@@ -6,3 +6,10 @@ website:
   title: "Open Case Study"
 
 brand: _brand.yml
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-location: left
+    code-tools: true

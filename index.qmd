@@ -51,6 +51,14 @@ $(document).ready(function() {
 }
 </style>
 
+```{r setup, include=FALSE}
+library(knitr)
+remotes::install_github("benmarwick/wordcountaddin", type = "source", dependencies = TRUE)
+remotes::install_github("alistaire47/read.so")
+library(wordcountaddin)
+library(read.so)
+library(tidyverse)
+```
 
 <!--
   Update the various qmd documents below with each component of a Bio-OCS case study.
@@ -64,8 +72,6 @@ $(document).ready(function() {
 
 {{< include _cite.qmd >}}
 
-{{< include _access.qmd >}}
-
 {{< include _motivation.qmd >}}
 
 {{< include _main_question.qmd >}}
@@ -77,6 +83,8 @@ $(document).ready(function() {
 {{< include _context.qmd >}}
 
 {{< include _limitations.qmd >}}
+
+{{< include _bioethics.qmd >}}
 
 {{< include _data_description.qmd >}}
 
