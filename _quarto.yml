@@ -11,4 +11,4 @@ format:
     css: styles.css
     toc: true
     toc-location: left
-    code_download: true
+    code-tools: true
