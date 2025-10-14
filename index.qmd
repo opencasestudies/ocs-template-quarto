@@ -28,8 +28,6 @@ library(tidyverse)
 
 {{< include _cite.qmd >}}
 
-{{< include _access.qmd >}}
-
 {{< include _motivation.qmd >}}
 
 {{< include _main_question.qmd >}}
