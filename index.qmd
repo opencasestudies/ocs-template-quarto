@@ -11,9 +11,6 @@ remotes::install_github("alistaire47/read.so")
 library(wordcountaddin)
 library(read.so)
 library(tidyverse)
-
-#quarto:::perf_timer_reset_all()
-#quarto:::perf_timer_start("render")
 ```
 
 <!--
@@ -68,12 +65,6 @@ library(tidyverse)
 
 ```{r}
 devtools::session_info()
-```
-
-```{r, eval = FALSE, echo=FALSE}
-quarto:::perf_timer_stop("render")
-pts = quarto:::perf_timer_summary()
-cat("About", round(pts$time[1]/1000 + 5), "-", round(pts$time[1]/1000 + 15),"seconds")
 ```
 
 {{< include _acknowledgements.qmd >}}
