@@ -5,9 +5,10 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-#word count add in needed
+library(knitr)
+remotes::install_github("benmarwick/wordcountaddin", type = "source", dependencies = TRUE)
 remotes::install_github("alistaire47/read.so")
-
+library(wordcountaddin)
 library(read.so)
 
 quarto:::perf_timer_reset_all()

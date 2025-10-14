@@ -1,7 +1,7 @@
-<u>**Data Science Learning Objectives:**</u>
+<u>**Data Science/Bioinformatics Learning Objectives:**</u>
 
 <!--
-Enumerate the Data Science specific learning objectives here.
+Enumerate the Data Science or Bioinformatic specific learning objectives here.
 (Can have more than 3).
 For an example, see this previous Open Case Study: https://www.opencasestudies.org/ocs-bp-co2-emissions/#Learning_Objectives
 -->
