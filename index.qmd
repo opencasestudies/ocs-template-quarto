@@ -35,11 +35,11 @@ library(tidyverse)
 
 {{< include _context.qmd >}}
 
+{{< include _data_description.qmd >}}
+
 {{< include _limitations.qmd >}}
 
 {{< include _bioethics.qmd >}}
-
-{{< include _data_description.qmd >}}
 
 {{< include _data_import.qmd >}}
 
