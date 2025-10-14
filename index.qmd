@@ -4,15 +4,6 @@ output:
   html_document
 ---
 
-```{r setup, include=FALSE}
-library(knitr)
-remotes::install_github("benmarwick/wordcountaddin", type = "source", dependencies = TRUE)
-remotes::install_github("alistaire47/read.so")
-library(wordcountaddin)
-library(read.so)
-library(tidyverse)
-```
-
 <!--
   Update the various qmd documents below with each component of a Bio-OCS case study.
   Besides filling in the title in the header of this document, no other changes should be necessary within this file.
