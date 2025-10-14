@@ -24,7 +24,6 @@ website:
  
  
   sidebar:
-    logo: "resources/images/actions.png"
     logo-href: "https://www.opencasestudies.org/"
     logo: "resources/images/actions.png"
     foreground: "#1B365D"
