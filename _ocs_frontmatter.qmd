@@ -1,3 +1,12 @@
+```{r setup, include=FALSE}
+library(knitr)
+remotes::install_github("benmarwick/wordcountaddin", type = "source", dependencies = TRUE)
+remotes::install_github("alistaire47/read.so")
+library(wordcountaddin)
+library(read.so)
+library(tidyverse)
+```
+
 <!--
 The disclaimer block, license block, and funding info generally will not need updated
 
@@ -55,6 +64,10 @@ This section may not be needed for all case studies and can be removed if not
 
 ---
 
+<details><summary>Estimated **reading time** and this material's **readability score**</summary>
+
+**Reading Time: **
+
 The total reading time for this case study is calculated via [koRpus](https://github.com/unDocUMeantIt/koRpus) and shown below:
 
 ```{r, echo=FALSE, message = FALSE, warning = FALSE}
@@ -82,3 +95,5 @@ knitr::kable(df, format="markdown")
 ```
 
 ***
+
+</details>
