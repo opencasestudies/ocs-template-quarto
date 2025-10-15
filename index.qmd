@@ -1,5 +1,10 @@
 ---
 title: "**Biomedical Open Case Studies: {Title}**"
+include-sections:
+  data-exploration: false
+  data-wrangling: true
+  stat-los: false
+  bio-los: true
 ---
 
 <!--
@@ -32,12 +37,17 @@ title: "**Biomedical Open Case Studies: {Title}**"
 
 {{< include _data_import.qmd >}}
 
-<!--
-  Not all case studies will require a data exploration section
--->
+::: {.content-hidden unless-meta="include-sections.data-exploration"}
+
 {{< include _data_exploration.qmd >}}
 
+:::
+
+::: {.content-hidden unless-meta="include-sections.data-wrangling"}
+
 {{< include _data_wrangling.qmd >}}
+
+:::
 
 {{< include _data_visualization.qmd >}}
 
