@@ -22,11 +22,15 @@ params:
 
 <details><summary>Estimated **reading time** and this material's **readability score**</summary>
 
+`{r} params$wordcount`
+
+`{r} as.integer(params$wordcount)`
+
 ```{r, echo = FALSE, warning = FALSE}
 
-echo(params$wordcount)
+print(params$wordcount)
 
-echo(as.integer(params$wordcount))
+print(as.integer(params$wordcount))
 
 estimate <- round(as.integer(params$wordcount) / 200, 0)
 ```
