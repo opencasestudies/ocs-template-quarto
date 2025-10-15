@@ -66,7 +66,9 @@ This section may not be needed for all case studies and can be removed if not
 
 <details><summary>Estimated **reading time** and this material's **readability score**</summary>
 
-**Reading Time: ** `{r} round({{wordcount}} / 200, 0) ` minutes
+{{wordcount}}
+
+**Reading Time: ** `{r} round( 25000 / 200, 0) ` minutes
 
 The total reading time for this case study is calculated by finding a word count using a [quarto extension](https://github.com/christopherkenny/wordcount/tree/main) and estimating time based on an average adult reading speed of 200 words per minute.
 
