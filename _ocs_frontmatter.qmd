@@ -1,12 +1,11 @@
 ```{r setup, include=FALSE}
 library(knitr)
 remotes::install_github("benmarwick/wordcountaddin", type = "source", dependencies = TRUE)
-install.packages("koRpus.lang.en")
+install.packages("sylly")
 remotes::install_github("alistaire47/read.so")
 library(wordcountaddin)
 library(read.so)
 library(tidyverse)
-library(koRpus.lang.en)
 ```
 
 <!--
