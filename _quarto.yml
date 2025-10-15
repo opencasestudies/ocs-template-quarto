@@ -33,5 +33,6 @@ format:
     toc: true
     toc-location: left
     code-tools: true
+    code-fold: true
     code-copy: true
     license: "CC BY 4.0"
