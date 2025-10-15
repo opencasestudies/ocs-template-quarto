@@ -19,6 +19,32 @@ params:
 
 {{< include _ocs_frontmatter.qmd >}}
 
+<details><summary>Estimated **reading time** and this material's **readability score**</summary>
+
+```{r, echo = FALSE, warning = FALSE}
+
+echo(params$wordcount)
+
+echo(as.integer(params$wordcount))
+
+estimate <- round(as.integer(params$wordcount) / 200, 0)
+```
+
+**Reading Time: ** `{r} estimate ` minutes
+
+
+
+The total reading time for this case study is calculated by finding a word count using a [quarto extension](https://github.com/andrewheiss/quarto-wordcount) and estimating time based on an average adult reading speed of 200 words per minute.
+
+***
+
+**Readability Score: **
+
+
+***
+
+</details>
+
 {{< include _cite.qmd >}}
 
 {{< include _motivation.qmd >}}
