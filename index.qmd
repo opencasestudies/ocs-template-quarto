@@ -5,6 +5,8 @@ include-sections:
   data-wrangling: true
   stat-los: false
   bio-los: true
+filters:
+  - wordcount
 ---
 
 <!--

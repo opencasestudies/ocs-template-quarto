@@ -66,18 +66,9 @@ This section may not be needed for all case studies and can be removed if not
 
 <details><summary>Estimated **reading time** and this material's **readability score**</summary>
 
-**Reading Time: **
+**Reading Time: ** `{r} round({{wordcount}} / 200, 0) ` minutes
 
-The total reading time for this case study is calculated via [koRpus](https://github.com/unDocUMeantIt/koRpus) and shown below:
-
-```{r, eval = FALSE, echo=FALSE, message = FALSE, warning = FALSE}
-readtable = text_stats("index.qmd") # producing reading time markdown table
-readtime = read.so::read.md(readtable) %>% dplyr::select(Method, koRpus) %>% # reading table into dataframe, selecting relevant factors
-  dplyr::filter(Method == "Reading time") %>% # dropping unnecessary rows
-  dplyr::mutate(koRpus = paste(round(as.numeric(stringr::str_split(koRpus, " ")[[1]][1])), "minutes")) %>% # rounding reading time estimate
-  dplyr::mutate(Method = "koRpus") %>% dplyr::relocate(koRpus, .before = Method) %>% dplyr::rename(`Reading Time` = koRpus) # reorganizing table
-knitr::kable(readtime, format="markdown")
-```
+The total reading time for this case study is calculated by finding a word count using a [quarto extension](https://github.com/christopherkenny/wordcount/tree/main) and estimating time based on an average adult reading speed of 200 words per minute.
 
 ***
 
