@@ -6,7 +6,8 @@ include-sections:
   stat-los: false
   bio-los: true
 params:
-  wordcount: {{< words-body >}}
+  wordcount: |
+    {{< words-body >}}
 ---
 
 <!--
