@@ -69,7 +69,11 @@ This section may not be needed for all case studies and can be removed if not
 {{wordcount}}
 
 ```{r, echo = FALSE}
-estimate <- round(as.integer(rmarkdown::metadata$filters[[1]]) / 200, 0)
+rmarkdown::metadata$filters
+```
+
+```{r, echo = FALSE}
+estimate <- round(as.integer(rmarkdown::metadata$filters['wordcount']) / 200, 0)
 ```
 
 **Reading Time: ** `{r} estimate ` minutes
