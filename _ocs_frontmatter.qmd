@@ -69,8 +69,7 @@ This section may not be needed for all case studies and can be removed if not
 {{wordcount}}
 
 ```{r, echo = FALSE}
-#| label: access-yaml-filters
-estimate <- round(filters$wordcount / 200, 0)
+estimate <- round(as.integer(rmarkdown::metadata$filters$wordcount) / 200, 0)
 ```
 
 **Reading Time: ** `{r} estimate ` minutes
