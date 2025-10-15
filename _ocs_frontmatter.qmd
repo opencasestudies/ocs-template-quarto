@@ -66,8 +66,12 @@ This section may not be needed for all case studies and can be removed if not
 
 <details><summary>Estimated **reading time** and this material's **readability score**</summary>
 
-```{r, echo = FALSE}
-#| label: access-yaml-params
+```{r, echo = FALSE, warning = FALSE}
+
+echo(params$wordcount)
+
+echo(as.integer(params$wordcount))
+
 estimate <- round(as.integer(params$wordcount) / 200, 0)
 ```
 
