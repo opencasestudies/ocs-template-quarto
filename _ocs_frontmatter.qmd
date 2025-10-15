@@ -1,7 +1,6 @@
 ```{r setup, include=FALSE}
 library(knitr)
 remotes::install_github("benmarwick/wordcountaddin", type = "source", dependencies = TRUE)
-install.packages("sylly")
 remotes::install_github("alistaire47/read.so")
 library(wordcountaddin)
 library(read.so)
@@ -71,7 +70,7 @@ This section may not be needed for all case studies and can be removed if not
 
 The total reading time for this case study is calculated via [koRpus](https://github.com/unDocUMeantIt/koRpus) and shown below:
 
-```{r, echo=FALSE, message = FALSE, warning = FALSE}
+```{r, eval = FALSE, echo=FALSE, message = FALSE, warning = FALSE}
 readtable = text_stats("index.qmd") # producing reading time markdown table
 readtime = read.so::read.md(readtable) %>% dplyr::select(Method, koRpus) %>% # reading table into dataframe, selecting relevant factors
   dplyr::filter(Method == "Reading time") %>% # dropping unnecessary rows
