@@ -22,6 +22,8 @@ params:
 
 <details><summary>Estimated **reading time** and this material's **readability score**</summary>
 
+{{< words-body >}}
+
 `{r} params$wordcount`
 
 `{r} as.integer(params$wordcount)`
