@@ -68,7 +68,14 @@ This section may not be needed for all case studies and can be removed if not
 
 {{wordcount}}
 
-**Reading Time: ** `{r} round( 25000 / 200, 0) ` minutes
+```{r, echo = FALSE}
+#| label: access-yaml-filters
+estimate <- round(filters$wordcount / 200, 0)
+```
+
+**Reading Time: ** `{r} estimate ` minutes
+
+
 
 The total reading time for this case study is calculated by finding a word count using a [quarto extension](https://github.com/christopherkenny/wordcount/tree/main) and estimating time based on an average adult reading speed of 200 words per minute.
 
