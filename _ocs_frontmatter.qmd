@@ -66,14 +66,9 @@ This section may not be needed for all case studies and can be removed if not
 
 <details><summary>Estimated **reading time** and this material's **readability score**</summary>
 
-{{wordcount}}
-
 ```{r, echo = FALSE}
-rmarkdown::metadata$filters
-```
-
-```{r, echo = FALSE}
-estimate <- round(as.integer(rmarkdown::metadata$filters['wordcount']) / 200, 0)
+#| label: access-yaml-params
+estimate <- round(params$wordcount / 200, 0)
 ```
 
 **Reading Time: ** `{r} estimate ` minutes
