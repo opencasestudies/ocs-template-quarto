@@ -28,7 +28,7 @@ params:
 
 wordcount <- params$wordcount
 print(wordcount)
-print(typeof(wordcount))
+print(as.integer(wordcount))
 
 
 estimate <- round(as.integer(wordcount) / 200, 0)
