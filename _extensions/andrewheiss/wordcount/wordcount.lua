@@ -16,7 +16,7 @@ local appendix_words = 0
 local total_words = 0
 
 function set_meta(m)
-  m.wordcount_body_words = tonumber(body_words)
+  m.wordcount_body_words = body_words
   m.wordcount_ref_words = ref_words
   m.wordcount_appendix_words = appendix_words
   m.wordcount_note_words = note_words

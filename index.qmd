@@ -28,10 +28,10 @@ params:
 
 wordcount <- params$wordcount
 print(wordcount)
-print(as.integer(wordcount))
+print(as.numeric(wordcount))
 
 
-estimate <- round(as.integer(wordcount) / 200, 0)
+estimate <- round(as.numeric(wordcount) / 200, 0)
 ```
 
 **Reading Time: ** `{r} estimate ` minutes
