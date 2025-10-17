@@ -1,10 +1,12 @@
 ---
 title: "**Biomedical Open Case Studies: {Title}**"
 include-sections:
+  stat-los: false
+  data-import: true
   data-exploration: false
   data-wrangling: true
-  stat-los: false
-  bio-los: true
+  data-viz: true
+  data-analysis: true
 params:
   wordcount: |
     {{< words-body >}}
@@ -67,7 +69,11 @@ The total reading time for this case study is calculated by finding a word count
 
 {{< include _bioethics.qmd >}}
 
+::: {.content-hidden unless-meta="include-sections.data-import"}
+
 {{< include _data_import.qmd >}}
+
+:::
 
 ::: {.content-hidden unless-meta="include-sections.data-exploration"}
 
@@ -81,9 +87,17 @@ The total reading time for this case study is calculated by finding a word count
 
 :::
 
+::: {.content-hidden unless-meta="include-sections.data-viz"}
+
 {{< include _data_visualization.qmd >}}
 
+:::
+
+::: {.content-hidden unless-meta="include-sections.data-analysis"}
+
 {{< include _data_analysis.qmd >}}
+
+:::
 
 {{< include _summary.qmd >}}
 
