@@ -4,7 +4,7 @@ as_str = function(meta_value, name)
     print("cannot find " .. name .. " in meta data")
     return pandoc.Null()
   end
-  return pandoc.Str(meta_value) 
+  return pandoc.Str(meta_value)
 end
 
 as_num = function(meta_value, name)
@@ -17,7 +17,7 @@ end
 
 return {
   ['words-body'] = function(args, kwargs, meta)
-    return as_str(meta.wordcount_body_words, "wordcount_body_words")
+    return as_num(meta.wordcount_body_words, "wordcount_body_words")
   end,
   ['words-ref'] = function(args, kwargs, meta)
     return as_str(meta.wordcount_ref_words, "wordcount_ref_words")
