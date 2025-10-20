@@ -27,7 +27,7 @@ params:
 {{< words-body >}}
 
 ```{r, echo = FALSE, warning = FALSE}
-
+library(stringr)
 wordcount <- params$wordcount
 print(wordcount)
 print(as.numeric(str_trim(wordcount)))
