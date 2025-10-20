@@ -30,7 +30,7 @@ params:
 library(stringr)
 wordcount <- params$wordcount
 print(wordcount)
-print(as.factor(wordcount))
+print(as.numeric(as.factor(as.character(wordcount))))
 
 
 estimate <- round(as.numeric(wordcount) / 200, 0)
