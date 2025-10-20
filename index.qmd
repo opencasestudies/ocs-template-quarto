@@ -27,8 +27,9 @@ params:
 {{< words-body >}}
 
 ```{r, echo = FALSE, warning = FALSE}
-library(stringr)
-wordcount <- str_trim(params$wordcount)
+wordcount <- params$wordcount
+print(typeof(wordcount))
+print(class(wordcount))
 print(wordcount)
 print(as.integer(wordcount))
 
