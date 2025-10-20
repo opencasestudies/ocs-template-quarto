@@ -24,10 +24,6 @@ params:
 
 <details><summary>Estimated **reading time** and this material's **readability score**</summary>
 
-::: {.content-visible when-meta="wordcount-banner"}
-{{< include _extensions/andrewheiss/wordcount/banner.html >}}
-:::
-
 {{< words-body >}}
 
 ```{r, echo = FALSE, warning = FALSE}
@@ -40,21 +36,9 @@ print(as.integer(trimws(wordcount)))
 
 estimate <- round(as.integer(wordcount) / 200, 0)
 
-print(typeof(wordcount_for_estimate))
-print(class(wordcount_for_estimate))
-print(wordcount_for_estimate)
-print(as.integer(wordcount_for_estimate))
-
-estimate_trytwo <- round(as.integer(wordcount_for_estimate) / 200, 0)
-
-
-
 ```
 
 **Reading Time: ** `{r} estimate ` minutes
-
-**Reading Time: ** `{r} estimate_trytwo ` minutes
-
 
 The total reading time for this case study is calculated by finding a word count using a [quarto extension](https://github.com/andrewheiss/quarto-wordcount) and estimating time based on an average adult reading speed of 200 words per minute.
 

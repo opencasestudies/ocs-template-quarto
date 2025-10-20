@@ -25,7 +25,6 @@ website:
 brand: _brand.yml
 format:
   wordcount-html:
-    wordcount-banner: true
     citeproc: false
     filters:
       - at: pre-quarto
