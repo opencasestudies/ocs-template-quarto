@@ -28,17 +28,28 @@ params:
 
 ```{r, echo = FALSE, warning = FALSE}
 wordcount <- params$wordcount
+wordcount_for_estimate <- wordcount
 print(typeof(wordcount))
 print(class(wordcount))
 print(wordcount)
 print(as.integer(wordcount))
 
-
 estimate <- round(as.integer(wordcount) / 200, 0)
+
+print(typeof(wordcount_for_estimate))
+print(class(wordcount_for_estimate))
+print(wordcount_for_estimate)
+print(as.integer(wordcount_for_estimate))
+
+estimate_trytwo <- round(as.integer(wordcount_for_estimate) / 200, 0)
+
+
+
 ```
 
 **Reading Time: ** `{r} estimate ` minutes
 
+**Reading Time: ** `{r} estimate_trytwo ` minutes
 
 
 The total reading time for this case study is calculated by finding a word count using a [quarto extension](https://github.com/andrewheiss/quarto-wordcount) and estimating time based on an average adult reading speed of 200 words per minute.
