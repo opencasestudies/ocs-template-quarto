@@ -24,6 +24,10 @@ params:
 
 <details><summary>Estimated **reading time** and this material's **readability score**</summary>
 
+::: {.content-visible when-meta="wordcount-banner"}
+{{< include _extensions/andrewheiss/wordcount/banner.html >}}
+:::
+
 {{< words-body >}}
 
 ```{r, echo = FALSE, warning = FALSE}
