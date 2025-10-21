@@ -12,12 +12,12 @@ as_num = function(meta_value, name)
     print("cannot find " .. name .. " in meta data")
     return 0
   end
-  return math.integer(meta_value)
+  return meta_value
 end
 
 return {
   ['words-body'] = function(args, kwargs, meta)
-    return as_num(meta.wordcount_body_words, "wordcount_body_words")
+    return math.integer(as_num(meta.wordcount_body_words, "wordcount_body_words"))
   end,
   ['words-ref'] = function(args, kwargs, meta)
     return as_num(meta.wordcount_ref_words, "wordcount_ref_words")
