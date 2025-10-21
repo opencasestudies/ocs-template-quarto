@@ -24,13 +24,7 @@ website:
 
 brand: _brand.yml
 format:
-  wordcount-html:
-    citeproc: false
-    filters:
-      - at: pre-quarto
-        path: _extensions/andrewheiss/wordcount/citeproc.lua
-      - at: pre-quarto
-        path: _extensions/andrewheiss/wordcount/wordcount.lua
+  html:
     grid:
        sidebar-width: 260px
     theme: cosmo
