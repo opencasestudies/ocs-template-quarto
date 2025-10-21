@@ -32,7 +32,7 @@ wordcount_for_estimate <- wordcount
 print(typeof(wordcount))
 print(class(wordcount))
 print(wordcount)
-print(as_num(trimws(wordcount)))
+print(trimws(wordcount))
 
 estimate <- round(as.integer(wordcount) / 200, 0)
 
