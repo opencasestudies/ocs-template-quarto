@@ -159,7 +159,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations"><strong>Limitations</strong></a></li>
   <li><a href="#ethical-considerations" id="toc-ethical-considerations" class="nav-link" data-scroll-target="#ethical-considerations"><strong>Ethical Considerations</strong></a></li>
   <li><a href="#data-import" id="toc-data-import" class="nav-link" data-scroll-target="#data-import"><strong>Data Import</strong></a></li>
-  <li><a href="#data-exploration" id="toc-data-exploration" class="nav-link" data-scroll-target="#data-exploration"><strong>Data Exploration</strong></a></li>
   <li><a href="#data-wrangling" id="toc-data-wrangling" class="nav-link" data-scroll-target="#data-wrangling"><strong>Data Wrangling</strong></a></li>
   <li><a href="#data-visualization" id="toc-data-visualization" class="nav-link" data-scroll-target="#data-visualization"><strong>Data Visualization</strong></a></li>
   <li><a href="#data-analysis" id="toc-data-analysis" class="nav-link" data-scroll-target="#data-analysis"><strong>Data Analysis</strong></a></li>
@@ -232,8 +231,6 @@ The disclaimer block, license block, and funding info generally will not need up
 
 Please update the access information (e.g., github link and data access)
 as well as any system or server requirements to work with the data
-
-This also includes information on estimated reading time and readability. This should not need updated.
 -->
 <div class="disclaimer_block">
 <p><strong>Disclaimer</strong>: The purpose of the <a href="https://opencasestudies.github.io" target="_blank">Open Case Studies</a> project is <strong>to demonstrate the use of various data science methods, tools, and software in the context of messy, real-world data</strong>. A given case study does not cover all aspects of the research process, is not claiming to be the most appropriate way to analyze a given data set, and should not be used in the context of making policy decisions without external consultation from scientific experts. In addition, due to size constraints, datasets used within a case study may be subset of the original/full dataset.</p>
@@ -268,68 +265,6 @@ In essence this section is useful to provide information to learners on how to w
 This section may not be needed for all case studies and can be removed if not
 -->
 <hr>
-<details>
-<summary>
-Estimated <strong>reading time</strong> and this material’s <strong>readability score</strong>
-</summary>
-<p><strong>Reading Time: </strong></p>
-<p>The total reading time for this case study is calculated via <a href="https://github.com/unDocUMeantIt/koRpus">koRpus</a> and shown below:</p>
-<div class="cell">
-<div class="cell-output-display">
-<table class="caption-top table table-sm table-striped small">
-<thead>
-<tr class="header">
-<th style="text-align: left;">Reading Time</th>
-<th style="text-align: left;">Method</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">0 minutes</td>
-<td style="text-align: left;">koRpus</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<hr>
-<p><strong>Readability Score: </strong></p>
-<p>A readability index estimates the reading difficulty level of a particular text. Flesch-Kincaid, FORCAST, and SMOG are three common readability indices that were calculated for this case study via <a href="https://github.com/unDocUMeantIt/koRpus">koRpus</a>. These indices provide an estimation of the minimum reading level required to comprehend this case study by grade and age.</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>Text language: en </code></pre>
-</div>
-<div class="cell-output-display">
-<table class="caption-top table table-sm table-striped small">
-<thead>
-<tr class="header">
-<th style="text-align: left;">index</th>
-<th style="text-align: right;">grade</th>
-<th style="text-align: right;">age</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Flesch-Kincaid</td>
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">14</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">FORCAST</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">10</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">SMOG</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">8</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<hr>
-</details>
 <!--
 The reference block should be updated to reflect how this case study should be cited
 -->
@@ -390,17 +325,6 @@ For an example, see this previous Open Case Study: https://www.opencasestudies.o
 <li>{FILL IN}</li>
 <li>{FILL IN}</li>
 </ol>
-<p><u><strong>Statistical Learning Objectives:</strong></u></p>
-<!--
-Enumerate the Statistical specific learning objectives here. (
-Can have more or less than 3 or be omitted completely dependent on the open case study overal topic).
-For an example, see this previous Open Case Study: https://www.opencasestudies.org/ocs-bp-co2-emissions/#Learning_Objectives
--->
-<ol type="1">
-<li>{Fill In}</li>
-<li>{Fill In}</li>
-<li>{Fill In}</li>
-</ol>
 <p><u><strong>Biological/Topical Learning Objectives:</strong></u></p>
 <!--
 Enumerate the topical Biological specific learning objectives here.
@@ -420,8 +344,8 @@ Fill out the table and add rows as necessary providing a link to the source and 
 -->
 <p>We will begin by loading the packages that we will need:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#add library() calls</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#add library() calls</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>here() starts at /home</code></pre>
 </div>
@@ -538,7 +462,7 @@ put the data files as they came from the source into a 'data/raw/' subfolder
 and use the `here` package. See the following example and update with your data:
 -->
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>pm <span class="ot">&lt;-</span>readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"raw"</span>, <span class="st">"pm25_data.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>pm <span class="ot">&lt;-</span>readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"raw"</span>, <span class="st">"pm25_data.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Rows: 876 Columns: 50
 ── Column specification ────────────────────────────────────────────────────────
@@ -555,47 +479,13 @@ At the end of the data import section, save the imported data as .rda files
 to allow users to stop and pick up where they left off:
 -->
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(pm, <span class="at">file =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"imported"</span>, <span class="st">"pm25_data_imported.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(pm, <span class="at">file =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"imported"</span>, <span class="st">"pm25_data_imported.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <!--
 NOTE that depending on the size of the data for Bio-OCS, the data may not be in the case study project folder directly
 and may need to be imported from an external source
 -->
 <hr>
-<!--
-  Not all case studies will require a data exploration section
--->
-<!--
-Update the file paths as needed throughout
--->
-<!--
-Not all case studies will need a Data Exploration subsection
--->
-<!--
-At the end of this section, save incremental data (if changes were made) so that users can pause and come back later
--->
-</section>
-<section id="data-exploration" class="level1">
-<h1><strong>Data Exploration</strong></h1>
-<hr>
-<p>If you have been following along but stopped, we could load our imported data like so:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"imported"</span>, <span class="st">"pm25_data_imported.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<hr>
-<details>
-<summary>
-If you skipped the data import section click here.
-</summary>
-<p>An RDA version (stands for R data) of the data can be found <a href="https://github.com//opencasestudies/ocs-bp-co2-emissions/tree/master/data/imported">here</a> or slightly more directly <a href="https://raw.githubusercontent.com/opencasestudies/ocs-bp-co2-emissions/master/data/imported/co2_data_imported.rda">here</a>. Download this file and then place it in your current working directory within a subdirectory called “imported” within a directory called “data” to use the following code. We used an RStudio project and the <a href="https://github.com/jennybc/here_here"><code>here</code> package</a> to navigate to the file more easily.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"imported"</span>, <span class="st">"co2_data_imported.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</details>
-<hr>
-<!--
-Use this section to walk through any exploration of the dataset conducted pre-analysis.
--->
 <!--
 Update the file paths as needed throughout
 -->
@@ -611,7 +501,7 @@ At the end of this section, save incremental data so that users can pause and co
 <hr>
 <p>If you have been following along but stopped, we could load our imported data like so:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"imported"</span>, <span class="st">"pm25_data_imported.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"imported"</span>, <span class="st">"pm25_data_imported.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <hr>
 <details>
@@ -620,7 +510,7 @@ If you skipped the data import section click here.
 </summary>
 <p>An RDA version (stands for R data) of the data can be found <a href="https://github.com//opencasestudies/ocs-bp-co2-emissions/tree/master/data/imported">here</a> or slightly more directly <a href="https://raw.githubusercontent.com/opencasestudies/ocs-bp-co2-emissions/master/data/imported/co2_data_imported.rda">here</a>. Download this file and then place it in your current working directory within a subdirectory called “imported” within a directory called “data” to use the following code. We used an RStudio project and the <a href="https://github.com/jennybc/here_here"><code>here</code> package</a> to navigate to the file more easily.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"imported"</span>, <span class="st">"co2_data_imported.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"imported"</span>, <span class="st">"co2_data_imported.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </details>
 <hr>
@@ -629,8 +519,8 @@ Use this section to explain step-by-step the data wrangling process used to prep
 -->
 <p>To allow users to skip import and wrangling we will save the data as an RDA file as well as a CSV file as this is often useful to send our data to collaborators. We will save this in a “wrangled” subdirectory of our “data” directory of our working directory.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(pm, <span class="at">file =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>readr<span class="sc">::</span><span class="fu">write_csv</span>(pm, <span class="at">file =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>,<span class="st">"wrangled"</span>, <span class="st">"wrangled_data.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(pm, <span class="at">file =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>readr<span class="sc">::</span><span class="fu">write_csv</span>(pm, <span class="at">file =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>,<span class="st">"wrangled"</span>, <span class="st">"wrangled_data.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <!--
 Replace `pm` above with the name of the data object created at the end of data wrangling.
@@ -648,7 +538,7 @@ At the end of this section, save incremental data so that users can pause and co
 <hr>
 <p>If you have been following along but stopped, we could load our wrangled data like so:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <hr>
 <details>
@@ -657,7 +547,7 @@ If you skipped the data import section click here.
 </summary>
 <p>An RDA file (stands for R data) of the data can be found <a href="https://github.com//opencasestudies/ocs-bp-co2-emissions/tree/master/data/wrangled">here</a> or slightly more directly <a href="https://raw.githubusercontent.com/opencasestudies/ocs-bp-co2-emissions/master/data/wrangled/wrangled_data.rda">here</a>. Download this file and then place it in your current working directory within a subdirectory called “wrangled” within a subdirectory called “data” to use the following code. We used an RStudio project and the <a href="https://github.com/jennybc/here_here"><code>here</code> package</a> to navigate to the file more easily.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </details>
 <hr>
@@ -676,7 +566,7 @@ please save the most recent version of the data similar to previous sections.
 <hr>
 <p>If you have been following along but stopped, we could load our wrangled data like so:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <hr>
 <details>
@@ -685,7 +575,7 @@ If you skipped the data import section click here.
 </summary>
 <p>An RDA file (stands for R data) of the data can be found <a href="https://github.com//opencasestudies/ocs-bp-co2-emissions/tree/master/data/wrangled">here</a> or slightly more directly <a href="https://raw.githubusercontent.com/opencasestudies/ocs-bp-co2-emissions/master/data/wrangled/wrangled_data.rda">here</a>. Download this file and then place it in your current working directory within a subdirectory called “wrangled” within a subdirectory called “data” to use the following code. We used an RStudio project and the <a href="https://github.com/jennybc/here_here"><code>here</code> package</a> to navigate to the file more easily.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </details>
 <hr>
@@ -749,7 +639,7 @@ Automatically include the packages table from _packages.qmd?
 <h2 class="anchored" data-anchor-id="session-info"><strong>Session Info</strong></h2>
 <hr>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">session_info</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">session_info</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>─ Session info ───────────────────────────────────────────────────────────────
  setting  value
@@ -761,94 +651,66 @@ Automatically include the packages table from _packages.qmd?
  collate  en_US.UTF-8
  ctype    en_US.UTF-8
  tz       Etc/UTC
- date     2025-10-15
+ date     2025-10-21
  pandoc   3.1.1 @ /usr/local/bin/ (via rmarkdown)
 
 ─ Packages ───────────────────────────────────────────────────────────────────
- package        * version    date (UTC) lib source
- bit              4.0.5      2022-11-15 [1] RSPM (R 4.3.0)
- bit64            4.0.5      2020-08-30 [1] RSPM (R 4.3.0)
- cachem           1.0.8      2023-05-01 [1] RSPM (R 4.3.0)
- callr            3.7.5      2024-02-19 [1] RSPM (R 4.3.0)
- cli              3.6.2      2023-12-11 [1] RSPM (R 4.3.0)
- colorspace       2.1-0      2023-01-23 [1] RSPM (R 4.3.0)
- crayon           1.5.2      2022-09-29 [1] RSPM (R 4.3.0)
- curl             6.4.0      2025-06-22 [1] CRAN (R 4.3.2)
- data.table       1.15.0     2024-01-30 [1] RSPM (R 4.3.0)
- desc             1.4.3      2023-12-10 [1] RSPM (R 4.3.0)
- devtools         2.4.5      2022-10-11 [1] RSPM (R 4.3.0)
- digest           0.6.34     2024-01-11 [1] RSPM (R 4.3.0)
- dplyr          * 1.1.4      2023-11-17 [1] RSPM (R 4.3.0)
- ellipsis         0.3.2      2021-04-29 [1] RSPM (R 4.3.0)
- evaluate         1.0.4      2025-06-18 [1] CRAN (R 4.3.2)
- fansi            1.0.6      2023-12-08 [1] RSPM (R 4.3.0)
- fastmap          1.1.1      2023-02-24 [1] RSPM (R 4.3.0)
- forcats        * 1.0.0      2023-01-29 [1] RSPM (R 4.3.0)
- fs               1.6.3      2023-07-20 [1] RSPM (R 4.3.0)
- generics         0.1.3      2022-07-05 [1] RSPM (R 4.3.0)
- ggplot2        * 3.5.0      2024-02-23 [1] RSPM (R 4.3.0)
- glue             1.7.0      2024-01-09 [1] RSPM (R 4.3.0)
- gtable           0.3.4      2023-08-21 [1] RSPM (R 4.3.0)
- here           * 1.0.1      2020-12-13 [1] CRAN (R 4.3.2)
- hms              1.1.3      2023-03-21 [1] RSPM (R 4.3.0)
- htmltools        0.5.7      2023-11-03 [1] RSPM (R 4.3.0)
- htmlwidgets      1.6.4      2023-12-06 [1] RSPM (R 4.3.0)
- httpuv           1.6.14     2024-01-26 [1] RSPM (R 4.3.0)
- jsonlite         1.8.8      2023-12-04 [1] RSPM (R 4.3.0)
- knitr          * 1.50       2025-03-16 [1] CRAN (R 4.3.2)
- koRpus         * 0.13-8     2021-05-17 [1] RSPM (R 4.3.0)
- koRpus.lang.en * 0.1-4      2020-10-24 [1] RSPM (R 4.3.0)
- later            1.3.2      2023-12-06 [1] RSPM (R 4.3.0)
- lattice          0.21-9     2023-10-01 [2] CRAN (R 4.3.2)
- lifecycle        1.0.4      2023-11-07 [1] RSPM (R 4.3.0)
- lubridate      * 1.9.3      2023-09-27 [1] RSPM (R 4.3.0)
- magrittr         2.0.3      2022-03-30 [1] RSPM (R 4.3.0)
- Matrix           1.6-1.1    2023-09-18 [2] CRAN (R 4.3.2)
- memoise          2.0.1      2021-11-26 [1] RSPM (R 4.3.0)
- mime             0.12       2021-09-28 [1] RSPM (R 4.3.0)
- miniUI           0.1.1.1    2018-05-18 [1] RSPM (R 4.3.0)
- munsell          0.5.0      2018-06-12 [1] RSPM (R 4.3.0)
- pillar           1.9.0      2023-03-22 [1] RSPM (R 4.3.0)
- pkgbuild         1.4.3      2023-12-10 [1] RSPM (R 4.3.0)
- pkgconfig        2.0.3      2019-09-22 [1] RSPM (R 4.3.0)
- pkgload          1.3.4      2024-01-16 [1] RSPM (R 4.3.0)
- processx         3.8.3      2023-12-10 [1] RSPM (R 4.3.0)
- profvis          0.3.8      2023-05-02 [1] RSPM (R 4.3.0)
- promises         1.2.1      2023-08-10 [1] RSPM (R 4.3.0)
- ps               1.7.6      2024-01-18 [1] RSPM (R 4.3.0)
- purrr          * 1.0.2      2023-08-10 [1] RSPM (R 4.3.0)
- R6               2.5.1      2021-08-19 [1] RSPM (R 4.3.0)
- Rcpp             1.0.12     2024-01-09 [1] RSPM (R 4.3.0)
- read.so        * 0.1.1      2025-10-15 [1] Github (alistaire47/read.so@b1eedf9)
- readr          * 2.1.5      2024-01-10 [1] RSPM (R 4.3.0)
- remotes          2.4.2.1    2023-07-18 [1] RSPM (R 4.3.0)
- rlang            1.1.6      2025-04-11 [1] CRAN (R 4.3.2)
- rmarkdown        2.25       2023-09-18 [1] RSPM (R 4.3.0)
- rprojroot        2.1.0      2025-07-12 [1] CRAN (R 4.3.2)
- rstudioapi       0.15.0     2023-07-07 [1] RSPM (R 4.3.0)
- scales           1.3.0      2023-11-28 [1] RSPM (R 4.3.0)
- sessioninfo      1.2.2      2021-12-06 [1] RSPM (R 4.3.0)
- shiny            1.8.0      2023-11-17 [1] RSPM (R 4.3.0)
- stringi          1.8.3      2023-12-11 [1] RSPM (R 4.3.0)
- stringr        * 1.5.1      2023-11-14 [1] RSPM (R 4.3.0)
- sylly          * 0.1-6      2020-09-20 [1] RSPM (R 4.3.0)
- sylly.en         0.1-3      2018-03-19 [1] RSPM (R 4.3.0)
- tibble         * 3.3.0      2025-06-08 [1] CRAN (R 4.3.2)
- tidyr          * 1.3.1      2024-01-24 [1] RSPM (R 4.3.0)
- tidyselect       1.2.0      2022-10-10 [1] RSPM (R 4.3.0)
- tidyverse      * 2.0.0      2023-02-22 [1] RSPM (R 4.3.0)
- timechange       0.3.0      2024-01-18 [1] RSPM (R 4.3.0)
- tzdb             0.4.0      2023-05-12 [1] RSPM (R 4.3.0)
- urlchecker       1.0.1      2021-11-30 [1] RSPM (R 4.3.0)
- usethis          2.2.3      2024-02-19 [1] RSPM (R 4.3.0)
- utf8             1.2.4      2023-10-22 [1] RSPM (R 4.3.0)
- vctrs            0.6.5      2023-12-01 [1] RSPM (R 4.3.0)
- vroom            1.6.5      2023-12-05 [1] RSPM (R 4.3.0)
- withr            3.0.2      2024-10-28 [1] CRAN (R 4.3.2)
- wordcountaddin * 0.3.0.9000 2025-10-15 [1] Github (benmarwick/wordcountaddin@13bf891)
- xfun             0.52       2025-04-02 [1] CRAN (R 4.3.2)
- xtable           1.8-4      2019-04-21 [1] RSPM (R 4.3.0)
- yaml             2.3.10     2024-07-26 [1] CRAN (R 4.3.2)
+ package     * version date (UTC) lib source
+ bit           4.0.5   2022-11-15 [1] RSPM (R 4.3.0)
+ bit64         4.0.5   2020-08-30 [1] RSPM (R 4.3.0)
+ cachem        1.0.8   2023-05-01 [1] RSPM (R 4.3.0)
+ cli           3.6.2   2023-12-11 [1] RSPM (R 4.3.0)
+ crayon        1.5.2   2022-09-29 [1] RSPM (R 4.3.0)
+ devtools      2.4.5   2022-10-11 [1] RSPM (R 4.3.0)
+ digest        0.6.34  2024-01-11 [1] RSPM (R 4.3.0)
+ ellipsis      0.3.2   2021-04-29 [1] RSPM (R 4.3.0)
+ evaluate      1.0.4   2025-06-18 [1] CRAN (R 4.3.2)
+ fansi         1.0.6   2023-12-08 [1] RSPM (R 4.3.0)
+ fastmap       1.1.1   2023-02-24 [1] RSPM (R 4.3.0)
+ fs            1.6.3   2023-07-20 [1] RSPM (R 4.3.0)
+ glue          1.7.0   2024-01-09 [1] RSPM (R 4.3.0)
+ here        * 1.0.1   2020-12-13 [1] CRAN (R 4.3.2)
+ hms           1.1.3   2023-03-21 [1] RSPM (R 4.3.0)
+ htmltools     0.5.7   2023-11-03 [1] RSPM (R 4.3.0)
+ htmlwidgets   1.6.4   2023-12-06 [1] RSPM (R 4.3.0)
+ httpuv        1.6.14  2024-01-26 [1] RSPM (R 4.3.0)
+ jsonlite      1.8.8   2023-12-04 [1] RSPM (R 4.3.0)
+ knitr         1.50    2025-03-16 [1] CRAN (R 4.3.2)
+ later         1.3.2   2023-12-06 [1] RSPM (R 4.3.0)
+ lifecycle     1.0.4   2023-11-07 [1] RSPM (R 4.3.0)
+ magrittr      2.0.3   2022-03-30 [1] RSPM (R 4.3.0)
+ memoise       2.0.1   2021-11-26 [1] RSPM (R 4.3.0)
+ mime          0.12    2021-09-28 [1] RSPM (R 4.3.0)
+ miniUI        0.1.1.1 2018-05-18 [1] RSPM (R 4.3.0)
+ pillar        1.9.0   2023-03-22 [1] RSPM (R 4.3.0)
+ pkgbuild      1.4.3   2023-12-10 [1] RSPM (R 4.3.0)
+ pkgconfig     2.0.3   2019-09-22 [1] RSPM (R 4.3.0)
+ pkgload       1.3.4   2024-01-16 [1] RSPM (R 4.3.0)
+ profvis       0.3.8   2023-05-02 [1] RSPM (R 4.3.0)
+ promises      1.2.1   2023-08-10 [1] RSPM (R 4.3.0)
+ purrr         1.0.2   2023-08-10 [1] RSPM (R 4.3.0)
+ R6            2.5.1   2021-08-19 [1] RSPM (R 4.3.0)
+ Rcpp          1.0.12  2024-01-09 [1] RSPM (R 4.3.0)
+ readr         2.1.5   2024-01-10 [1] RSPM (R 4.3.0)
+ remotes       2.4.2.1 2023-07-18 [1] RSPM (R 4.3.0)
+ rlang         1.1.6   2025-04-11 [1] CRAN (R 4.3.2)
+ rmarkdown     2.25    2023-09-18 [1] RSPM (R 4.3.0)
+ rprojroot     2.1.0   2025-07-12 [1] CRAN (R 4.3.2)
+ sessioninfo   1.2.2   2021-12-06 [1] RSPM (R 4.3.0)
+ shiny         1.8.0   2023-11-17 [1] RSPM (R 4.3.0)
+ stringi       1.8.3   2023-12-11 [1] RSPM (R 4.3.0)
+ stringr       1.5.1   2023-11-14 [1] RSPM (R 4.3.0)
+ tibble        3.3.0   2025-06-08 [1] CRAN (R 4.3.2)
+ tidyselect    1.2.0   2022-10-10 [1] RSPM (R 4.3.0)
+ tzdb          0.4.0   2023-05-12 [1] RSPM (R 4.3.0)
+ urlchecker    1.0.1   2021-11-30 [1] RSPM (R 4.3.0)
+ usethis       2.2.3   2024-02-19 [1] RSPM (R 4.3.0)
+ utf8          1.2.4   2023-10-22 [1] RSPM (R 4.3.0)
+ vctrs         0.6.5   2023-12-01 [1] RSPM (R 4.3.0)
+ vroom         1.6.5   2023-12-05 [1] RSPM (R 4.3.0)
+ xfun          0.52    2025-04-02 [1] CRAN (R 4.3.2)
+ xtable        1.8-4   2019-04-21 [1] RSPM (R 4.3.0)
+ yaml          2.3.10  2024-07-26 [1] CRAN (R 4.3.2)
 
  [1] /usr/local/lib/R/site-library
  [2] /usr/local/lib/R/library
@@ -1324,65 +1186,89 @@ Funding info should be included here
     }
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb18" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "**Biomedical Open Case Studies: {Title}**"</span></span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!--</span></span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="co">  Update the various qmd documents below with each component of a Bio-OCS case study.</span></span>
-<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="co">  Besides filling in the title in the header of this document, no other changes should be necessary within this file.</span></span>
-<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a><span class="co">  You may chose to remove the data exploration step if it's not necessary.</span></span>
-<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a><span class="co">--&gt;</span></span>
-<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>{{&lt; include _main_image.qmd &gt;}}</span>
-<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>{{&lt; include _ocs_frontmatter.qmd &gt;}}</span>
-<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a>{{&lt; include _cite.qmd &gt;}}</span>
-<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a>{{&lt; include _motivation.qmd &gt;}}</span>
-<span id="cb18-18"><a href="#cb18-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-19"><a href="#cb18-19" aria-hidden="true" tabindex="-1"></a>{{&lt; include _main_question.qmd &gt;}}</span>
-<span id="cb18-20"><a href="#cb18-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-21"><a href="#cb18-21" aria-hidden="true" tabindex="-1"></a>{{&lt; include _los.qmd &gt;}}</span>
-<span id="cb18-22"><a href="#cb18-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-23"><a href="#cb18-23" aria-hidden="true" tabindex="-1"></a>{{&lt; include _packages.qmd &gt;}}</span>
-<span id="cb18-24"><a href="#cb18-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-25"><a href="#cb18-25" aria-hidden="true" tabindex="-1"></a>{{&lt; include _context.qmd &gt;}}</span>
-<span id="cb18-26"><a href="#cb18-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-27"><a href="#cb18-27" aria-hidden="true" tabindex="-1"></a>{{&lt; include _data_description.qmd &gt;}}</span>
-<span id="cb18-28"><a href="#cb18-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-29"><a href="#cb18-29" aria-hidden="true" tabindex="-1"></a>{{&lt; include _limitations.qmd &gt;}}</span>
-<span id="cb18-30"><a href="#cb18-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-31"><a href="#cb18-31" aria-hidden="true" tabindex="-1"></a>{{&lt; include _bioethics.qmd &gt;}}</span>
-<span id="cb18-32"><a href="#cb18-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-33"><a href="#cb18-33" aria-hidden="true" tabindex="-1"></a>{{&lt; include _data_import.qmd &gt;}}</span>
-<span id="cb18-34"><a href="#cb18-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-35"><a href="#cb18-35" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!--</span></span>
-<span id="cb18-36"><a href="#cb18-36" aria-hidden="true" tabindex="-1"></a><span class="co">  Not all case studies will require a data exploration section</span></span>
-<span id="cb18-37"><a href="#cb18-37" aria-hidden="true" tabindex="-1"></a><span class="co">--&gt;</span></span>
-<span id="cb18-38"><a href="#cb18-38" aria-hidden="true" tabindex="-1"></a>{{&lt; include _data_exploration.qmd &gt;}}</span>
-<span id="cb18-39"><a href="#cb18-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-40"><a href="#cb18-40" aria-hidden="true" tabindex="-1"></a>{{&lt; include _data_wrangling.qmd &gt;}}</span>
-<span id="cb18-41"><a href="#cb18-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-42"><a href="#cb18-42" aria-hidden="true" tabindex="-1"></a>{{&lt; include _data_visualization.qmd &gt;}}</span>
-<span id="cb18-43"><a href="#cb18-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-44"><a href="#cb18-44" aria-hidden="true" tabindex="-1"></a>{{&lt; include _data_analysis.qmd &gt;}}</span>
-<span id="cb18-45"><a href="#cb18-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-46"><a href="#cb18-46" aria-hidden="true" tabindex="-1"></a>{{&lt; include _summary.qmd &gt;}}</span>
-<span id="cb18-47"><a href="#cb18-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-48"><a href="#cb18-48" aria-hidden="true" tabindex="-1"></a>{{&lt; include _suggested_hw.qmd &gt;}}</span>
-<span id="cb18-49"><a href="#cb18-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-50"><a href="#cb18-50" aria-hidden="true" tabindex="-1"></a>{{&lt; include _additional_info.qmd &gt;}}</span>
-<span id="cb18-51"><a href="#cb18-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-52"><a href="#cb18-52" aria-hidden="true" tabindex="-1"></a><span class="fu">## **Session Info**</span></span>
-<span id="cb18-53"><a href="#cb18-53" aria-hidden="true" tabindex="-1"></a>***</span>
-<span id="cb18-54"><a href="#cb18-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-57"><a href="#cb18-57" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb18-58"><a href="#cb18-58" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">session_info</span>()</span>
-<span id="cb18-59"><a href="#cb18-59" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb18-60"><a href="#cb18-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-61"><a href="#cb18-61" aria-hidden="true" tabindex="-1"></a>{{&lt; include _acknowledgements.qmd &gt;}}</span>
+<div class="sourceCode" id="cb15" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "**Biomedical Open Case Studies: {Title}**"</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="an">include-sections:</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co">  stat-los: false</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="co">  data-import: true</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="co">  data-exploration: false</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="co">  data-wrangling: true</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="co">  data-viz: true</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="co">  data-analysis: true</span></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!--</span></span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a><span class="co">  Update the various qmd documents below with each component of a Bio-OCS case study.</span></span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a><span class="co">  Besides filling in the title in the header of this document, no other changes should be necessary within this file.</span></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a><span class="co">  You may chose to remove the data exploration step if it's not necessary.</span></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a><span class="co">--&gt;</span></span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>{{&lt; include _main_image.qmd &gt;}}</span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>{{&lt; include _ocs_frontmatter.qmd &gt;}}</span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>{{&lt; include _cite.qmd &gt;}}</span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>{{&lt; include _motivation.qmd &gt;}}</span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a>{{&lt; include _main_question.qmd &gt;}}</span>
+<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a>{{&lt; include _los.qmd &gt;}}</span>
+<span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-30"><a href="#cb15-30" aria-hidden="true" tabindex="-1"></a>{{&lt; include _packages.qmd &gt;}}</span>
+<span id="cb15-31"><a href="#cb15-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-32"><a href="#cb15-32" aria-hidden="true" tabindex="-1"></a>{{&lt; include _context.qmd &gt;}}</span>
+<span id="cb15-33"><a href="#cb15-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-34"><a href="#cb15-34" aria-hidden="true" tabindex="-1"></a>{{&lt; include _data_description.qmd &gt;}}</span>
+<span id="cb15-35"><a href="#cb15-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-36"><a href="#cb15-36" aria-hidden="true" tabindex="-1"></a>{{&lt; include _limitations.qmd &gt;}}</span>
+<span id="cb15-37"><a href="#cb15-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-38"><a href="#cb15-38" aria-hidden="true" tabindex="-1"></a>{{&lt; include _bioethics.qmd &gt;}}</span>
+<span id="cb15-39"><a href="#cb15-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-40"><a href="#cb15-40" aria-hidden="true" tabindex="-1"></a>::: {.content-hidden unless-meta="include-sections.data-import"}</span>
+<span id="cb15-41"><a href="#cb15-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-42"><a href="#cb15-42" aria-hidden="true" tabindex="-1"></a>{{&lt; include _data_import.qmd &gt;}}</span>
+<span id="cb15-43"><a href="#cb15-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-44"><a href="#cb15-44" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb15-45"><a href="#cb15-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-46"><a href="#cb15-46" aria-hidden="true" tabindex="-1"></a>::: {.content-hidden unless-meta="include-sections.data-exploration"}</span>
+<span id="cb15-47"><a href="#cb15-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-48"><a href="#cb15-48" aria-hidden="true" tabindex="-1"></a>{{&lt; include _data_exploration.qmd &gt;}}</span>
+<span id="cb15-49"><a href="#cb15-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-50"><a href="#cb15-50" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb15-51"><a href="#cb15-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-52"><a href="#cb15-52" aria-hidden="true" tabindex="-1"></a>::: {.content-hidden unless-meta="include-sections.data-wrangling"}</span>
+<span id="cb15-53"><a href="#cb15-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-54"><a href="#cb15-54" aria-hidden="true" tabindex="-1"></a>{{&lt; include _data_wrangling.qmd &gt;}}</span>
+<span id="cb15-55"><a href="#cb15-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-56"><a href="#cb15-56" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb15-57"><a href="#cb15-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-58"><a href="#cb15-58" aria-hidden="true" tabindex="-1"></a>::: {.content-hidden unless-meta="include-sections.data-viz"}</span>
+<span id="cb15-59"><a href="#cb15-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-60"><a href="#cb15-60" aria-hidden="true" tabindex="-1"></a>{{&lt; include _data_visualization.qmd &gt;}}</span>
+<span id="cb15-61"><a href="#cb15-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-62"><a href="#cb15-62" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb15-63"><a href="#cb15-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-64"><a href="#cb15-64" aria-hidden="true" tabindex="-1"></a>::: {.content-hidden unless-meta="include-sections.data-analysis"}</span>
+<span id="cb15-65"><a href="#cb15-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-66"><a href="#cb15-66" aria-hidden="true" tabindex="-1"></a>{{&lt; include _data_analysis.qmd &gt;}}</span>
+<span id="cb15-67"><a href="#cb15-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-68"><a href="#cb15-68" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb15-69"><a href="#cb15-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-70"><a href="#cb15-70" aria-hidden="true" tabindex="-1"></a>{{&lt; include _summary.qmd &gt;}}</span>
+<span id="cb15-71"><a href="#cb15-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-72"><a href="#cb15-72" aria-hidden="true" tabindex="-1"></a>{{&lt; include _suggested_hw.qmd &gt;}}</span>
+<span id="cb15-73"><a href="#cb15-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-74"><a href="#cb15-74" aria-hidden="true" tabindex="-1"></a>{{&lt; include _additional_info.qmd &gt;}}</span>
+<span id="cb15-75"><a href="#cb15-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-76"><a href="#cb15-76" aria-hidden="true" tabindex="-1"></a><span class="fu">## **Session Info**</span></span>
+<span id="cb15-77"><a href="#cb15-77" aria-hidden="true" tabindex="-1"></a>***</span>
+<span id="cb15-78"><a href="#cb15-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-81"><a href="#cb15-81" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb15-82"><a href="#cb15-82" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">session_info</span>()</span>
+<span id="cb15-83"><a href="#cb15-83" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb15-84"><a href="#cb15-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-85"><a href="#cb15-85" aria-hidden="true" tabindex="-1"></a>{{&lt; include _acknowledgements.qmd &gt;}}</span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
