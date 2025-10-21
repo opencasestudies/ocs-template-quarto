@@ -3,9 +3,6 @@
 render-preview: true
 
 ##### Checks run at pull request #####
-# Check quiz formatting
-check-quizzes: false
-quiz_error_min: 0
 # Check that urls in the content are not broken
 url-checker: true
 url_error_min: 0
@@ -27,13 +24,7 @@ url-check-periodically: true
 
 ##### Renderings run upon merge to main branch #####
 # Rendering each platform's content
-render-website: quarto
-render-leanpub: true
-render-coursera: true
-
-## Automate the creation of Book.txt file? yes/no
-## This is only relevant if render-leanpub is yes, otherwise it will be ignored
-make-book-txt: true
+render-website: quarto_web
 
 # What docker image should be used for rendering?
 # The default is jhudsl/base_ottr:main

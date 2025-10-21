@@ -1,5 +1,12 @@
 ---
 title: "**Biomedical Open Case Studies: {Title}**"
+include-sections:
+  stat-los: false
+  data-import: true
+  data-exploration: false
+  data-wrangling: true
+  data-viz: true
+  data-analysis: true
 ---
 
 <!--
@@ -30,18 +37,35 @@ title: "**Biomedical Open Case Studies: {Title}**"
 
 {{< include _bioethics.qmd >}}
 
+::: {.content-hidden unless-meta="include-sections.data-import"}
+
 {{< include _data_import.qmd >}}
 
-<!--
-  Not all case studies will require a data exploration section
--->
+:::
+
+::: {.content-hidden unless-meta="include-sections.data-exploration"}
+
 {{< include _data_exploration.qmd >}}
+
+:::
+
+::: {.content-hidden unless-meta="include-sections.data-wrangling"}
 
 {{< include _data_wrangling.qmd >}}
 
+:::
+
+::: {.content-hidden unless-meta="include-sections.data-viz"}
+
 {{< include _data_visualization.qmd >}}
 
+:::
+
+::: {.content-hidden unless-meta="include-sections.data-analysis"}
+
 {{< include _data_analysis.qmd >}}
+
+:::
 
 {{< include _summary.qmd >}}
 
