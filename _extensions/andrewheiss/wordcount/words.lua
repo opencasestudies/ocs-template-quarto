@@ -17,19 +17,19 @@ end
 
 return {
   ['words-body'] = function(args, kwargs, meta)
-    return math.integer(as_num(meta.wordcount_body_words, "wordcount_body_words"))
+    return as_num(meta.wordcount_body_words, "wordcount_body_words"))
   end,
   ['words-ref'] = function(args, kwargs, meta)
-    return as_num(meta.wordcount_ref_words, "wordcount_ref_words")
+    return as_str(meta.wordcount_ref_words, "wordcount_ref_words")
   end,
   ['words-append'] = function(args, kwargs, meta)
-    return as_num(meta.wordcount_appendix_words, "wordcount_appendix_words")
+    return as_str(meta.wordcount_appendix_words, "wordcount_appendix_words")
   end,
   ['words-note'] = function(args, kwargs, meta)
-    return as_num(meta.wordcount_note_words, "wordcount_note_words")
+    return as_str(meta.wordcount_note_words, "wordcount_note_words")
   end,
   ['words-total'] = function(args, kwargs, meta)
-    return as_num(meta.wordcount_total_words, "wordcount_total_words")
+    return as_str(meta.wordcount_total_words, "wordcount_total_words")
   end,
   ['words-sum'] = function(args, kwargs, meta)
     local nargs = #args
