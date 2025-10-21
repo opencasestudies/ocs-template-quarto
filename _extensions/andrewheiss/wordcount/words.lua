@@ -17,7 +17,7 @@ end
 
 return {
   ['words-body'] = function(args, kwargs, meta)
-    return as_num(meta.wordcount_body_words, "wordcount_body_words"))
+    return as_num(meta.wordcount_body_words, "wordcount_body_words")
   end,
   ['words-ref'] = function(args, kwargs, meta)
     return as_str(meta.wordcount_ref_words, "wordcount_ref_words")
