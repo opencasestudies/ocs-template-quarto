@@ -27,12 +27,14 @@ params:
 {{< words-body >}}
 
 ```{r, echo = FALSE, warning = FALSE}
+library(stringr)
 wordcount <- params$wordcount
 wordcount_for_estimate <- wordcount
 print(typeof(wordcount))
 print(class(wordcount))
 print(wordcount)
 print(as.integer(trimws(wordcount)))
+print(as.integer(str_replace_all(wordcount, "\\s", "")))
 
 estimate <- round(as.integer(wordcount) / 200, 0)
 
