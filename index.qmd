@@ -1,5 +1,5 @@
 ---
-title: "**Biomedical Open Case Studies: {Title}**"
+title: "**Biomedical Open Case Studies: Title**"
 include-sections:
   stat-los: false
   data-import: true
@@ -7,6 +7,9 @@ include-sections:
   data-wrangling: true
   data-viz: true
   data-analysis: true
+params:
+  wordcount: |
+    {{< words-body >}}
 ---
 
 <!--
@@ -18,6 +21,37 @@ include-sections:
 {{< include _main_image.qmd >}}
 
 {{< include _ocs_frontmatter.qmd >}}
+
+<details><summary>Estimated **reading time** and this material's **readability score**</summary>
+
+{{< words-body >}}
+
+```{r, echo = FALSE, warning = FALSE}
+library(stringr)
+wordcount <- params$wordcount
+wordcount_for_estimate <- wordcount
+print(typeof(wordcount))
+print(class(wordcount))
+print(wordcount)
+print(as.integer(trimws(wordcount)))
+print(as.integer(str_replace_all(wordcount, "\\s", "")))
+
+estimate <- round(as.integer(wordcount) / 200, 0)
+
+```
+
+**Reading Time: ** `{r} estimate ` minutes
+
+The total reading time for this case study is calculated by finding a word count using a [quarto extension](https://github.com/andrewheiss/quarto-wordcount) and estimating time based on an average adult reading speed of 200 words per minute.
+
+***
+
+**Readability Score: **
+
+
+***
+
+</details>
 
 {{< include _cite.qmd >}}
 
