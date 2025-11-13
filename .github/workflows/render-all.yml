@@ -11,6 +11,8 @@ on:
       - '*.qmd'
       - '*.Rmd'
       - assets/*
+      - '*.yml'
+      - 'GA_Script.html'
 
 jobs:
 
