@@ -6,7 +6,6 @@ website:
   title: "Biomedical Open Case Studies"
   navbar:
     search: true
-  include-in-header: GA_Script.html
   sidebar:
     logo-href: "https://www.opencasestudies.org/"
     logo: "img/Bio-OCS_Logo.png"
@@ -26,6 +25,7 @@ website:
 brand: _brand.yml
 format:
   html:
+    include-in-header: GA_Script.html
     grid:
        sidebar-width: 260px
     theme: cosmo
