@@ -1,11 +1,60 @@
-# OTTR for Websites -- Quarto version!
+# Bio-OCS Quarto Template
 
-Get started by going to [ottrproject.org](https://www.ottrproject.org/getting_started.html)!
-
-This is a template for creating websites from  qmd files hosted on GitHub with three helpful automations following a pull request to the repository: spelling check, broken link check, and website rendering.
+This is a template for creating websites from qmd files hosted on GitHub with three helpful automations following a pull request to the repository: spelling check, broken link check, and website rendering. The spelling and url checks as well as the website rendering are supported by the OTTR Template, specifically the OTTR Quarto Web version.
 
 - Check for spelling errors more intensively than RStudio and allow you to add words to the dictionary
 - Check for broken links - you will be warned about broken links
 - Automatic rendering of the website for previewing before merges
 - Automatic rendering of the website upon merging to main
 - Docker images that can be customized.
+
+This specific template sets up the style and content template for Biomedical Open Case Studies (Bio-OCS).
+
+## Repository Structure + Checklist for files to update when using the template
+
+### Style and Configuration
+
+These files will largely not need updated though a brief description of what each contains is provided.
+
+* _quarto.yml -- Configurations for how the rendered website will look. The title may need updated, but most everything else should not be updated so that the case studies share a style.
+* styles.css -- Defines html elements
+* _brand.yml -- Logo and favicon definition
+* config_automation.yml	-- Configurations for the OTTR Template automations. Update this file to toggle spelling or url check as well as minimum errors allowed for those checks or to update the docker image.
+
+### Directories
+
+* `data/`: Raw, imported, and wrangled datasets. `raw/pm25_data.csv`, `imported/pm25_data_imported.rda`, and `wrangled_data.csv` are template files that can be removed or overwritten by case study repositories.
+* `img/`: Template images. Please do not add case study images in this directory -- instead adding them to `resources` or `resources/images`.
+* `resources/`
+
+
+### Content
+
+For the overall content of the Open Case Study, each portion of the case study is split into individual `.qmd` files. They are included in order within the `index.qmd` file. Certain case studies will not have every component, and so we can toggle those on and off using short code and header booleans. Below is a list of all of the sub-component `.qmd` files in checklist form. Besides the listed changes below, `index.qmd` should not need updated.
+
+- [ ] `index.qmd`
+  - [ ] Update Case Study Title
+  - [ ] Update any header booleans for section inclusion or add additional short code content-hidden sections as necessary
+- [ ] _main_image.qmd
+- [ ] _ocs_frontmatter.qmd	
+- [ ] _cite.qmd
+- [ ] _motivation.qmd
+- [ ] _main_question.qmd
+- [ ] _los.qmd
+  - [ ] _data_science_los.qmd
+  - [ ] _statistical_los.qmd
+  - [ ] _biological_los.qmd
+- [ ] _packages.qmd
+- [ ] _context.qmd
+- [ ] _data_description.qmd
+- [ ] _limitations.qmd
+- [ ] _bioethics.qmd
+- [ ] _data_import.qmd
+- [ ] _data_exploration.qmd
+- [ ] _data_wrangling.qmd
+- [ ] _data_visualization.qmd
+- [ ] _data_analysis.qmd
+- [ ] _summary.qmd
+- [ ] _suggested_hw.qmd
+- [ ] _additional_info.qmd
+- [ ] _acknowledgements.qmd
