@@ -11,6 +11,9 @@ group:
           send-updates.yml
           test-send-updates.yml
           docker-test.yml
+      - source: img/
+        dest: img/
+        deleteOrphaned: true
       - source: .github/workflows/delete-preview.yml
         dest: .github/workflows/delete-preview.yml
       - source: .github/workflows/render-all.yml
@@ -23,8 +26,8 @@ group:
         dest: config_automation.yml
       - source: _brand.yml
         dest: _brand.yml
-      - source: index.qmd
-        dest: index.qmd
+      - source: _quarto.yml
+        dest: _quarto.yml
       - source: styles.css
         dest: styles.css
   # Repositories to receive changes
@@ -38,14 +41,3 @@ group:
       opencasestudies/bio-ocs-bp-version-control
       opencasestudies/bio-ocs-bp-big-data
 ###ADD NEW REPO HERE following the format above#
-
-### These are custom groups for syncing -- not all files needs to be synced # will update later
-  # - files:
-  #   - source: config_automation.yml
-  #     dest: config_automation.yml
-  #   - source: .github/workflows/pull-request.yml
-  #     dest: .github/workflows/pull-request.yml
-  #   - source: scripts/spell-check.R
-  #     dest: scripts/spell-check.R
-  #   repos: |
-  #     jhudsl/Baltimore_Community_Course
