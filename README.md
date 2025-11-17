@@ -25,7 +25,9 @@ These files will largely not need updated though a brief description of what eac
 
 * `data/`: Raw, imported, and wrangled datasets. `raw/pm25_data.csv`, `imported/pm25_data_imported.rda`, and `wrangled_data.csv` are template files that can be removed or overwritten by case study repositories.
 * `img/`: Template images. Please do not add case study images in this directory -- instead adding them to `resources` or `resources/images`.
-* `resources/`
+* `resources/`: Files related to OTTR checks (e.g., dictionary and a file of URLs to exclude/ignore from checking.). Also should put template specific images here.
+* `.github/`: workflow files supporting the OTTR template automations
+* `docs/`: the rendered files that GitHub pages will use -- refreshed through OTTR template automations.
 
 
 ### Content
@@ -36,7 +38,7 @@ For the overall content of the Open Case Study, each portion of the case study i
   - [ ] Update Case Study Title
   - [ ] Update any header booleans for section inclusion or add additional short code content-hidden sections as necessary
 - [ ] _main_image.qmd
-- [ ] _ocs_frontmatter.qmd	
+- [ ] _ocs_frontmatter.qmd
 - [ ] _cite.qmd
 - [ ] _motivation.qmd
 - [ ] _main_question.qmd
