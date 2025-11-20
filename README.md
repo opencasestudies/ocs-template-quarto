@@ -1,6 +1,12 @@
 # Bio-OCS Quarto Template
 
-This is a template for creating websites from qmd files hosted on GitHub with three helpful automations following a pull request to the repository: spelling check, broken link check, and website rendering. The spelling and url checks as well as the website rendering are supported by the OTTR Template, specifically the OTTR Quarto Web version.
+This is a template for creating websites from qmd files hosted on GitHub with three helpful automations following a pull request to the repository: 
+
+- Spelling check
+- Broken link check
+- Website rendering.
+
+This is all supported by the OTTR Template, specifically the [OTTR Quarto Web](https://github.com/ottrproject/OTTR_Quarto_Website) version.
 
 - Check for spelling errors more intensively than RStudio and allow you to add words to the dictionary
 - Check for broken links - you will be warned about broken links
@@ -35,7 +41,7 @@ The rest of these files will largely not need updated though a brief description
 
 ### Content
 
-For the overall content of the Open Case Study, each portion of the case study is split into individual `.qmd` files. They are included in order within the `index.qmd` file. Certain case studies will not have every component, and so we can toggle those on and off using short code and header booleans. Below is a list of all of the sub-component `.qmd` files in checklist form. Besides the listed changes below, `index.qmd` should not need updated.
+For the overall content of the Open Case Study, each portion of the case study is split into individual `.qmd` files. They are included in order within the `index.qmd` file. Certain case studies will not have every component, and so we can toggle those on and off using short code and header booleans.  This is mostly for others using our case studies to teach, as they might want to have a version that only has part of the case study.  For our core team, we will likely have all components for our case studies. Below is a list of all of the sub-component `.qmd` files in checklist form. Besides the listed changes below, `index.qmd` should not need updated.
 
 * [ ] `index.qmd`
   * [ ] Update Case Study Title
