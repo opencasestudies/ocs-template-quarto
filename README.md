@@ -41,7 +41,7 @@ The rest of these files will largely not need updated though a brief description
 
 ### Content
 
-For the overall content of the Open Case Study, each portion of the case study is split into individual `.qmd` files. They are included in order within the `index.qmd` file. Certain case studies will not have every component, and so we can toggle those on and off using short code and header booleans. Below is a list of all of the sub-component `.qmd` files in checklist form. Besides the listed changes below, `index.qmd` should not need updated.
+For the overall content of the Open Case Study, each portion of the case study is split into individual `.qmd` files. They are included in order within the `index.qmd` file. Certain case studies will not have every component, and so we can toggle those on and off using short code and header booleans.  This is mostly for others using our case studies to teach, as they might want to have a version that only has part of the case study.  For our core team, we will likely have all components for our case studies. Below is a list of all of the sub-component `.qmd` files in checklist form. Besides the listed changes below, `index.qmd` should not need updated.
 
 * [ ] `index.qmd`
   * [ ] Update Case Study Title
