@@ -1,6 +1,12 @@
 # Bio-OCS Quarto Template
 
-This is a template for creating websites from qmd files hosted on GitHub with three helpful automations following a pull request to the repository: spelling check, broken link check, and website rendering. The spelling and url checks as well as the website rendering are supported by the OTTR Template, specifically the OTTR Quarto Web version.
+This is a template for creating websites from qmd files hosted on GitHub with three helpful automations following a pull request to the repository: 
+
+- Spelling check
+- Broken link check
+- Website rendering.
+
+This is all supported by the OTTR Template, specifically the [OTTR Quarto Web](https://github.com/ottrproject/OTTR_Quarto_Website) version.
 
 - Check for spelling errors more intensively than RStudio and allow you to add words to the dictionary
 - Check for broken links - you will be warned about broken links
