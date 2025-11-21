@@ -11,8 +11,8 @@ group:
           send-updates.yml
           test-send-updates.yml
           docker-test.yml
-      - source: img/
-        dest: img/
+      - source: assets/
+        dest: assets/
         deleteOrphaned: true
       - source: .github/workflows/delete-preview.yml
         dest: .github/workflows/delete-preview.yml
