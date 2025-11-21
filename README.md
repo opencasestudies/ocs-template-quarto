@@ -34,7 +34,7 @@ The rest of these files will largely not need updated though a brief description
 
 * `data/`: Raw, imported, and wrangled datasets. `raw/pm25_data.csv`, `imported/pm25_data_imported.rda`, and `wrangled_data.csv` are template files that can be removed or overwritten by case study repositories.
 * `img/`: Template images. Please do not add case study images in this directory -- instead adding them to `resources` or `resources/images`.
-* `resources/`: Files related to OTTR checks (e.g., dictionary and a file of URLs to exclude/ignore from checking.). Also should put template specific images here.
+* `resources/`: Files related to OTTR checks (e.g., dictionary and a file of URLs to exclude/ignore from checking.). Also should put case study specific (non-template) images here.
 * `.github/`: workflow files supporting the OTTR template automations
 * `docs/`: the rendered files that GitHub pages will use -- refreshed through OTTR template automations.
 
