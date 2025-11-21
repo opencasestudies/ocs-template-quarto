@@ -10,7 +10,9 @@ This case study explores {}...
 
 Images are very helpful within this section....
 
-```{r, echo = FALSE, out.width= "800 px"}
+```{r}
+#| echo: false
+#| out.width: "800 px"
 knitr::include_graphics(here::here("img", "motivation_map_of_monitors.jpg"))
 ```
 
