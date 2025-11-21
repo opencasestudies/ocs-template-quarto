@@ -16,5 +16,5 @@ Images are very helpful within this section....
 #| fig.alt: "Map showing location of air pollution monitors across the US."
 knitr::include_graphics(here::here("img", "motivation_map_of_monitors.jpg"))
 ```
-![](img/motivation_map_of_monitors.jpg){fig-alt="Map showing location of air pollution monitors across the US."}{width=800}
+![](img/motivation_map_of_monitors.jpg){fig-alt="Map showing location of air pollution monitors across the US." width=800}
 ***
