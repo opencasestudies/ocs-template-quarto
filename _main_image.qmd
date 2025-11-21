@@ -8,6 +8,7 @@ See image here for example: https://www.opencasestudies.org/ocs-bp-school-shooti
 ```{r}
 #| echo: false
 #| out.width: 800
+#| fig-alt: "Map showing amount of pollution across the US localized to monitors"
 knitr::include_graphics(here::here("img", "mainplot.png"))
 ```
 
