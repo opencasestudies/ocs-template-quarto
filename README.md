@@ -1,6 +1,6 @@
 # Bio-OCS Quarto Template
 
-This is a template for creating websites from qmd files hosted on GitHub with three helpful automations following a pull request to the repository: 
+This is a template for creating websites from qmd files hosted on GitHub with three helpful automations following a pull request to the repository:
 
 - Spelling check
 - Broken link check
@@ -33,8 +33,11 @@ The rest of these files will largely not need updated though a brief description
 ### Directories
 
 * `data/`: Raw, imported, and wrangled datasets. `raw/pm25_data.csv`, `imported/pm25_data_imported.rda`, and `wrangled_data.csv` are template files that can be removed or overwritten by case study repositories.
-* `img/`: Template images. Please do not add case study images in this directory -- instead adding them to `resources` or `resources/images`.
-* `resources/`: Files related to OTTR checks (e.g., dictionary and a file of URLs to exclude/ignore from checking.). Also should put case study specific (non-template) images here.
+* `assets/`: Template images such as the logo or icons.
+* `img/`: This is where images should go for the case study background, motivation, etc.
+  - [ ] Replace the `mainplot.png` from the template with your main plot
+  - [ ] Add any additional case study specific (non-template) images in this directory
+* `resources/`: Files related to OTTR checks (e.g., dictionary and a file of URLs to exclude/ignore from checking.).
 * `.github/`: workflow files supporting the OTTR template automations
 * `docs/`: the rendered files that GitHub pages will use -- refreshed through OTTR template automations.
 
