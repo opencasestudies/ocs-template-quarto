@@ -8,7 +8,7 @@ website:
     search: true
   sidebar:
     logo-href: "https://www.opencasestudies.org/"
-    logo: "img/Bio-OCS_Logo.png"
+    logo: "assets/Bio-OCS-logo-gray.png"
     foreground: "#1B365D"
   google-analytics:
     tracking-id: "G-XXXXXXXXXX"
