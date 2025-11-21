@@ -12,7 +12,7 @@ Images are very helpful within this section....
 
 ```{r}
 #| echo: false
-#| out.width: "800 px"
+#| out.width: 800
 knitr::include_graphics(here::here("img", "motivation_map_of_monitors.jpg"))
 ```
 

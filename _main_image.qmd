@@ -7,7 +7,7 @@ See image here for example: https://www.opencasestudies.org/ocs-bp-school-shooti
 
 ```{r}
 #| echo: false
-#| out.width: "800 px"
+#| out.width: 800
 knitr::include_graphics(here::here("img", "mainplot.png"))
 ```
 
