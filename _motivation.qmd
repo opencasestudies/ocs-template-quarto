@@ -8,4 +8,10 @@ See this previous case study as an example: https://www.opencasestudies.org/ocs-
 ***
 This case study explores {}...
 
+Images are very helpful within this section....
+
+```{r, echo = FALSE, out.width= "800 px"}
+knitr::include_graphics(here::here("img", "motivation_map_of_monitors.jpg"))
+```
+
 ***
