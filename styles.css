@@ -51,7 +51,7 @@
   padding-bottom: 0.1em;
   color: black;
   background-color: #7ce364;
-  border-top-right-radius: 10px;
+  border-top-right-radius: 7px;
   font-size: 1em;
   font-weight: bold;
   background-size: 40px;
@@ -65,7 +65,7 @@
   padding-left: 10px;
   color: black;
   background-color: #d6dbe5;
-  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 7px;
 }
 
 .think_question_header{
