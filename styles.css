@@ -47,12 +47,11 @@
 .main_question_header {
   margin-left: 0em;
   padding-left: 60px;
-  padding-right: 5px;
   padding-top: 5px;
   padding-bottom: 0.1em;
   color: black;
   background-color: #7ce364;
-  border-top-right-radius: 10px;
+  border-top-right-radius: 15px;
   font-size: 1em;
   font-weight: bold;
   background-size: 40px;
