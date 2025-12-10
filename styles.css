@@ -38,7 +38,7 @@
 
 .main_question{
   margin: 1em 0;
-  border: 2px solid gray;
+  border: 2px solid #d6dbe5;
   border-left: 10px solid #7ce364;
   border-radius: 10px;
   background-color: #d6dbe5;
@@ -51,6 +51,7 @@
   padding-bottom: 0.1em;
   color: black;
   background-color: #7ce364;
+  border: 2px solid #d6dbe5;
   border-top-right-radius: 10px;
   font-size: 1em;
   font-weight: bold;
@@ -64,6 +65,7 @@
   padding-top: 5px;
   padding-left: 10px;
   color: black;
+  border: 2px solid #d6dbe5;
   background-color: #d6dbe5;
   border-bottom-right-radius: 10px;
 }
