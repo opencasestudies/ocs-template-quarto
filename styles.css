@@ -41,7 +41,7 @@
   border: 2px solid #7ce364;
   border-left: 10px solid #7ce364;
   border-radius: 10px;
-  background-color: #d6dbe5;
+  background-color: white;
 }
 
 .main_question_header {
@@ -64,9 +64,9 @@
   padding-top: 5px;
   padding-left: 10px;
   color: black;
-  background-color: #d6dbe5;
+  background-color: white;
   border-bottom-right-radius: 10px;
-  border-radius: inherit
+  border-radius: inherit;
 }
 
 .think_question_header{
