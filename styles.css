@@ -38,9 +38,9 @@
 
 .main_question{
   margin: 1em 0;
-  border: 2px solid #7ce364;
+  border: 2px solid gray;
   border-left: 10px solid #7ce364;
-  border-radius: 10px;
+  border-radius: 7px;
   background-color: #d6dbe5;
 }
 
