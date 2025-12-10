@@ -11,7 +11,7 @@ See this previous case study as an example: https://www.opencasestudies.org/ocs-
 ::::{.main_question_header}
 Our main question:
 ::::
-::::{.main_question_block}
+::::{.inner_block}
 1. Question 1
 1. Question 2
 ::::
