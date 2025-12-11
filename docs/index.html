@@ -65,7 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./img/Bio-OCS_Logo.png" rel="icon" type="image/png">
+<link href="./assets/Bio-OCS-logo-gray.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -116,7 +116,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./img/Bio-OCS_Logo.png" alt="" class="navbar-logo">
+    <img src="./assets/Bio-OCS-logo-gray.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Biomedical Open Case Studies</span>
@@ -144,7 +144,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
       <a href="https://www.opencasestudies.org/" class="sidebar-logo-link">
-      <img src="./img/Bio-OCS_Logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="./assets/Bio-OCS-logo-gray.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       </div>
     <nav id="TOC" role="doc-toc" class="toc-active">
@@ -232,11 +232,21 @@ The disclaimer block, license block, and funding info generally will not need up
 Please update the access information (e.g., github link and data access)
 as well as any system or server requirements to work with the data
 -->
-<div class="disclaimer_block">
-<p><strong>Disclaimer</strong>: The purpose of the <a href="https://opencasestudies.github.io" target="_blank">Open Case Studies</a> project is <strong>to demonstrate the use of various data science methods, tools, and software in the context of messy, real-world data</strong>. A given case study does not cover all aspects of the research process, is not claiming to be the most appropriate way to analyze a given data set, and should not be used in the context of making policy decisions without external consultation from scientific experts. In addition, due to size constraints, datasets used within a case study may be subset of the original/full dataset.</p>
+<div class="disclaimer_box">
+<div class="disclaimer_box_header">
+<p>Disclaimer</p>
 </div>
-<div class="license_block">
+<div class="inner_block">
+<p>The purpose of the <a href="https://opencasestudies.github.io" target="_blank">Open Case Studies</a> project is <strong>to demonstrate the use of various data science methods, tools, and software in the context of messy, real-world data</strong>. A given case study does not cover all aspects of the research process, is not claiming to be the most appropriate way to analyze a given data set, and should not be used in the context of making policy decisions without external consultation from scientific experts. In addition, due to size constraints, datasets used within a case study may be subset of the original/full dataset.</p>
+</div>
+</div>
+<div class="license_box">
+<div class="license_box_header">
+<p>License information:</p>
+</div>
+<div class="inner_block">
 <p>This work is licensed under the Creative Commons Attribution-NonCommerical 3.0 <a href="https://creativecommons.org/licenses/by-nc/3.0/us/" target="_blank">(CC BY-NC 3.0)</a> United States License.</p>
+</div>
 </div>
 <!--
 Funding info should be included here
@@ -268,9 +278,13 @@ This section may not be needed for all case studies and can be removed if not
 <!--
 The reference block should be updated to reflect how this case study should be cited
 -->
-<div class="reference_block">
+<div class="reference_box">
+<div class="reference_box_header">
 <p>To cite this case study, please use:</p>
+</div>
+<div class="inner_block">
 <p>{Fill In Authors}. {(YEAR)}. {github source url}. {Title} {(Version)}.</p>
+</div>
 </div>
 <!--
 Describe the biological motivation for this case study.
@@ -282,6 +296,14 @@ See this previous case study as an example: https://www.opencasestudies.org/ocs-
 <h1><strong>Motivation</strong></h1>
 <hr>
 <p>This case study explores {}…</p>
+<div class="definition_box">
+<div class="definition_box_header">
+<p>Definition</p>
+</div>
+<div class="inner_block">
+<p>Provide the definition here</p>
+</div>
+</div>
 <hr>
 <!--
 Describe the main biological questions for this case study.
@@ -292,12 +314,16 @@ See this previous case study as an example: https://www.opencasestudies.org/ocs-
 <section id="main-question" class="level1">
 <h1><strong>Main Question</strong></h1>
 <hr>
-<div class="main_question_block">
-<p><b><u> Our main question: </u></b></p>
+<div class="main_question">
+<div class="main_question_header">
+<p>Our main question:</p>
+</div>
+<div class="inner_block">
 <ol type="1">
 <li>Question 1</li>
 <li>Question 2</li>
 </ol>
+</div>
 </div>
 <hr>
 </section>
@@ -579,6 +605,20 @@ If you skipped the data import section click here.
 </div>
 </details>
 <hr>
+<div class="think_question">
+<div class="think_question_header">
+<p>Question opportunity</p>
+</div>
+<div class="inner_block">
+Pose a question about the data analysis.
+<details>
+<summary>
+Answer
+</summary>
+You can use a collapsible details section to provide an answer
+</details>
+</div>
+</div>
 <!--
 Use this section to walk through the methods and code used in the data analysis step-by-step.
 Explain how this analysis helps answer the main questions posed earlier in the case study.
@@ -651,7 +691,7 @@ Automatically include the packages table from _packages.qmd?
  collate  en_US.UTF-8
  ctype    en_US.UTF-8
  tz       Etc/UTC
- date     2025-10-21
+ date     2025-12-11
  pandoc   3.1.1 @ /usr/local/bin/ (via rmarkdown)
 
 ─ Packages ───────────────────────────────────────────────────────────────────
