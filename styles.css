@@ -115,10 +115,10 @@
 
 .definition_box{
   margin: 1em 0;
-  border: 2px solid #b5a8d6;
-  border-left: 10px solid #b5a8d6;
+  border: 2px solid gray;
+  border-left: 10px solid gray;
   border-radius: 10px;
-  background-color: white;
+  background-color: #b5a8d6;
 }
 
 .definition_box_header{
@@ -127,7 +127,7 @@
   padding-top: 5px;
   padding-bottom: 0.1em;
   color: black;
-  background-color: #b5a8d6;
+  background-color: gray;
   font-size: 1em;
   font-weight: bold;
   background-size: 40px;
