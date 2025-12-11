@@ -8,8 +8,8 @@ See this previous case study as an example: https://www.opencasestudies.org/ocs-
 ***
 This case study explores {}...
 
-:::{.reference_box}
-::::{.reference_box_header}
+:::{.definition_box}
+::::{.definition_box_header}
 Definition
 ::::
 ::::{.inner_block}
