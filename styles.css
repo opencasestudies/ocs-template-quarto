@@ -38,10 +38,10 @@
 
 .main_question{
   margin: 1em 0;
-  border: 3px solid #7ce364;
-  border-left: 10px solid #7ce364;
+  border: 3px solid gray;
+  border-left: 10px solid gray;
   border-radius: 10px;
-  background-color: white;
+  background-color: #d6dbe5;
 }
 
 .main_question_header {
@@ -50,7 +50,7 @@
   padding-top: 5px;
   padding-bottom: 0.1em;
   color: black;
-  background-color: #7ce364;
+  background-color: gray;
   font-size: 1em;
   font-weight: bold;
   background-size: 40px;
@@ -63,16 +63,16 @@
   padding-top: 5px;
   padding-left: 10px;
   color: black;
-  background-color: white;
+  background-color: #d6dbe5;
   border-bottom-right-radius: 10px;
 }
 
 .think_question{
   margin: 1em 0;
-  border: 2px solid #beeffd;
-  border-left: 10px solid #beeffd;
+  border: 2px solid gray;
+  border-left: 10px solid gray;
   border-radius: 10px;
-  background-color: white;
+  background-color: #d6dbe5;
 }
 
 .think_question_header{
@@ -81,7 +81,7 @@
   padding-top: 5px;
   padding-bottom: 0.1em;
   color: black;
-  background-color: #beeffd;
+  background-color: gray;
   font-size: 1em;
   font-weight: bold;
   background-size: 40px;
@@ -92,10 +92,10 @@
 
 .reference_box{
   margin: 1em 0;
-  border: 2px solid #b5a8d6;
-  border-left: 10px solid #b5a8d6;
+  border: 2px solid gray;
+  border-left: 10px solid gray;
   border-radius: 10px;
-  background-color: white;
+  background-color: #d6dbe5;
 }
 
 .reference_box_header{
@@ -104,7 +104,7 @@
   padding-top: 5px;
   padding-bottom: 0.1em;
   color: black;
-  background-color: #b5a8d6;
+  background-color: gray;
   font-size: 1em;
   font-weight: bold;
   background-size: 40px;
@@ -115,10 +115,10 @@
 
 .disclaimer_box{
   margin: 1em 0;
-  border: 2px solid #f08f9c;
-  border-left: 10px solid #f08f9c;
+  border: 2px solid gray;
+  border-left: 10px solid gray;
   border-radius: 10px;
-  background-color: white;
+  background-color: #d6dbe5;
 }
 
 .disclaimer_box_header{
@@ -127,7 +127,7 @@
   padding-top: 5px;
   padding-bottom: 0.1em;
   color: black;
-  background-color: #f08f9c;
+  background-color: gray;
   font-size: 1em;
   font-weight: bold;
   background-size: 40px;
@@ -141,7 +141,7 @@
   border: 2px solid gray;
   border-left: 10px solid gray;
   border-radius: 10px;
-  background-color: white;
+  background-color: #d6dbe5;
 }
 
 .license_box_header{
