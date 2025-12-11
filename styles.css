@@ -41,7 +41,7 @@
   border: 3px solid #7ce364;
   border-left: 10px solid #7ce364;
   border-radius: 10px;
-  background-color: white;
+  background-color: #d6dbe5;
 }
 
 .main_question_header {
@@ -63,7 +63,7 @@
   padding-top: 5px;
   padding-left: 10px;
   color: black;
-  background-color: white;
+  background-color: #d6dbe5;
   border-bottom-right-radius: 10px;
 }
 
@@ -72,7 +72,7 @@
   border: 2px solid #beeffd;
   border-left: 10px solid #beeffd;
   border-radius: 10px;
-  background-color: white;
+  background-color: #d6dbe5;
 }
 
 .think_question_header{
@@ -95,7 +95,7 @@
   border: 2px solid #b5a8d6;
   border-left: 10px solid #b5a8d6;
   border-radius: 10px;
-  background-color: white;
+  background-color: #d6dbe5;
 }
 
 .reference_box_header{
@@ -118,7 +118,7 @@
   border: 2px solid #f08f9c;
   border-left: 10px solid #f08f9c;
   border-radius: 10px;
-  background-color: white;
+  background-color: #d6dbe5;
 }
 
 .disclaimer_box_header{
@@ -141,7 +141,7 @@
   border: 2px solid gray;
   border-left: 10px solid gray;
   border-radius: 10px;
-  background-color: white;
+  background-color: #d6dbe5;
 }
 
 .license_box_header{
