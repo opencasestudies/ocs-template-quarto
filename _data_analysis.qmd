@@ -20,6 +20,18 @@ load(here::here("data", "wrangled", "wrangled_data.rda"))
 </details>
 ***
 
+:::{.think_question}
+::::{.think_question_header}
+Question opportunity
+::::
+::::{.inner_block}
+Pose a question about the data analysis.
+<details><summary>Answer</summary>
+You can use a collapsible details section to provide an answer
+</details>
+::::
+:::
+
 <!--
 Use this section to walk through the methods and code used in the data analysis step-by-step.
 Explain how this analysis helps answer the main questions posed earlier in the case study.
