@@ -110,6 +110,29 @@
   background-size: 40px;
   background-repeat: no-repeat;
   background-position: 15px center;
+  background-image: url("assets/box_images/cite.png");
+}
+
+.definition_box{
+  margin: 1em 0;
+  border: 2px solid #b5a8d6;
+  border-left: 10px solid #b5a8d6;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.definition_box_header{
+  margin-left: 0em;
+  padding-left: 60px;
+  padding-top: 5px;
+  padding-bottom: 0.1em;
+  color: black;
+  background-color: #b5a8d6;
+  font-size: 1em;
+  font-weight: bold;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
   background-image: url("assets/box_images/dictionary.png");
 }
 
