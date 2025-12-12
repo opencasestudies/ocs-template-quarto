@@ -5,6 +5,6 @@ Replace the `img/mainplot.png` image with the appropriate case study image or co
 See image here for example: https://www.opencasestudies.org/ocs-bp-school-shootings-dashboard/
 -->
 
-![](img/mainplot.png){fig-alt="Map showing amount of pollution across the US localized to monitors." width=800}
+![](img/mainplot.png){fig-alt="Map showing amount of pollution across the US localized to monitors." width=800 .lightbox}
 
 ####

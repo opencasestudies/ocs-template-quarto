@@ -51,6 +51,7 @@ For the overall content of the Open Case Study, each portion of the case study i
   * [ ] Update any header booleans for section inclusion or add additional short code content-hidden sections as necessary
 * [ ] _main_image.qmd
   * Provides an example of including images with Quarto
+  * [ ] switch out `mainplot.png` within the `img` directory to be the case study main plot.
 * [ ] _ocs_frontmatter.qmd
 * [ ] _cite.qmd
 * [ ] _motivation.qmd
@@ -77,3 +78,8 @@ For the overall content of the Open Case Study, each portion of the case study i
 * [ ] _suggested_hw.qmd
 * [ ] _additional_info.qmd
 * [ ] _acknowledgements.qmd
+
+* [ ] **Verify**
+  * [ ] Every image ....
+    * [ ] has accompanying alt text (using `{fig-alt=""}`)
+    * [ ] has lightbox capability enabled (using `{.lightbox}`) so that images can be opened in a larger preview

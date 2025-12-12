@@ -40,11 +40,16 @@ To allow users to skip import and wrangling we will save the data as an RDA file
 
 ```{r}
 save(pm, file = here::here("data", "wrangled", "wrangled_data.rda")) # <1>
-readr::write_csv(pm, file = here::here("data","wrangled", "wrangled_data.csv")) # <2>
+readr::write_csv(pm, file = here::here("data","wrangled",            # <2>
+                                       "wrangled_data.csv"))         # <2>
 ```
 
 1. saving the data as an RDA file within the wrangled data subdirectory
 2. saving the data as a CSV file within the wrangled data subdirectory
+
+<!--
+Note that with this code annotation example, we've used a new line to space the code so that the annotation doesn't overlay the code
+-->
 
 <!--
 Replace `pm` above with the name of the data object created at the end of data wrangling.
