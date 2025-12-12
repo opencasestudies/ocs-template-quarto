@@ -20,6 +20,10 @@ load(here::here("data", "wrangled", "wrangled_data.rda"))
 </details>
 ***
 
+::: {.column-margin}
+We might use a column margin note to add an equation or some other annotation for learners or educators.
+:::
+
 <!--
 Use this section to walk through the methods and code used in the data analysis step-by-step.
 Explain how this analysis helps answer the main questions posed earlier in the case study.

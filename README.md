@@ -50,9 +50,11 @@ For the overall content of the Open Case Study, each portion of the case study i
   * [ ] Update Case Study Title
   * [ ] Update any header booleans for section inclusion or add additional short code content-hidden sections as necessary
 * [ ] _main_image.qmd
+  * Provides an example of including images with Quarto
 * [ ] _ocs_frontmatter.qmd
 * [ ] _cite.qmd
 * [ ] _motivation.qmd
+  * Provides an example of including images with Quarto (including those that you can click to open in a larger preview)
 * [ ] _main_question.qmd
 * [ ] _los.qmd
   * [ ] _data_science_los.qmd
@@ -60,14 +62,17 @@ For the overall content of the Open Case Study, each portion of the case study i
   * [ ] _biological_los.qmd
 * [ ] _packages.qmd
 * [ ] _context.qmd
+  * Provides an example of including a video with Quarto
 * [ ] _data_description.qmd
 * [ ] _limitations.qmd
 * [ ] _bioethics.qmd
 * [ ] _data_import.qmd
 * [ ] _data_exploration.qmd
 * [ ] _data_wrangling.qmd
+  * Provides an example of including code annotations with Quarto
 * [ ] _data_visualization.qmd
 * [ ] _data_analysis.qmd
+  * Provides an example of using a column margin note with Quarto
 * [ ] _summary.qmd
 * [ ] _suggested_hw.qmd
 * [ ] _additional_info.qmd

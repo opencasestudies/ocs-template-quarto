@@ -33,14 +33,18 @@ load(here::here("data", "imported", "co2_data_imported.rda"))
 
 <!--
 Use this section to explain step-by-step the data wrangling process used to prepare the data for analysis.
+This includes an example of code annotation with Quarto. See the documentation for more information: https://quarto.org/docs/authoring/code-annotation.html
 -->
 
 To allow users to skip import and wrangling we will save the data as an RDA file as well as a CSV file as this is often useful to send our data to collaborators. We will save this in a “wrangled” subdirectory of our “data” directory of our working directory.
 
 ```{r}
-save(pm, file = here::here("data", "wrangled", "wrangled_data.rda"))
-readr::write_csv(pm, file = here::here("data","wrangled", "wrangled_data.csv"))
+save(pm, file = here::here("data", "wrangled", "wrangled_data.rda")) # <1>
+readr::write_csv(pm, file = here::here("data","wrangled", "wrangled_data.csv")) # <2>
 ```
+
+1. saving the data as an RDA file within the wrangled data subdirectory
+2. saving the data as a CSV file within the wrangled data subdirectory
 
 <!--
 Replace `pm` above with the name of the data object created at the end of data wrangling.

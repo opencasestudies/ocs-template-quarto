@@ -5,11 +5,6 @@ Update path as needed or consider using ottrpal::include_slide() with a publicly
 See image here for example: https://www.opencasestudies.org/ocs-bp-school-shootings-dashboard/
 -->
 
-```{r}
-#| echo: false
-#| out.width: 800
-#| fig.alt: "Map showing amount of pollution across the US localized to monitors"
-knitr::include_graphics(here::here("img", "mainplot.png"))
-```
+![](img/mainplot.png){fig-alt="Map showing amount of pollution across the US localized to monitors." width=800}
 
 ####

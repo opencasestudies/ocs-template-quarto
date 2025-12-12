@@ -2,6 +2,7 @@
 Describe the biological motivation for this case study.
 Include relevant explanatory images and references throughout.
 See this previous case study as an example: https://www.opencasestudies.org/ocs-bp-co2-emissions/#Motivation
+Images or videos may be helpful so this includes an example of including an image.
 -->
 
 # **Motivation**
@@ -10,12 +11,6 @@ This case study explores {}...
 
 Images are very helpful within this section....
 
-```{r}
-#| echo: false
-#| out.width: 800
-#| fig.alt: "Map showing location of air pollution monitors across the US."
-knitr::include_graphics(here::here("img", "motivation_map_of_monitors.jpg"))
-```
-![](img/motivation_map_of_monitors.jpg){fig-alt="Map showing location of air pollution monitors across the US." width=800}
+![](img/motivation_map_of_monitors.jpg){fig-alt="Map showing location of air pollution monitors across the US." width=800 .lightbox}
 
 ***
