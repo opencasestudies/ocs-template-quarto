@@ -8,3 +8,5 @@ Fill in any Acknowledgments using an example from a previous case study if neede
 <!--
 Funding info should be included here
 -->
+
+Icons are from [iconpacks](https://www.iconsets.com/). 

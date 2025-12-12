@@ -12,7 +12,9 @@ include-sections:
 <!--
   Update the various qmd documents below with each component of a Bio-OCS case study.
   Besides filling in the title in the header of this document, no other changes should be necessary within this file.
-  You may chose to remove the data exploration step if it's not necessary.
+  Use the `include-sections` within the header to toggle section inclusion/exclusion as needed.
+  For documentation on quarto syntax possibilities, use https://quarto.org/docs/authoring/markdown-basics.html.
+  Examples in the documentation range from including images and videos to including margin notes, annotating code, and linking within a document.
 -->
 
 {{< include _main_image.qmd >}}
