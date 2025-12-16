@@ -45,14 +45,15 @@
 }
 
 .main_question_header {
+  display: flex;
+  align-items: center;
   margin-left: 0em;
   padding-left: 60px;
   padding-top: 5px;
   padding-bottom: 0.1em;
   color: black;
-  border-radius: 10px;
   background-color: #7ce364;
-  font-size: 1.75em;
+  font-size: 1.25em;
   font-weight: bold;
   background-size: 40px;
   background-repeat: no-repeat;
@@ -77,14 +78,15 @@
 }
 
 .think_question_header{
+  display: flex;
+  align-items: center;
   margin-left: 0em;
   padding-left: 60px;
   padding-top: 5px;
   padding-bottom: 0.1em;
   color: black;
-  border-radius: 10px;
   background-color: #beeffd;
-  font-size: 1.75em;
+  font-size: 1.25em;
   font-weight: bold;
   background-size: 40px;
   background-repeat: no-repeat;
@@ -101,14 +103,15 @@
 }
 
 .reference_box_header{
+  display: flex;
+  align-items: center;
   margin-left: 0em;
   padding-left: 60px;
   padding-top: 5px;
   padding-bottom: 0.1em;
   color: black;
-  border-radius: 10px;
   background-color: #beeffd;
-  font-size: 1.75em;
+  font-size: 1.25em;
   font-weight: bold;
   background-size: 40px;
   background-repeat: no-repeat;
@@ -125,14 +128,15 @@
 }
 
 .definition_box_header{
+  display: flex;
+  align-items: center;
   margin-left: 0em;
   padding-left: 60px;
   padding-top: 5px;
   padding-bottom: 0.1em;
   color: black;
-  border-radius: 10px;
   background-color: #b5a8d6;
-  font-size: 1.75em;
+  font-size: 1.25em;
   font-weight: bold;
   background-size: 40px;
   background-repeat: no-repeat;
@@ -149,14 +153,15 @@
 }
 
 .disclaimer_box_header{
+  display: flex;
+  align-items: center;
   margin-left: 0em;
   padding-left: 60px;
   padding-top: 5px;
   padding-bottom: 0.1em;
   color: black;
-  border-radius: 10px;
   background-color: #f08f9c;
-  font-size: 1.75em;
+  font-size: 1.25em;
   font-weight: bold;
   background-size: 40px;
   background-repeat: no-repeat;
@@ -173,14 +178,15 @@
 }
 
 .license_box_header{
+  display: flex;
+  align-items: center;
   margin-left: 0em;
   padding-left: 60px;
   padding-top: 5px;
   padding-bottom: 0.1em;
   color: white;
-  border-radius: 10px;
   background-color: gray;
-  font-size: 1.75em;
+  font-size: 1.25em;
   font-weight: bold;
   background-size: 40px;
   background-repeat: no-repeat;
