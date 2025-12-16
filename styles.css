@@ -47,6 +47,8 @@
 .main_question_header {
   margin-left: 0em;
   padding-left: 60px;
+  padding-top: 5px;
+  padding-bottom: 0.1em;
   color: black;
   background-color: #7ce364;
   font-size: 1em;
@@ -74,8 +76,6 @@
 }
 
 .think_question_header{
-  display: flex;
-  align-items: center;
   margin-left: 0em;
   padding-left: 60px;
   padding-top: 5px;
@@ -99,8 +99,6 @@
 }
 
 .reference_box_header{
-  display: flex;
-  align-items: center;
   margin-left: 0em;
   padding-left: 60px;
   padding-top: 5px;
@@ -124,8 +122,6 @@
 }
 
 .definition_box_header{
-  display: flex;
-  align-items: center;
   margin-left: 0em;
   padding-left: 60px;
   padding-top: 5px;
@@ -149,8 +145,6 @@
 }
 
 .disclaimer_box_header{
-  display: flex;
-  align-items: center;
   margin-left: 0em;
   padding-left: 60px;
   padding-top: 5px;
@@ -174,8 +168,6 @@
 }
 
 .license_box_header{
-  display: flex;
-  align-items: center;
   margin-left: 0em;
   padding-left: 60px;
   padding-top: 5px;
