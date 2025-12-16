@@ -50,8 +50,9 @@
   padding-top: 5px;
   padding-bottom: 0.1em;
   color: black;
+  border-radius: 10px;
   background-color: #7ce364;
-  font-size: 1em;
+  font-size: 1.75em;
   font-weight: bold;
   background-size: 40px;
   background-repeat: no-repeat;
@@ -81,8 +82,9 @@
   padding-top: 5px;
   padding-bottom: 0.1em;
   color: black;
+  border-radius: 10px;
   background-color: #beeffd;
-  font-size: 1em;
+  font-size: 1.75em;
   font-weight: bold;
   background-size: 40px;
   background-repeat: no-repeat;
@@ -104,8 +106,9 @@
   padding-top: 5px;
   padding-bottom: 0.1em;
   color: black;
+  border-radius: 10px;
   background-color: #beeffd;
-  font-size: 1em;
+  font-size: 1.75em;
   font-weight: bold;
   background-size: 40px;
   background-repeat: no-repeat;
@@ -127,8 +130,9 @@
   padding-top: 5px;
   padding-bottom: 0.1em;
   color: black;
+  border-radius: 10px;
   background-color: #b5a8d6;
-  font-size: 1em;
+  font-size: 1.75em;
   font-weight: bold;
   background-size: 40px;
   background-repeat: no-repeat;
@@ -150,8 +154,9 @@
   padding-top: 5px;
   padding-bottom: 0.1em;
   color: black;
+  border-radius: 10px;
   background-color: #f08f9c;
-  font-size: 1em;
+  font-size: 1.75em;
   font-weight: bold;
   background-size: 40px;
   background-repeat: no-repeat;
@@ -172,9 +177,10 @@
   padding-left: 60px;
   padding-top: 5px;
   padding-bottom: 0.1em;
-  color: black;
+  color: white;
+  border-radius: 10px;
   background-color: gray;
-  font-size: 1em;
+  font-size: 1.75em;
   font-weight: bold;
   background-size: 40px;
   background-repeat: no-repeat;
