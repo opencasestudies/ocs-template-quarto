@@ -45,11 +45,10 @@
 }
 
 .main_question_header {
-  display: flex;
-  align-items: center;
-  height 80px;
   margin-left: 0em;
-  padding 0 px; 0 px; 0 px; 60px;
+  padding-left: 60px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   color: black;
   background-color: #7ce364;
   font-size: 1em;
