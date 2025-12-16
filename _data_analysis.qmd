@@ -30,6 +30,9 @@ Pose a question about the data analysis.
 You can use a collapsible details section to provide an answer
 </details>
 ::::
+
+::: {.column-margin}
+We might use a column margin note to add an equation or some other annotation for learners or educators.
 :::
 
 <!--
