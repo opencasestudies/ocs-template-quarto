@@ -9,6 +9,15 @@ Images or videos may be helpful so this includes an example of including an imag
 ***
 This case study explores {}...
 
+:::{.definition_box}
+::::{.definition_box_header}
+Definition
+::::
+::::{.inner_block}
+Provide the definition here
+::::
+:::
+
 Images are very helpful within this section....
 
 ![](img/motivation_map_of_monitors.jpg){fig-alt="Map showing location of air pollution monitors across the US." width=800 .lightbox}
