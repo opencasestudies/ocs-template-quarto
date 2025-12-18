@@ -15,6 +15,7 @@ Github
 github
 glyphicons
 HTTPS
+hw
 iconpacks
 lightblue
 lightbox
