@@ -8,8 +8,10 @@ website:
     search: true
   sidebar:
     logo-href: "https://www.opencasestudies.org/"
-    logo: "img/Bio-OCS_Logo.png"
+    logo: "assets/Bio-OCS_Logo.png"
     foreground: "#1B365D"
+  google-analytics:
+    tracking-id: "G-XXXXXXXXXX"
   page-footer:
     left: |
       This book was built with <a href="https://quarto.org/" style="color: #0000FF;">Quarto</a> using

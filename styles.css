@@ -36,54 +36,150 @@
   background-color: RoyalBlue;
 }
 
-.main_question_block {
-  margin: .2em;
-  padding: .2em;
-  border: 1px solid black;
-  border-radius: 5px;
-  background: #7ce364;
+.main_question{
+  margin: 1em 0;
+  border: 3px solid #7ce364;
+  border-left: 10px solid #7ce364;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.main_question_header {
+  margin-left: 0em;
+  padding-left: 60px;
+  padding-top: 5px;
+  padding-bottom: 0.1em;
   color: black;
+  background-color: #7ce364;
+  font-size: 1em;
   font-weight: bold;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-image: url("assets/box_images/question.png");
 }
 
-.think_question_block {
-  margin: .2em;
-  padding: .2em;
-  border: 1px solid black;
-  border-radius: 5px;
-  background: #beeffd;
+.inner_block {
+  padding-top: 5px;
+  padding-left: 10px;
   color: black;
-  font-weight: bold
+  background-color: white;
+  border-bottom-right-radius: 10px;
 }
 
-.reference_block {
-  margin: .2em;
-  padding: .2em;
-  border: 1px solid black;
-  border-radius: 5px;
-  background: #b5a8d6;
+.think_question{
+  margin: 1em 0;
+  border: 3px solid #beeffd;
+  border-left: 10px solid #beeffd;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.think_question_header{
+  margin-left: 0em;
+  padding-left: 60px;
+  padding-top: 5px;
+  padding-bottom: 0.1em;
   color: black;
+  background-color: #beeffd;
+  font-size: 1em;
   font-weight: bold;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-image: url("assets/box_images/thinking_face.png");
 }
 
-.disclaimer_block {
-  margin: .2em;
-  padding: .2em;
-  border: 1px solid black;
-  border-radius: 5px;
-  background: #f08f9c;
-  color: black;
-  font-size: 20px;
+.reference_box{
+  margin: 1em 0;
+  border: 3px solid #beeffd;
+  border-left: 10px solid #beeffd;
+  border-radius: 10px;
+  background-color: white;
 }
 
-.license_block {
-  margin: .2em;
-  padding: .2em;
-  border: 1px solid black;
-  border-radius: 5px;
-  background: #d6dbe5;
+.reference_box_header{
+  margin-left: 0em;
+  padding-left: 60px;
+  padding-top: 5px;
+  padding-bottom: 0.1em;
   color: black;
+  background-color: #beeffd;
+  font-size: 1em;
   font-weight: bold;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-image: url("assets/box_images/cite.png");
+}
+
+.definition_box{
+  margin: 1em 0;
+  border: 3px solid #b5a8d6;
+  border-left: 10px solid #b5a8d6;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.definition_box_header{
+  margin-left: 0em;
+  padding-left: 60px;
+  padding-top: 5px;
+  padding-bottom: 0.1em;
+  color: black;
+  background-color: #b5a8d6;
+  font-size: 1em;
+  font-weight: bold;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-image: url("assets/box_images/dictionary.png");
+}
+
+.disclaimer_box{
+  margin: 1em 0;
+  border: 3px solid #f08f9c;
+  border-left: 10px solid #f08f9c;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.disclaimer_box_header{
+  margin-left: 0em;
+  padding-left: 60px;
+  padding-top: 5px;
+  padding-bottom: 0.1em;
+  color: black;
+  background-color: #f08f9c;
+  font-size: 1em;
+  font-weight: bold;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-image: url("assets/box_images/warning.png");
+}
+
+.license_box{
+  margin: 1em 0;
+  border: 3px solid gray;
+  border-left: 10px solid gray;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.license_box_header{
+  margin-left: 0em;
+  padding-left: 60px;
+  padding-top: 5px;
+  padding-bottom: 0.1em;
+  color: white;
+  background-color: gray;
+  font-size: 1em;
+  font-weight: bold;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-image: url("assets/box_images/license.png");
 }
 
 .scrollable {
