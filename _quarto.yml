@@ -4,11 +4,12 @@ project:
 
 website:
   title: "Biomedical Open Case Studies"
+  repo-url: "
   navbar:
     search: true
     right:
       - icon: github
-        href: https://github.com/opencasestudies/ocs-template-quarto
+        href: "{{ site.repo-url }}"
   sidebar:
     logo-href: "https://www.opencasestudies.org/"
     logo: "assets/Bio-OCS_Logo.png"
