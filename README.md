@@ -21,8 +21,11 @@ This specific template sets up the style and content template for Biomedical Ope
 ### Style and Configuration
 
 * _quarto.yml -- Configurations for how the rendered website will look.
-  * [ ] Update the title
-  * [ ] Replace the Google analytics tracking ID ("G-XXXXXXXXXX") with the appropriate Bio_OCS case study specific tracking ID.
+  * [ ] Update the title on line 6
+  * [ ] Replace the Google analytics tracking ID ("G-XXXXXXXXXX") with the appropriate Bio_OCS case study specific tracking ID on line 17
+  * [ ] Update the GitHub Repository link to point to the specific open case studies repository instead of the template
+    * [ ] line 11
+    * [ ] line 28
 
 The rest of these files will largely not need updated though a brief description of what each contains is provided.
 
