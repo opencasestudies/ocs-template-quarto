@@ -26,8 +26,6 @@ group:
         dest: config_automation.yml
       - source: _brand.yml
         dest: _brand.yml
-      - source: _quarto.yml
-        dest: _quarto.yml
       - source: styles.css
         dest: styles.css
   # Repositories to receive changes
