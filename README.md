@@ -33,6 +33,13 @@ The rest of these files will largely not need updated though a brief description
 * _brand.yml -- Logo and favicon definition
 * config_automation.yml	-- Configurations for the OTTR Template automations. Update this file to toggle spelling or url check as well as minimum errors allowed for those checks or to update the docker image.
 
+*To update the docker image*, replace the `rendering-docker-image:` option in `config_automation.yml` to the docker image that has the packages you need.
+* `jhudsl/base_ottr:main` is the default and works for most tidyverse/R needs
+* `jhudsl/ottr_python:main` should meet basic python needs
+* `jhudsl/ottr_ml:main` should meet most machine learning with python needs
+* Additional docker images that work within the OTTR framework can be found here: https://github.com/ottrproject/ottr-docker/tree/main
+* For specific needs within the OCS organization, let Kate Isaac (`@kweav` on GitHub) know and an image can be developed to your specifications.
+
 ### Directories
 
 * `data/`: Raw, imported, and wrangled datasets. `raw/pm25_data.csv`, `imported/pm25_data_imported.rda`, and `wrangled_data.csv` are template files that can be removed or overwritten by case study repositories.

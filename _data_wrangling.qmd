@@ -15,9 +15,23 @@ At the end of this section, save incremental data so that users can pause and co
 
 If you have been following along but stopped, we could load our imported data like so:
 
+{.panel-tabset}
+
+:::
+
+## R
+
 ```{r}
 load(here::here("data", "imported", "pm25_data_imported.rda"))
 ```
+## Python
+
+```{python}
+pm = pd.read_hdf("data/imported/pm_data_imported.h5", key = "pm")
+```
+
+:::
+
 ***
 
 <details> <summary> If you skipped the data import section click here. </summary>
@@ -38,6 +52,12 @@ This includes an example of code annotation with Quarto. See the documentation f
 
 To allow users to skip import and wrangling we will save the data as an RDA file as well as a CSV file as this is often useful to send our data to collaborators. We will save this in a “wrangled” subdirectory of our “data” directory of our working directory.
 
+{.panel-tabset}
+
+:::
+
+## R
+
 ```{r}
 save(pm, file = here::here("data", "wrangled", "wrangled_data.rda")) # <1>
 readr::write_csv(pm, file = here::here("data","wrangled",            # <2>
@@ -51,8 +71,19 @@ readr::write_csv(pm, file = here::here("data","wrangled",            # <2>
 Note that with this code annotation example, we've used a new line to space the code so that the annotation doesn't overlay the code
 -->
 
+## Python
+
+```{python}
+pm.to_hdf("data/wrangled/wrangled_data.h5", 'pm', format='table')
+pm.to_csv("data/wrangled/wrangled_data_py.csv")
+```
+
+:::
+
 <!--
 Replace `pm` above with the name of the data object created at the end of data wrangling.
 -->
+
+
 
 ***
