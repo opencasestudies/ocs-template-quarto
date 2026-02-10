@@ -51,7 +51,7 @@ save(pm, file = here::here("data", "imported", "pm25_data_imported.rda"))
 ## Python
 
 ```{python}
-pm.to_hdf("data/imported/pm_data_imported.h5", 'pm', format='table')
+pm.to_hdf("data/imported/pm_data_imported.h5", key='pm', format='table')
 ```
 
 :::

@@ -70,7 +70,7 @@ Note that with this code annotation example, we've used a new line to space the 
 ## Python
 
 ```{python}
-pm.to_hdf("data/wrangled/wrangled_data.h5", 'pm', format='table')
+pm.to_hdf("data/wrangled/wrangled_data.h5", key = 'pm', format='table')
 pm.to_csv("data/wrangled/wrangled_data_py.csv")
 ```
 
