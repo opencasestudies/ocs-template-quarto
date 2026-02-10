@@ -37,6 +37,7 @@ The rest of these files will largely not need updated though a brief description
 * `jhudsl/base_ottr:main` is the default and works for most tidyverse/R needs
 * `jhudsl/ottr_python:main` should meet basic python needs
 * `jhudsl/ottr_ml:main` should meet most machine learning with python needs
+* Developing `jhudsl/ottr_ocs_py` (`dev` tag not `main`) because working with h5 files needs a dependency that `jhudsl/ottr_python` doesn't have and h5 files are common in bioinformatics
 * Additional docker images that work within the OTTR framework can be found here: https://github.com/ottrproject/ottr-docker/tree/main
 * For specific needs within the OCS organization, let Kate Isaac (`@kweav` on GitHub) know and an image can be developed to your specifications.
 
