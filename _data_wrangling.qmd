@@ -15,9 +15,7 @@ At the end of this section, save incremental data so that users can pause and co
 
 If you have been following along but stopped, we could load our imported data like so:
 
-{.panel-tabset}
-
-:::
+::: {.panel-tabset}
 
 ## R
 
@@ -52,9 +50,7 @@ This includes an example of code annotation with Quarto. See the documentation f
 
 To allow users to skip import and wrangling we will save the data as an RDA file as well as a CSV file as this is often useful to send our data to collaborators. We will save this in a “wrangled” subdirectory of our “data” directory of our working directory.
 
-{.panel-tabset}
-
-:::
+::: {.panel-tabset}
 
 ## R
 

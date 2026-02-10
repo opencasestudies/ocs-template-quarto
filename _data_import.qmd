@@ -19,9 +19,7 @@ put the data files as they came from the source into a 'data/raw/' subfolder
 and use the `here` package. See the following example and update with your data:
 -->
 
-{.panel-tabset}
-
-:::
+::: {.panel-tabset}
 
 ## R
 
@@ -42,9 +40,7 @@ At the end of the data import section, save the imported data as .rda files
 to allow users to stop and pick up where they left off:
 -->
 
-{.panel-tabset}
-
-:::
+::: {.panel-tabset}
 
 ## R
 
