@@ -182,6 +182,52 @@
   background-image: url("assets/box_images/license.png");
 }
 
+.funding_box{
+  margin: 1em 0;
+  border: 3px solid #f6d77a;
+  border-left: 10px solid #f6d77a;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.funding_box_header{
+  margin-left: 0em;
+  padding-left: 60px;
+  padding-top: 5px;
+  padding-bottom: 0.1em;
+  color: black;
+  background-color: #f6d77a;
+  font-size: 1em;
+  font-weight: bold;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-image: url("assets/box_images/funding.png");
+}
+
+.github_repo_box{
+  margin: 1em 0;
+  border: 3px solid #a8d5ba;
+  border-left: 10px solid #a8d5ba;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.github_repo_box_header{
+  margin-left: 0em;
+  padding-left: 60px;
+  padding-top: 5px;
+  padding-bottom: 0.1em;
+  color: black;
+  background-color: #a8d5ba;
+  font-size: 1em;
+  font-weight: bold;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-image: url("assets/box_images/source_code.png");
+}
+
 .scrollable {
    white-space: pre !important;
    max-height: 400px;
@@ -200,4 +246,55 @@
    background-color: #beeffd;
    padding:10px;
    display: inline-block;
+}
+
+
+/* =========================
+   Frontmatter tab styling
+   (scoped ONLY to this tabset)
+   ========================= */
+
+.frontmatter-tabs .nav-tabs {
+  border-bottom: none;
+}
+
+.frontmatter-tabs .nav-tabs li a {
+  border-radius: 8px 8px 0 0;
+  margin-right: 4px;
+  padding: 8px 12px;
+  border: none;
+  color: black;
+}
+
+/* ===== Match tab colors to box headers ===== */
+
+/* 1. Disclaimer */
+.frontmatter-tabs .nav-tabs li:nth-child(1) a {
+  background-color: #f08f9c;
+}
+
+/* 2. License */
+.frontmatter-tabs .nav-tabs li:nth-child(2) a {
+  background-color: gray;
+  color: white;
+}
+
+/* 3. Funding */
+.frontmatter-tabs .nav-tabs li:nth-child(3) a {
+  background-color: #f6d77a;
+}
+
+/* 4. Citation */
+.frontmatter-tabs .nav-tabs li:nth-child(4) a {
+  background-color: #beeffd;
+}
+
+/* 5. GitHub repo */
+.frontmatter-tabs .nav-tabs li:nth-child(5) a {
+  background-color: #a8d5ba;
+}
+
+/* Active tab styling */
+.frontmatter-tabs .nav-tabs li a.active {
+  font-weight: bold;
 }
