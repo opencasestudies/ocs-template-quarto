@@ -55,7 +55,7 @@ See the following example from a previous case study (prior to Motivation sectio
 
 :::{.github_repo_box}
 ::::{.github_repo_box_header}
-GitHub Repository
+GitHub repository
 ::::
 ::::{.inner_block}
 To access the GitHub repository for this case study see here: {LINK}
