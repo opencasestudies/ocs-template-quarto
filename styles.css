@@ -207,8 +207,8 @@
 
 .github_repo_box{
   margin: 1em 0;
-  border: 3px solid #a8d5ba;
-  border-left: 10px solid #a8d5ba;
+  border: 3px solid #7ce364;
+  border-left: 10px solid #7ce364;
   border-radius: 10px;
   background-color: white;
 }
@@ -219,13 +219,36 @@
   padding-top: 5px;
   padding-bottom: 0.1em;
   color: black;
-  background-color: #a8d5ba;
+  background-color: #7ce364;
   font-size: 1em;
   font-weight: bold;
   background-size: 40px;
   background-repeat: no-repeat;
   background-position: 15px center;
   background-image: url("assets/box_images/github.png");
+}
+
+.prereq_box{
+  margin: 1em 0;
+  border: 3px solid #b5a8d6;
+  border-left: 10px solid #b5a8d6;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.prereq_box_header{
+  margin-left: 0em;
+  padding-left: 60px;
+  padding-top: 5px;
+  padding-bottom: 0.1em;
+  color: black;
+  background-color: #b5a8d6;
+  font-size: 1em;
+  font-weight: bold;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-image: url("assets/box_images/checklist.png");
 }
 
 .scrollable {
@@ -291,7 +314,12 @@
 
 /* 5. GitHub repo */
 .frontmatter-tabs .nav-tabs li:nth-child(5) a {
-  background-color: #a8d5ba;
+  background-color: #7ce364;
+}
+
+/* 6. Pre-reqs */
+.frontmatter-tabs .nav-tabs li:nth-child(6) a {
+  background-color: #b5a8d6;
 }
 
 /* Active tab styling */

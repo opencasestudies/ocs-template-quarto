@@ -70,9 +70,18 @@ If the data isn't in the main github repository, be sure to describe and link to
 Include bioOCSdata package information once ready/applicable
 -->
 
+#### Prerequisites
+
+:::{.prereq_box}
+::::{.prereq_box_header}
+Prerequisites
+::::
+::::{.inner_block}
+Add a list of prerequisites here.
+::::
 :::
 
----
+:::
 
 <!--
 UPDATE: SYSTEM, SERVER, or MOCK COMPUTING Information:
@@ -83,4 +92,3 @@ In essence this section is useful to provide information to learners on how to w
 This section may not be needed for all case studies and can be removed if not
 -->
 
----
