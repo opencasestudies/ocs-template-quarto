@@ -25,6 +25,7 @@ NonCommercial
 ocs
 OTTR
 ottrproject
+prereq
 quarto
 qmd
 repo
