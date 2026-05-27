@@ -69,8 +69,9 @@ If the data isn't in the main github repository, be sure to describe and link to
 <!--
 Include bioOCSdata package information once ready/applicable
 -->
+:::
 
-#### Prerequisites
+## Prerequisites
 
 :::{.prereq_box}
 ::::{.prereq_box_header}
@@ -81,7 +82,7 @@ Add a list of prerequisites here.
 ::::
 :::
 
-:::
+
 
 <!--
 UPDATE: SYSTEM, SERVER, or MOCK COMPUTING Information:

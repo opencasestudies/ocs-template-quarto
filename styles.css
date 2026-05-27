@@ -184,8 +184,8 @@
 
 .funding_box{
   margin: 1em 0;
-  border: 3px solid #f6d77a;
-  border-left: 10px solid #f6d77a;
+  border: 3px solid #b5a8d6;
+  border-left: 10px solid #b5a8d6;
   border-radius: 10px;
   background-color: white;
 }
@@ -196,7 +196,7 @@
   padding-top: 5px;
   padding-bottom: 0.1em;
   color: black;
-  background-color: #f6d77a;
+  background-color: #b5a8d6;
   font-size: 1em;
   font-weight: bold;
   background-size: 40px;
@@ -303,7 +303,7 @@
 
 /* 3. Funding */
 .frontmatter-tabs .nav-tabs li:nth-child(3) a {
-  background-color: #f6d77a;
+  background-color: #b5a8d6;
 }
 
 /* 4. Citation */
@@ -314,11 +314,6 @@
 /* 5. GitHub repo */
 .frontmatter-tabs .nav-tabs li:nth-child(5) a {
   background-color: #7ce364;
-}
-
-/* 6. Pre-reqs */
-.frontmatter-tabs .nav-tabs li:nth-child(6) a {
-  background-color: #b5a8d6;
 }
 
 /* Active tab styling */
