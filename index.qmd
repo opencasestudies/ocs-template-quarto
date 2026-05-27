@@ -21,7 +21,6 @@ include-sections:
 
 {{< include _ocs_frontmatter.qmd >}}
 
-{{< include _cite.qmd >}}
 
 {{< include _motivation.qmd >}}
 

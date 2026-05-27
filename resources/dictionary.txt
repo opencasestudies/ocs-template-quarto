@@ -25,11 +25,13 @@ NonCommercial
 ocs
 OTTR
 ottrproject
+prereq
 quarto
 qmd
 repo
 Rmd
 RStudio
 subdir
+tabset
 th
 www
