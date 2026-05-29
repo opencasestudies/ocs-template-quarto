@@ -1,6 +1,6 @@
 ---
 title: "**Biomedical Open Case Studies: {Title}**"
-bibliography: references.bib
+bibliography: resources/references.bib
 include-sections:
   stat-los: false
   data-import: true
