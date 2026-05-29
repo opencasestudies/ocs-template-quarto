@@ -60,6 +60,7 @@ For the overall content of the Open Case Study, each portion of the case study i
 * [ ] _motivation.qmd
   * Provides an example of including images with Quarto (including those that you can click to open in a larger preview)
   * Provides an example of a custom definition box
+  * Provides an example of citing a reference
 * [ ] _main_question.qmd
 * [ ] _los.qmd
   * [ ] _data_science_los.qmd
