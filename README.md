@@ -40,7 +40,7 @@ The rest of these files will largely not need updated though a brief description
 * `img/`: This is where images should go for the case study background, motivation, etc.
   - [ ] Replace the `mainplot.png` from the template with your main plot
   - [ ] Add any additional case study specific (non-template) images in this directory
-* `resources/`: Files related to OTTR checks (e.g., dictionary and a file of URLs to exclude/ignore from checking.).
+* `resources/`: Files related to OTTR checks (e.g., dictionary and a file of URLs to exclude/ignore from checking.). Also the `references.bib` file for citations.
 * `.github/`: workflow files supporting the OTTR template automations
 * `docs/`: the rendered files that GitHub pages will use -- refreshed through OTTR template automations.
 
