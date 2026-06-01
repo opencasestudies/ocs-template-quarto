@@ -17,6 +17,7 @@ glyphicons
 HTTPS
 hw
 iconpacks
+knuth
 lightblue
 lightbox
 lightgreen
@@ -35,3 +36,4 @@ subdir
 tabset
 th
 www
+Zotero

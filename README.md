@@ -40,7 +40,7 @@ The rest of these files will largely not need updated though a brief description
 * `img/`: This is where images should go for the case study background, motivation, etc.
   - [ ] Replace the `mainplot.png` from the template with your main plot
   - [ ] Add any additional case study specific (non-template) images in this directory
-* `resources/`: Files related to OTTR checks (e.g., dictionary and a file of URLs to exclude/ignore from checking.).
+* `resources/`: Files related to OTTR checks (e.g., dictionary and a file of URLs to exclude/ignore from checking.). Also the `references.bib` file for citations.
 * `.github/`: workflow files supporting the OTTR template automations
 * `docs/`: the rendered files that GitHub pages will use -- refreshed through OTTR template automations.
 
@@ -60,6 +60,7 @@ For the overall content of the Open Case Study, each portion of the case study i
 * [ ] _motivation.qmd
   * Provides an example of including images with Quarto (including those that you can click to open in a larger preview)
   * Provides an example of a custom definition box
+  * Provides an example of citing a reference
 * [ ] _main_question.qmd
 * [ ] _los.qmd
   * [ ] _data_science_los.qmd
