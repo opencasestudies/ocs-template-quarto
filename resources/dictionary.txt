@@ -35,3 +35,4 @@ subdir
 tabset
 th
 www
+Zotero
