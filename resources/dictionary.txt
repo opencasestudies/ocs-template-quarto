@@ -17,6 +17,7 @@ glyphicons
 HTTPS
 hw
 iconpacks
+knuth
 lightblue
 lightbox
 lightgreen
@@ -25,11 +26,14 @@ NonCommercial
 ocs
 OTTR
 ottrproject
+prereq
 quarto
 qmd
 repo
 Rmd
 RStudio
 subdir
+tabset
 th
 www
+Zotero

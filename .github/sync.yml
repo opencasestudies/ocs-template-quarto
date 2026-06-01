@@ -30,12 +30,12 @@ group:
         dest: styles.css
   # Repositories to receive changes
     repos: |
-      opencasestudies/bio-ocs-et-single-cell
-      opencasestudies/bio-ocs-et-ai-diffusion
-      opencasestudies/bio-ocs-et-spatial-expression
-      opencasestudies/bio-ocs-et-spatial-latent-variable
-      opencasestudies/bio-ocs-et-temporal
-      opencasestudies/bio-ocs-bp-biocontainers
-      opencasestudies/bio-ocs-bp-version-control
-      opencasestudies/bio-ocs-bp-big-data
+      opencasestudies/ocs-bio-single-cell
+      opencasestudies/ocs-bio-ai-deep-learning
+      opencasestudies/ocs-bio-spatial-transcriptomics
+      opencasestudies/ocs-bio-latent-variable
+      opencasestudies/ocs-bio-temporal
+      opencasestudies/ocs-bio-biocontainers
+      opencasestudies/ocs-bio-version-control
+      opencasestudies/ocs-bio-big-data
 ###ADD NEW REPO HERE following the format above#
