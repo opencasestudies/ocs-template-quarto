@@ -22,6 +22,6 @@ Images are very helpful within this section....
 
 ![](img/motivation_map_of_monitors.jpg){fig-alt="Map showing location of air pollution monitors across the US." width=800 .lightbox}
 
-In these background citations, you may want to reference information like [@knuth84]. These will automatically be added into the @ref-section subsection of the Additional Information section.
+In these background citations, you may want to reference information like [@knuth84]. These will automatically be added into the @ref-section subsection of the Additional Information section. See the references.bib file for where @knuth84 came from. Tools like Zotero can help you get the bib version of the citation and some journals will help you copy paste it more readily.
 
 ***
