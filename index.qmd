@@ -1,5 +1,6 @@
 ---
-title: "**Biomedical Open Case Studies: {Title}**"
+title: "**Biomedical Open Case Studies: {Fill In Title}**"
+bibliography: resources/references.bib
 include-sections:
   stat-los: false
   data-import: true
@@ -21,7 +22,6 @@ include-sections:
 
 {{< include _ocs_frontmatter.qmd >}}
 
-{{< include _cite.qmd >}}
 
 {{< include _motivation.qmd >}}
 
