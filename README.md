@@ -27,6 +27,8 @@ This specific template sets up the style and content template for Biomedical Ope
     * [ ] line 11
     * [ ] line 28
 
+* glossary.yml: stores terms to be defined where users can click on the term and see the definition.
+
 The rest of these files will largely not need updated though a brief description of what each contains is provided.
 
 * styles.css -- Defines html elements
@@ -61,6 +63,7 @@ For the overall content of the Open Case Study, each portion of the case study i
   * Provides an example of including images with Quarto (including those that you can click to open in a larger preview)
   * Provides an example of a custom definition box
   * Provides an example of citing a reference
+  * Provides examples of using the glossary extension to define terms
 * [ ] _main_question.qmd
 * [ ] _los.qmd
   * [ ] _data_science_los.qmd

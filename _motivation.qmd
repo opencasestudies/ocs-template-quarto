@@ -33,6 +33,6 @@ Term2: |
   Definition of Term2
 ```
 
-We've added code to print out all of the terms stored in `glossary.yml` as a table within the Additional Information section before listing references.
+We've added code to print out all of the terms stored in `glossary.yml` as a table within the Additional Information section before listing references. Note that this is in place of the table functionality from the extension and this will display every term in the yml file whether it is referenced in the case study or not.
 
 ***
