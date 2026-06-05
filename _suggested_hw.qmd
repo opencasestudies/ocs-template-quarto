@@ -1,8 +1,20 @@
 # **Suggested Homework**
 ***
 
+:::{.next_steps_box}
+::::{.next_steps_box_header}
+Question opportunity
+::::
+::::{.inner_block}
+Discuss common next steps for this type of an analysis in this box. Is there a specific number of steps that you need to do before a specific step? Is a "next step" more of an alternate step?
+::::
+:::
+
 <!--
-Suggest extra exercises using this data for students to practice the skills used in the case study.
+Suggest extra exercises using this data for students to practice the skills used in the case study. Perhaps explain how the suggested homework relates to the common next steps.
+
+Consider basic, intermediate, and advanced homework exercise suggestions.
+
 Example from a previous case study: https://www.opencasestudies.org/ocs-bp-co2-emissions/#Suggested_Homework
 -->
 
