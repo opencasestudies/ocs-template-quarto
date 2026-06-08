@@ -1,4 +1,4 @@
-# **Suggested Homework**
+# **Continued Learning**
 ***
 
 :::{.next_steps_box}
@@ -11,9 +11,9 @@ Discuss common next steps for this type of an analysis in this box. Is there a s
 :::
 
 <!--
-Suggest extra exercises using this data for students to practice the skills used in the case study. Perhaps explain how the suggested homework relates to the common next steps.
+Suggest extra exercises using this data for students to practice the skills used in the case study. Perhaps explain how the suggested exercises relate to the common next steps.
 
-Consider basic, intermediate, and advanced homework exercise suggestions.
+Consider basic, intermediate, and advanced exercise suggestions.
 
 Example from a previous case study: https://www.opencasestudies.org/ocs-bp-co2-emissions/#Suggested_Homework
 -->
