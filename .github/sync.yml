@@ -45,7 +45,7 @@ group:
       opencasestudies/ocs-bio-spatial-transcriptomics
       opencasestudies/ocs-bio-latent-variable
       opencasestudies/ocs-bio-temporal
-      opencasestudies/ocs-bio-biocontainers
+      opencasestudies/ocs-bio-containers
       opencasestudies/ocs-bio-version-control
       opencasestudies/ocs-bio-big-data
 ###ADD NEW REPO HERE following the format above#
