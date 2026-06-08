@@ -23,6 +23,18 @@ group:
         dest: _brand.yml
       - source: styles.css
         dest: styles.css
+      - source: index.qmd
+        dest: index.qmd
+      - source: _ocs_frontmatter.qmd
+        dest: _ocs_frontmatter.qmd
+      - source: _additional_info.qmd
+        dest: _additional_info.qmd
+      - source: _quarto.yml
+        dest: _quarto.yml
+      - source: glossary.yml
+        dest: glossary.yml
+      - source: resources/references.bib
+        dest: resources/references.bib
   # Repositories to receive changes
     repos: |
       opencasestudies/ocs-bio-single-cell
