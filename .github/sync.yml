@@ -7,6 +7,9 @@ group:
       - source: assets/
         dest: assets/
         deleteOrphaned: true
+      - source: _extensions/
+        dest: _extensions/
+        deleteOrphaned: true
       - source: .github/workflows/delete-preview.yml
         dest: .github/workflows/delete-preview.yml
       - source: .github/workflows/render-all.yml
