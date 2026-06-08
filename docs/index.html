@@ -101,6 +101,7 @@ div.csl-indent {
 <link href="site_libs/bootstrap/bootstrap-0c405366042b49ef95aaabe92e50da43.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark-0c405366042b49ef95aaabe92e50da43.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-0c405366042b49ef95aaabe92e50da43.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/glossary/glossary.css" rel="stylesheet">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -222,6 +223,7 @@ gtag('config', 'G-5R5B1JFCGE', { 'anonymize_ip': true});
   <li><a href="#suggested-homework" id="toc-suggested-homework" class="nav-link" data-scroll-target="#suggested-homework"><strong>Suggested Homework</strong></a></li>
   <li><a href="#additional-information" id="toc-additional-information" class="nav-link" data-scroll-target="#additional-information"><strong>Additional Information</strong></a>
   <ul class="collapse">
+  <li><a href="#glossary" id="toc-glossary" class="nav-link" data-scroll-target="#glossary">Glossary</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   <li><a href="#helpful-links" id="toc-helpful-links" class="nav-link" data-scroll-target="#helpful-links"><strong>Helpful Links</strong></a></li>
   <li><a href="#session-info" id="toc-session-info" class="nav-link" data-scroll-target="#session-info"><strong>Session Info</strong></a></li>
@@ -390,6 +392,12 @@ Images or videos may be helpful so this includes an example of including an imag
 <p>Images are very helpful within this section….</p>
 <p><a href="img/motivation_map_of_monitors.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="img/motivation_map_of_monitors.jpg" class="img-fluid" alt="Map showing location of air pollution monitors across the US." width="800"></a></p>
 <p>In these background citations, you may want to reference information like <a href="https://doi.org/10.1093/comjnl/27.2.97">knuth, 1984</a> <span class="citation" data-cites="knuth84">(<a href="#ref-knuth84" role="doc-biblioref">Knuth 1984</a>)</span>. These will automatically be added into the References subsection of the Additional Information section near the end of the case study. It is good to also add a direct link the the reference where appropriate. See the <code>references.bib</code> file for where <code>@knuth84</code> came from. Tools like Zotero can help you get the bib version of the citation and some journals will help you copy paste it more readily.</p>
+<p>This template also utilizes a <a href="https://github.com/debruine/quarto-glossary">quarto extension</a> to enable some glossary functionality. <button class="glossary"><span class="def">Definition of Term 1</span>Term 1</button> is an example where if you click and hold “Term 1”, the definition stored in <code>glossary.yml</code> for “Term 1” will be displayed. <code></code> will unlock the same functionality for <code>Term2</code> also stored in <code>glossary.yml</code>. Adding terms to <code>glossary.yml</code> uses the following pattern. Note the two spaces at the beginning of each definition line.</p>
+<pre><code>Term 1: |
+  Definition of Term 1
+Term2: |
+  Definition of Term2</code></pre>
+<p>We’ve added code to print out all of the terms stored in <code>glossary.yml</code> as a table within the Additional Information section before listing references. Note that this is in place of the table functionality from the extension and this will display every term in the <code>.yml</code> file whether it is referenced in the case study or not.</p>
 <hr>
 <!--
 Describe the main biological questions for this case study.
@@ -457,8 +465,8 @@ Fill out the table and add rows as necessary providing a link to the source and 
 -->
 <p>We will begin by loading the packages that we will need:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#add library() calls</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#add library() calls</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>here() starts at /home</code></pre>
 </div>
@@ -577,7 +585,7 @@ put the data files as they came from the source into a 'data/raw/' subfolder
 and use the `here` package. See the following example and update with your data:
 -->
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>pm <span class="ot">&lt;-</span>readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"raw"</span>, <span class="st">"pm25_data.csv"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>pm <span class="ot">&lt;-</span>readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"raw"</span>, <span class="st">"pm25_data.csv"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Rows: 876 Columns: 50
 ── Column specification ────────────────────────────────────────────────────────
@@ -594,7 +602,7 @@ At the end of the data import section, save the imported data as .rda files
 to allow users to stop and pick up where they left off:
 -->
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(pm, <span class="at">file =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"imported"</span>, <span class="st">"pm25_data_imported.rda"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(pm, <span class="at">file =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"imported"</span>, <span class="st">"pm25_data_imported.rda"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <!--
 NOTE that depending on the size of the data for Bio-OCS, the data may not be in the case study project folder directly
@@ -616,7 +624,7 @@ At the end of this section, save incremental data so that users can pause and co
 <hr>
 <p>If you have been following along but stopped, we could load our imported data like so:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"imported"</span>, <span class="st">"pm25_data_imported.rda"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"imported"</span>, <span class="st">"pm25_data_imported.rda"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <hr>
 <details>
@@ -625,7 +633,7 @@ If you skipped the data import section click here.
 </summary>
 <p>An RDA version (stands for R data) of the data can be found <a href="https://github.com//opencasestudies/ocs-bp-co2-emissions/tree/master/data/imported">here</a> or slightly more directly <a href="https://raw.githubusercontent.com/opencasestudies/ocs-bp-co2-emissions/master/data/imported/co2_data_imported.rda">here</a>. Download this file and then place it in your current working directory within a subdirectory called “imported” within a directory called “data” to use the following code. We used an RStudio project and the <a href="https://github.com/jennybc/here_here"><code>here</code> package</a> to navigate to the file more easily.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"imported"</span>, <span class="st">"co2_data_imported.rda"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"imported"</span>, <span class="st">"co2_data_imported.rda"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </details>
 <hr>
@@ -635,18 +643,18 @@ This includes an example of code annotation with Quarto. See the documentation f
 -->
 <p>To allow users to skip import and wrangling we will save the data as an RDA file as well as a CSV file as this is often useful to send our data to collaborators. We will save this in a “wrangled” subdirectory of our “data” directory of our working directory.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-9"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><a class="code-annotation-anchor" data-target-cell="annotated-cell-9" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-9-1" class="code-annotation-target"><a href="#annotated-cell-9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(pm, <span class="at">file =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-9" data-target-annotation="2" onclick="event.preventDefault();">2</a><span id="annotated-cell-9-2" class="code-annotation-target"><a href="#annotated-cell-9-2" aria-hidden="true" tabindex="-1"></a>readr<span class="sc">::</span><span class="fu">write_csv</span>(pm, <span class="at">file =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>,<span class="st">"wrangled"</span>,</span>
-<span id="annotated-cell-9-3"><a href="#annotated-cell-9-3" aria-hidden="true" tabindex="-1"></a>                                       <span class="st">"wrangled_data.csv"</span>))</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-10"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><a class="code-annotation-anchor" data-target-cell="annotated-cell-10" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-10-1" class="code-annotation-target"><a href="#annotated-cell-10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(pm, <span class="at">file =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-10" data-target-annotation="2" onclick="event.preventDefault();">2</a><span id="annotated-cell-10-2" class="code-annotation-target"><a href="#annotated-cell-10-2" aria-hidden="true" tabindex="-1"></a>readr<span class="sc">::</span><span class="fu">write_csv</span>(pm, <span class="at">file =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>,<span class="st">"wrangled"</span>,</span>
+<span id="annotated-cell-10-3"><a href="#annotated-cell-10-3" aria-hidden="true" tabindex="-1"></a>                                       <span class="st">"wrangled_data.csv"</span>))</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-9" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-10" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-9" data-code-lines="1" data-code-annotation="1">saving the data as an RDA file within the wrangled data subdirectory</span>
+<span data-code-cell="annotated-cell-10" data-code-lines="1" data-code-annotation="1">saving the data as an RDA file within the wrangled data subdirectory</span>
 </dd>
-<dt data-target-cell="annotated-cell-9" data-target-annotation="2">2</dt>
+<dt data-target-cell="annotated-cell-10" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-9" data-code-lines="2,3" data-code-annotation="2">saving the data as a CSV file within the wrangled data subdirectory</span>
+<span data-code-cell="annotated-cell-10" data-code-lines="2,3" data-code-annotation="2">saving the data as a CSV file within the wrangled data subdirectory</span>
 </dd>
 </dl>
 </div>
@@ -670,7 +678,7 @@ At the end of this section, save incremental data so that users can pause and co
 <hr>
 <p>If you have been following along but stopped, we could load our wrangled data like so:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <hr>
 <details>
@@ -679,7 +687,7 @@ If you skipped the data import section click here.
 </summary>
 <p>An RDA file (stands for R data) of the data can be found <a href="https://github.com//opencasestudies/ocs-bp-co2-emissions/tree/master/data/wrangled">here</a> or slightly more directly <a href="https://raw.githubusercontent.com/opencasestudies/ocs-bp-co2-emissions/master/data/wrangled/wrangled_data.rda">here</a>. Download this file and then place it in your current working directory within a subdirectory called “wrangled” within a subdirectory called “data” to use the following code. We used an RStudio project and the <a href="https://github.com/jennybc/here_here"><code>here</code> package</a> to navigate to the file more easily.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </details>
 <hr>
@@ -698,7 +706,7 @@ please save the most recent version of the data similar to previous sections.
 <hr>
 <p>If you have been following along but stopped, we could load our wrangled data like so:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <hr>
 <details>
@@ -707,7 +715,7 @@ If you skipped the data import section click here.
 </summary>
 <p>An RDA file (stands for R data) of the data can be found <a href="https://github.com//opencasestudies/ocs-bp-co2-emissions/tree/master/data/wrangled">here</a> or slightly more directly <a href="https://raw.githubusercontent.com/opencasestudies/ocs-bp-co2-emissions/master/data/wrangled/wrangled_data.rda">here</a>. Download this file and then place it in your current working directory within a subdirectory called “wrangled” within a subdirectory called “data” to use the following code. We used an RStudio project and the <a href="https://github.com/jennybc/here_here"><code>here</code> package</a> to navigate to the file more easily.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </details>
 <hr>
@@ -774,8 +782,29 @@ Example from a previous case study: https://www.opencasestudies.org/ocs-bp-co2-e
 <!--
 Use this section to provide any additional information or resources on the topic and methods covered in the case study
 -->
+<section id="glossary" class="level2">
+<h2 class="anchored" data-anchor-id="glossary">Glossary</h2>
+<hr>
+<table class="glossary_table caption-top table">
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th"><strong>Term</strong></th>
+<th data-quarto-table-cell-role="th"><strong>Definition</strong></th>
+</tr>
+<tr class="even">
+<td>Term 1</td>
+<td>Definition of Term 1</td>
+</tr>
+<tr class="odd">
+<td>Term2</td>
+<td>Definition of Term 2</td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
+<hr>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-knuth84" class="csl-entry" role="listitem">
 Knuth, Donald E. 1984. <span>“Literate Programming.”</span> <em>Comput. J.</em> 27 (2): 97–111. <a href="https://doi.org/10.1093/comjnl/27.2.97">https://doi.org/10.1093/comjnl/27.2.97</a>.
@@ -796,7 +825,7 @@ Automatically include the packages table from _packages.qmd?
 <h2 class="anchored" data-anchor-id="session-info"><strong>Session Info</strong></h2>
 <hr>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">session_info</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">session_info</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>─ Session info ───────────────────────────────────────────────────────────────
  setting  value
@@ -808,7 +837,7 @@ Automatically include the packages table from _packages.qmd?
  collate  en_US.UTF-8
  ctype    en_US.UTF-8
  tz       Etc/UTC
- date     2026-06-01
+ date     2026-06-08
  pandoc   3.1.1 @ /usr/local/bin/ (via rmarkdown)
 
 ─ Packages ───────────────────────────────────────────────────────────────────
@@ -867,7 +896,7 @@ Automatically include the packages table from _packages.qmd?
  vroom         1.6.5   2023-12-05 [1] RSPM (R 4.3.0)
  xfun          0.55    2025-12-16 [1] CRAN (R 4.3.2)
  xtable        1.8-4   2019-04-21 [1] RSPM (R 4.3.0)
- yaml          2.3.12  2025-12-10 [1] CRAN (R 4.3.2)
+ yaml        * 2.3.12  2025-12-10 [1] CRAN (R 4.3.2)
 
  [1] /usr/local/lib/R/site-library
  [2] /usr/local/lib/R/library
