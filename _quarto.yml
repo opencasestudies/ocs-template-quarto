@@ -27,6 +27,11 @@ website:
       - icon: github
         href: https://github.com/opencasestudies/ocs-template-quarto
 
+glossary:
+  path: glossary.yml
+  popup: click
+  show: true
+
 brand: _brand.yml
 format:
   html:
