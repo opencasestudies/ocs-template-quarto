@@ -83,6 +83,8 @@ For the overall content of the Open Case Study, each portion of the case study i
 * [ ] _data_analysis.qmd
   * Provides an example of using a column margin note with Quarto
   * Provides an example of a custom question opportunity box
+  * Provides an example of a custom AI box
+  * Provides an example of a custom Reproducibility consideration box
 * [ ] _summary.qmd
 * [ ] _suggested_hw.qmd
 * [ ] _additional_info.qmd

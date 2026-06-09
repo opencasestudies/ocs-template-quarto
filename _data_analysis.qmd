@@ -41,4 +41,62 @@ Use this section to walk through the methods and code used in the data analysis 
 Explain how this analysis helps answer the main questions posed earlier in the case study.
 -->
 
+In this section, you may want to provide learners with some guidance on ways to incorporate AI while they are developing their analysis. They may want AI to
+
+* help them debug
+* help them refactor code
+* help them simplify or suggest ways to validate code
+
+So, we have developed an AI box that you can pop in whenever you want to do something like this. Note, this is using a tabset approach so that one tab provides background, a suggested prompt, and guidance on how to evaluate or validate the AI's responses. The second tab is providing an important disclaimer about AI use within an analysis.
+
+:::{.ai_box}
+::: {.panel-tabset}
+### Context and Guidance
+::::{.definition_box_header}
+How to prompt and validate an AI chatbot
+::::
+::::{.inner_block}
+
+<u>Context:</u>
+Provide context here
+
+Note if there is any context (e.g., a script) that the learner should also provide the chatbot in addition to the prompt
+
+<u>Suggested Prompt:</u>
+
+```
+Suggested prompt that learners will be able to copy and paste
+```
+
+<u>Validation:</u>
+Provide guidance to learners on how they should check or validate the response they have received from AI
+
+::::
+### Disclaimer
+::::{.definition_box_header}
+AI chatbot use disclaimer
+::::
+::::{.inner_block}
+
+* Never provide sensitive data to an AI chatbot
+* Provide clear context about your question and why you are asking
+* Be ready to iterate your prompt
+* Chatbots often make mistakes so be sure to carefully consider their responses, test code / validate when possible
+* Asking a chatbot the same question more than once (even with the same prompt!) can result in different answers, so keep that in mind for reproduciblity considerations
+
+::::
+:::
+:::
+
+Finally, you may want to provide information about reproduciblity considerations .... this box may be appropriate in several places throughout the case study, but perhaps you'll want a note right before summary. Use something like the following for such cases (though you may want to rename the header within `reproducibility_box_header` depending on your specific use case):
+
+:::{.reproducibility_box}
+::::{.reproducibility_box_header}
+Reproducibility consideration / connection
+::::
+::::{.inner_block}
+Here you'll spotlight the reproducibility consideration or thought...This could be a note about needing a specific script or container or what reproducibility concept this is related to (e.g., file management, etc.)
+::::
+:::
+
 ***

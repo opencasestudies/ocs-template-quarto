@@ -274,6 +274,52 @@
   background-image: url("assets/box_images/checklist.png");
 }
 
+.ai_box{
+  margin: 1em 0;
+  border: 3px solid #7ce364;
+  border-left: 10px solid #7ce364;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.ai_box_header{
+  margin-left: 0em;
+  padding-left: 60px;
+  padding-top: 5px;
+  padding-bottom: 0.1em;
+  color: black;
+  background-color: #7ce364;
+  font-size: 1em;
+  font-weight: bold;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-image: url("assets/box_images/ai.png");
+}
+
+.reproducibility_box{
+  margin: 1em 0;
+  border: 3px solid #D6DCE5;
+  border-left: 10px solid #D6DCE5;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.reproducibility_box_header{
+  margin-left: 0em;
+  padding-left: 60px;
+  padding-top: 5px;
+  padding-bottom: 0.1em;
+  color: black;
+  background-color: #D6DCE5;
+  font-size: 1em;
+  font-weight: bold;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-image: url("assets/box_images/reproducibility.png");
+}
+
 .scrollable {
    white-space: pre !important;
    max-height: 400px;
