@@ -30,8 +30,10 @@ group:
         dest: index.qmd
       - source: _ocs_frontmatter.qmd
         dest: _ocs_frontmatter.qmd
-      - source: _additional_info.qmd
-        dest: _additional_info.qmd
+      - source: _bibliography.qmd
+        dest: _bibliography.qmd
+      - source: _glossary_table.qmd
+        dest: _glossary_table.qmd
       - source: _quarto.yml
         dest: _quarto.yml
       - source: glossary.yml
