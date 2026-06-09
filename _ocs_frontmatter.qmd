@@ -73,7 +73,13 @@ If the data isn't in the main github repository, be sure to describe and link to
 Keywords
 ::::
 ::::{.inner_block}
-Add keywords here
+* Keyword 1
+* Keyword 2
+* Keyword 3
+* ...Keyword n
+
+<!-- Note that keywords should be the types of words that you'd use for a conference abstract or grant submission; focus on the emerging tech or best practice that is being covered as well as the specific part of the task/analysis/visualization that is being shown. Just a quick way to overview what skills/topics are part of the case study -->
+
 ::::
 :::
 
