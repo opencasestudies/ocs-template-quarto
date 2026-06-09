@@ -27,10 +27,10 @@ This specific template sets up the style and content template for Biomedical Ope
     * [ ] line 11
     * [ ] line 28
 
-* glossary.yml: stores terms to be defined where users can click on the term and see the definition.
-
 The rest of these files will largely not need updated though a brief description of what each contains is provided.
 
+* `_bibliography.qmd` -- automatically adds the references that are included in `resources/references.bib` and referenced within the content `.qmd` files.
+* `_glossary_table.qmd` -- automatically builds the glossary table for **all** terms that are included in the `glossary.yml` file whether they are defined with the `{{< glossary term >}}` syntax within the content or not.
 * styles.css -- Defines html elements
 * _brand.yml -- Logo and favicon definition
 * config_automation.yml	-- Configurations for the OTTR Template automations. Update this file to toggle spelling or url check as well as minimum errors allowed for those checks or to update the docker image.
@@ -87,6 +87,8 @@ For the overall content of the Open Case Study, each portion of the case study i
 * [ ] _suggested_hw.qmd
 * [ ] _additional_info.qmd
 * [ ] _acknowledgements.qmd
+* [ ] glossary.yml: stores terms to be defined where users can click on the term and see the definition.
+
 
 * [ ] **Verify**
   * [ ] Every image ....

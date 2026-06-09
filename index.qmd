@@ -75,6 +75,10 @@ include-sections:
 
 {{< include _additional_info.qmd >}}
 
+{{< include _glossary_table.qmd >}}
+
+{{< include _bibliography.qmd >}}
+
 ## **Session Info**
 ***
 
