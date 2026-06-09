@@ -66,6 +66,23 @@ To access the GitHub repository for this case study see here: {LINK}
 If the data isn't in the main github repository, be sure to describe and link to the open source location of the data and how to access it
 -->
 
+#### Keywords
+
+:::{.keyword_box}
+::::{.keyword_box_header}
+Keywords
+::::
+::::{.inner_block}
+* Keyword 1
+* Keyword 2
+* Keyword 3
+* ...Keyword n
+
+<!-- Note that keywords should be the types of words that you'd use for a conference abstract or grant submission; focus on the emerging tech or best practice that is being covered as well as the specific part of the task/analysis/visualization that is being shown. Just a quick way to overview what skills/topics are part of the case study -->
+
+::::
+:::
+
 <!--
 Include bioOCSdata package information once ready/applicable
 -->

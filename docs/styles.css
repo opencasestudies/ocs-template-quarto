@@ -228,6 +228,29 @@
   background-image: url("assets/box_images/github.png");
 }
 
+.keyword_box{
+  margin: 1em 0;
+  border: 3px solid #f08f9c;
+  border-left: 10px solid #f08f9c;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.keyword_box_header{
+  margin-left: 0em;
+  padding-left: 60px;
+  padding-top: 5px;
+  padding-bottom: 0.1em;
+  color: black;
+  background-color: #f08f9c;
+  font-size: 1em;
+  font-weight: bold;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-image: url("assets/box_images/magnifying-glass.png");
+}
+
 .prereq_box{
   margin: 1em 0;
   border: 3px solid #b5a8d6;
@@ -314,6 +337,11 @@
 /* 5. GitHub repo */
 .frontmatter-tabs .nav-tabs li:nth-child(5) a {
   background-color: #7ce364;
+}
+
+/* 6. keywords */
+.frontmatter-tabs .nav-tabs li:nth-child(6) a {
+  background-color: #f08f9c;
 }
 
 /* Active tab styling */
