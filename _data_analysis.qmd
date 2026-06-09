@@ -81,12 +81,12 @@ Provide guidance to learners on how they should check or validate the response t
 * Provide clear context about your question and why you are asking
 * Be ready to iterate your prompt
 * Chatbots often make mistakes so be sure to carefully consider their responses, test code / validate when possible
-* Asking a chatbot the same question more than once (even with the same prompt!) can result in different answers, so keep that in mind for reproduciblity considerations
+* Asking a chatbot the same question more than once (even with the same prompt!) can result in different answers, so keep that in mind for reproducibility considerations
 
 :::
 
 
-Finally, you may want to provide information about reproduciblity considerations .... this box may be appropriate in several places throughout the case study, but perhaps you'll want a note right before summary. Use something like the following for such cases (though you may want to rename the header within `reproducibility_box_header` depending on your specific use case):
+Finally, you may want to provide information about reproducibility considerations .... this box may be appropriate in several places throughout the case study, but perhaps you'll want a note right before summary. Use something like the following for such cases (though you may want to rename the header within `reproducibility_box_header` depending on your specific use case):
 
 :::{.reproducibility_box}
 ::::{.reproducibility_box_header}
