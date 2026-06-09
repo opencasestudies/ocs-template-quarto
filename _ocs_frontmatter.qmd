@@ -66,6 +66,17 @@ To access the GitHub repository for this case study see here: {LINK}
 If the data isn't in the main github repository, be sure to describe and link to the open source location of the data and how to access it
 -->
 
+#### Keywords
+
+:::{.keyword_box}
+::::{.keyword_box_header}
+Keywords
+::::
+::::{.inner_block}
+Add keywords here
+::::
+:::
+
 <!--
 Include bioOCSdata package information once ready/applicable
 -->
