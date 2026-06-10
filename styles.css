@@ -48,7 +48,8 @@
 .keyword_box,
 .prereq_box,
 .ai_box,
-.reproducibility_box {
+.reproducibility_box,
+.next_steps_box {
   margin: 1em 0;
   border-radius: 10px;
   background-color: white;
@@ -68,6 +69,7 @@
   border-bottom-right-radius: 10px;
 }
 
+/* set common elements for the headers of the boxes */
 .main_question_header,
 .think_question_header,
 .reference_box_header,
@@ -79,7 +81,8 @@
 .keyword_box_header,
 .prereq_box_header,
 .ai_box_header,
-.reproducibility_box_header {
+.reproducibility_box_header,
+.next_steps_box_header {
   margin-left: 0em;
   padding-left: 60px;
   padding-top: 5px;
@@ -205,6 +208,16 @@
 .reproducibility_box_header{
   background-color: #D6DCE5;
   background-image: url("assets/box_images/reproducibility.png");
+}
+
+.next_steps_box{
+  border: 3px solid #f08f9c;
+  border-left: 10px solid #f08f9c;
+}
+
+.next_steps_box_header{
+  background-color: #f08f9c;
+  background-image: url("assets/box_images/stairs.png");
 }
 
 .scrollable {
