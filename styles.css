@@ -101,22 +101,22 @@
 }
 
 .think_question{
-  border: 3px solid #beeffd;
-  border-left: 10px solid #beeffd;
+  border: 3px solid #7ce364;
+  border-left: 10px solid #7ce364;
 }
 
 .think_question_header{
-  background-color: #beeffd;
+  background-color: #7ce364;
   background-image: url("assets/box_images/thinking_face.png");
 }
 
 .reference_box{
-  border: 3px solid #beeffd;
-  border-left: 10px solid #beeffd;
+  border: 3px solid #bdeffc;
+  border-left: 10px solid #bdeffc;
 }
 
 .reference_box_header{
-  background-color: #beeffd;
+  background-color: #bdeffc;
   background-image: url("assets/box_images/cite.png");
 }
 
@@ -191,12 +191,12 @@
 }
 
 .ai_box{
-  border: 3px solid #7ce364;
-  border-left: 10px solid #7ce364;
+  border: 3px solid #f08f9c;
+  border-left: 10px solid #f08f9c;
 }
 
 .ai_box_header{
-  background-color: #7ce364;
+  background-color: #f08f9c;
   background-image: url("assets/box_images/ai.png");
 }
 
@@ -235,7 +235,7 @@
 }
 
 .blue-outline {
-   background-color: #beeffd;
+   background-color: #bdeffc;
    padding:10px;
    display: inline-block;
 }
@@ -277,7 +277,7 @@
 
 /* 4. Citation */
 .frontmatter-tabs .nav-tabs li:nth-child(4) a {
-  background-color: #beeffd;
+  background-color: #bdeffc;
 }
 
 /* 5. GitHub repo */
