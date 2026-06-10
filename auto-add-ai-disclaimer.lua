@@ -1,4 +1,4 @@
--- auto-ai-box-note.lua
+-- auto-add-ai-disclaimer.lua
 function Div(el)
   if el.classes:includes("ai_box") then
 

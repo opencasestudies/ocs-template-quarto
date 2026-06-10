@@ -45,4 +45,4 @@ format:
     license: "CC BY-NC 4.0"
 
 filters:
-  - auto-ai-box-note.lua
+  - auto-add-ai-disclaimer.lua
