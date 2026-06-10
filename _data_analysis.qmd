@@ -50,10 +50,10 @@ In this section, you may want to provide learners with some guidance on ways to 
 So, we have developed an AI box that you can pop in whenever you want to do something like this. Note, this is using a tabset approach so that one tab provides background, a suggested prompt, and guidance on how to evaluate or validate the AI's responses. The second tab is providing an important disclaimer about AI use within an analysis.
 
 :::{.ai_box}
-::::{.ai_box_header}
+:::{.ai_box_header}
 How to prompt and validate an AI chatbot
-::::
-::::{.inner_block}
+:::
+:::{.inner_block}
 
 <u>Context:</u>
 Provide context here
@@ -62,14 +62,16 @@ Note if there is any context (e.g., a script) that the learner should also provi
 
 <u>Suggested Prompt:</u>
 
-```{.code}
+::: {.code}
+```text
 Suggested prompt that learners will be able to copy and paste
 ```
+:::
 
 <u>Validation:</u>
 Provide guidance to learners on how they should check or validate the response they have received from AI
 
-::::
+:::
 :::
 
 Note that **everytime** an `.ai_box` is used throughout the case study, a lua filter will automatically add an AI use disclaimer/margin note to accompany the box during rendering.
