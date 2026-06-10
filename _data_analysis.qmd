@@ -52,7 +52,7 @@ So, we have developed an AI box that you can pop in whenever you want to do some
 :::{.ai_box}
 ::: {.panel-tabset}
 ### Context and Guidance
-::::{.definition_box_header}
+::::{.ai_box_header}
 How to prompt and validate an AI chatbot
 ::::
 ::::{.inner_block}
@@ -73,7 +73,7 @@ Provide guidance to learners on how they should check or validate the response t
 
 ::::
 ### Disclaimer
-::::{.definition_box_header}
+::::{.ai_box_header}
 AI chatbot use disclaimer
 ::::
 ::::{.inner_block}
