@@ -40,6 +40,8 @@ group:
         dest: _acknowledgements.qmd
       - source: _quarto.yml
         dest: _quarto.yml
+      - source: auto-add-ai-disclaimer.lua
+        dest: auto-add-ai-disclaimer.lua
       - source: glossary.yml
         dest: glossary.yml
       - source: resources/references.bib
