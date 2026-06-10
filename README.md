@@ -32,6 +32,7 @@ The rest of these files will largely not need updated though a brief description
 * `_bibliography.qmd` -- automatically adds the references that are included in `resources/references.bib` and referenced within the content `.qmd` files.
 * `_glossary_table.qmd` -- automatically builds the glossary table for **all** terms that are included in the `glossary.yml` file whether they are defined with the `{{< glossary term >}}` syntax within the content or not.
 * styles.css -- Defines html elements
+* `auto-add-ai-disclaimer.lua` -- this is a lua filter that during rendering automatically adds an AI use disclaimer (defined within the lua filter) as a column margin note next to AI boxes (the element `.ai_box` element defined `styles.css`)
 * _brand.yml -- Logo and favicon definition
 * config_automation.yml	-- Configurations for the OTTR Template automations. Update this file to toggle spelling or url check as well as minimum errors allowed for those checks or to update the docker image.
 
