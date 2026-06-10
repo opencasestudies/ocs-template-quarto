@@ -36,27 +36,28 @@
   background-color: RoyalBlue;
 }
 
-.main_question{
+/* set common elements for the outer boxes */
+.main_question,
+.think_question,
+.reference_box,
+.definition_box,
+.disclaimer_box,
+.license_box,
+.funding_box,
+.github_repo_box,
+.keyword_box,
+.prereq_box,
+.ai_box,
+.reproducibility_box {
   margin: 1em 0;
-  border: 3px solid #7ce364;
-  border-left: 10px solid #7ce364;
   border-radius: 10px;
   background-color: white;
 }
 
-.main_question_header {
-  margin-left: 0em;
-  padding-left: 60px;
-  padding-top: 5px;
-  padding-bottom: 0.1em;
-  color: black;
-  background-color: #7ce364;
-  font-size: 1em;
-  font-weight: bold;
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-position: 15px center;
-  background-image: url("assets/box_images/question.png");
+.main_question{
+  border: 3px solid #7ce364;
+  border-left: 10px solid #7ce364;
+
 }
 
 .inner_block {
@@ -67,256 +68,142 @@
   border-bottom-right-radius: 10px;
 }
 
-.think_question{
-  margin: 1em 0;
-  border: 3px solid #beeffd;
-  border-left: 10px solid #beeffd;
-  border-radius: 10px;
-  background-color: white;
-}
-
-.think_question_header{
+.main_question_header,
+.think_question_header,
+.reference_box_header,
+.definition_box_header,
+.disclaimer_box_header,
+.license_box_header,
+.funding_box_header,
+.github_repo_box_header,
+.keyword_box_header,
+.prereq_box_header,
+.ai_box_header,
+.reproducibility_box_header {
   margin-left: 0em;
   padding-left: 60px;
   padding-top: 5px;
   padding-bottom: 0.1em;
   color: black;
-  background-color: #beeffd;
   font-size: 1em;
   font-weight: bold;
   background-size: 40px;
   background-repeat: no-repeat;
   background-position: 15px center;
+}
+
+.main_question_header {
+  background-color: #7ce364;
+  background-image: url("assets/box_images/question.png");
+}
+
+.think_question{
+  border: 3px solid #beeffd;
+  border-left: 10px solid #beeffd;
+}
+
+.think_question_header{
+  background-color: #beeffd;
   background-image: url("assets/box_images/thinking_face.png");
 }
 
 .reference_box{
-  margin: 1em 0;
   border: 3px solid #beeffd;
   border-left: 10px solid #beeffd;
-  border-radius: 10px;
-  background-color: white;
 }
 
 .reference_box_header{
-  margin-left: 0em;
-  padding-left: 60px;
-  padding-top: 5px;
-  padding-bottom: 0.1em;
-  color: black;
   background-color: #beeffd;
-  font-size: 1em;
-  font-weight: bold;
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-position: 15px center;
   background-image: url("assets/box_images/cite.png");
 }
 
 .definition_box{
-  margin: 1em 0;
   border: 3px solid #b5a8d6;
   border-left: 10px solid #b5a8d6;
-  border-radius: 10px;
-  background-color: white;
 }
 
 .definition_box_header{
-  margin-left: 0em;
-  padding-left: 60px;
-  padding-top: 5px;
-  padding-bottom: 0.1em;
-  color: black;
   background-color: #b5a8d6;
-  font-size: 1em;
-  font-weight: bold;
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-position: 15px center;
   background-image: url("assets/box_images/dictionary.png");
 }
 
 .disclaimer_box{
-  margin: 1em 0;
   border: 3px solid #f08f9c;
   border-left: 10px solid #f08f9c;
-  border-radius: 10px;
-  background-color: white;
 }
 
 .disclaimer_box_header{
-  margin-left: 0em;
-  padding-left: 60px;
-  padding-top: 5px;
-  padding-bottom: 0.1em;
-  color: black;
   background-color: #f08f9c;
-  font-size: 1em;
-  font-weight: bold;
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-position: 15px center;
   background-image: url("assets/box_images/warning.png");
 }
 
 .license_box{
-  margin: 1em 0;
   border: 3px solid #D6DCE5;
   border-left: 10px solid #D6DCE5;
-  border-radius: 10px;
-  background-color: white;
 }
 
 .license_box_header{
-  margin-left: 0em;
-  padding-left: 60px;
-  padding-top: 5px;
-  padding-bottom: 0.1em;
-  color: black;
   background-color: #D6DCE5;
-  font-size: 1em;
-  font-weight: bold;
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-position: 15px center;
   background-image: url("assets/box_images/license.png");
 }
 
 .funding_box{
-  margin: 1em 0;
   border: 3px solid #b5a8d6;
   border-left: 10px solid #b5a8d6;
-  border-radius: 10px;
-  background-color: white;
 }
 
 .funding_box_header{
-  margin-left: 0em;
-  padding-left: 60px;
-  padding-top: 5px;
-  padding-bottom: 0.1em;
-  color: black;
   background-color: #b5a8d6;
-  font-size: 1em;
-  font-weight: bold;
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-position: 15px center;
   background-image: url("assets/box_images/funding.png");
 }
 
 .github_repo_box{
-  margin: 1em 0;
   border: 3px solid #7ce364;
   border-left: 10px solid #7ce364;
-  border-radius: 10px;
-  background-color: white;
 }
 
 .github_repo_box_header{
-  margin-left: 0em;
-  padding-left: 60px;
-  padding-top: 5px;
-  padding-bottom: 0.1em;
-  color: black;
   background-color: #7ce364;
-  font-size: 1em;
-  font-weight: bold;
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-position: 15px center;
   background-image: url("assets/box_images/github.png");
 }
 
 .keyword_box{
-  margin: 1em 0;
   border: 3px solid #f08f9c;
   border-left: 10px solid #f08f9c;
-  border-radius: 10px;
-  background-color: white;
 }
 
 .keyword_box_header{
-  margin-left: 0em;
-  padding-left: 60px;
-  padding-top: 5px;
-  padding-bottom: 0.1em;
-  color: black;
   background-color: #f08f9c;
-  font-size: 1em;
-  font-weight: bold;
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-position: 15px center;
   background-image: url("assets/box_images/magnifying-glass.png");
 }
 
 .prereq_box{
-  margin: 1em 0;
   border: 3px solid #b5a8d6;
   border-left: 10px solid #b5a8d6;
-  border-radius: 10px;
-  background-color: white;
 }
 
 .prereq_box_header{
-  margin-left: 0em;
-  padding-left: 60px;
-  padding-top: 5px;
-  padding-bottom: 0.1em;
-  color: black;
   background-color: #b5a8d6;
-  font-size: 1em;
-  font-weight: bold;
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-position: 15px center;
   background-image: url("assets/box_images/checklist.png");
 }
 
 .ai_box{
-  margin: 1em 0;
   border: 3px solid #7ce364;
   border-left: 10px solid #7ce364;
-  border-radius: 10px;
-  background-color: white;
 }
 
 .ai_box_header{
-  margin-left: 0em;
-  padding-left: 60px;
-  padding-top: 5px;
-  padding-bottom: 0.1em;
-  color: black;
   background-color: #7ce364;
-  font-size: 1em;
-  font-weight: bold;
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-position: 15px center;
   background-image: url("assets/box_images/ai.png");
 }
 
 .reproducibility_box{
-  margin: 1em 0;
   border: 3px solid #D6DCE5;
   border-left: 10px solid #D6DCE5;
-  border-radius: 10px;
-  background-color: white;
 }
 
 .reproducibility_box_header{
-  margin-left: 0em;
-  padding-left: 60px;
-  padding-top: 5px;
-  padding-bottom: 0.1em;
-  color: black;
   background-color: #D6DCE5;
-  font-size: 1em;
-  font-weight: bold;
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-position: 15px center;
   background-image: url("assets/box_images/reproducibility.png");
 }
 
