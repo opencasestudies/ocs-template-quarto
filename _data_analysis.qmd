@@ -62,7 +62,7 @@ Note if there is any context (e.g., a script) that the learner should also provi
 
 <u>Suggested Prompt:</u>
 
-```
+```{.code}
 Suggested prompt that learners will be able to copy and paste
 ```
 
