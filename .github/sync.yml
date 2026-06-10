@@ -36,6 +36,8 @@ group:
         dest: _glossary_table.qmd
       - source: _suggested_hw.qmd
         dest: _suggested_hw.qmd
+      - source: _acknowledgements.qmd
+        dest: _acknowledgements.qmd
       - source: _quarto.yml
         dest: _quarto.yml
       - source: glossary.yml
