@@ -43,3 +43,6 @@ format:
     toc: true
     toc-location: left
     license: "CC BY-NC 4.0"
+
+filters:
+  - auto-ai-box-note.lua
