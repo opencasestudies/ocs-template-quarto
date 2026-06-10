@@ -65,6 +65,7 @@ For the overall content of the Open Case Study, each portion of the case study i
   * Provides an example of a custom definition box
   * Provides an example of citing a reference
   * Provides examples of using the glossary extension to define terms
+  * Provides an example of labeling a code chunk with the filename of where that code is from
 * [ ] _main_question.qmd
 * [ ] _los.qmd
   * [ ] _data_science_los.qmd
