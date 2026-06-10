@@ -55,20 +55,18 @@ How to prompt and validate an AI chatbot
 :::
 :::{.inner_block}
 
-<u>Context:</u>
+**_Context:_**
 Provide context here
 
 Note if there is any context (e.g., a script) that the learner should also provide the chatbot in addition to the prompt
 
-<u>Suggested Prompt:</u>
+**_Suggested Prompt:_**
 
-::: {.code}
-```{.code-overflow-wrap}
+```{ .default .code-overflow-wrap }
 Suggested prompt that learners will be able to copy and paste
 ```
-:::
 
-<u>Validation:</u>
+**_Validation:_**
 Provide guidance to learners on how they should check or validate the response they have received from AI
 
 :::
