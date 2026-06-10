@@ -26,7 +26,7 @@ In these background citations, you may want to reference information like [knuth
 
 This template also utilizes a [quarto extension](https://github.com/debruine/quarto-glossary) to enable some glossary functionality. {{< glossary "Term 1" >}} is an example where if you click and hold "Term 1", the definition stored in `glossary.yml` for "Term 1" will be displayed. `{{< glossary Term2 >}}` will unlock the same functionality for `Term2` also stored in `glossary.yml`. Adding terms to `glossary.yml` uses the following pattern. Note the two spaces at the beginning of each definition line.
 
-```{ .default filename = "glossary.yml"}
+```{ .default filename="glossary.yml"}
 Term 1: |
   Definition of Term 1
 Term2: |
