@@ -2,16 +2,16 @@
 function Div(el)
   if el.classes:includes("ai_box") then
 
-    -- Margin note (as Markdown)
+    -- Margin note (as Markdown) (no leading spaces so it will format during rendering)
 
     local md = [[
-      **AI chatbot use Disclaimer:**
+**AI chatbot use Disclaimer:**
 
-      * Never provide sensitive data to an AI chatbot
-      * Provide clear context about your question and why you are asking
-      * Be ready to iterate your prompt
-      * Chatbots often make mistakes so be sure to carefully consider their responses, test code / validate when possible
-      * Asking a chatbot the same question more than once (even with the same prompt!) can result in different answers, so keep that in mind for reproducibility considerations
+* Never provide sensitive data to an AI chatbot
+* Provide clear context about your question and why you are asking
+* Be ready to iterate your prompt
+* Chatbots often make mistakes so be sure to carefully consider their responses, test code / validate when possible
+* Asking a chatbot the same question more than once (even with the same prompt!) can result in different answers, so keep that in mind for reproducibility considerations
     ]]
 
     -- Parse Markdown into Pandoc AST blocks
