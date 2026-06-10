@@ -47,7 +47,9 @@ In this section, you may want to provide learners with some guidance on ways to 
 * help them refactor code
 * help them simplify or suggest ways to validate code
 
-So, we have developed an AI box that you can pop in whenever you want to do something like this. Note, this is using a tabset approach so that one tab provides background, a suggested prompt, and guidance on how to evaluate or validate the AI's responses. The second tab is providing an important disclaimer about AI use within an analysis.
+So, we have developed an AI box that you can pop in whenever you want to do something like this. Note that **every time** an `.ai_box` is used throughout the case study, a `lua` filter will automatically add an AI use disclaimer/margin note to accompany the box during rendering.
+
+You will want to the use the `{ .default .code-overflow-wrap }` next to the three backticks exactly to make sure that the suggested prompts have a copy button and have wrapped text instead of scroll text
 
 :::{.ai_box}
 ::::{.ai_box_header}
@@ -71,8 +73,6 @@ Provide guidance to learners on how they should check or validate the response t
 
 ::::
 :::
-
-Note that **every time** an `.ai_box` is used throughout the case study, a `lua` filter will automatically add an AI use disclaimer/margin note to accompany the box during rendering.
 
 
 Finally, you may want to provide information about reproducibility considerations .... this box may be appropriate in several places throughout the case study, but perhaps you'll want a note right before summary. Use something like the following for such cases (though you may want to rename the header within `reproducibility_box_header` depending on your specific use case):
