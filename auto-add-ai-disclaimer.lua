@@ -12,7 +12,8 @@ function Div(el)
 * Recognize that you may need to iteratively improve your prompt to reach the desired output.
 * Chatbots may produce inaccurate, out-of-date, or incomplete information. Always evaluate their responses critically, test generated code, and validate information using reliable sources.
 * Asking a chatbot the same question more than once (even with the same prompt!) can result in different answers, so be sure to document what you can for the sake of reproducibility.
-    ]]
+ * Keep track of the models you use (including versions) and be transparent about it your AI use in your work.
+     ]]
 
     -- Parse Markdown into Pandoc AST blocks
     local blocks = pandoc.read(md).blocks
