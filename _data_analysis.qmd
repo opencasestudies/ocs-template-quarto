@@ -53,7 +53,7 @@ You will want to the use the `{ .default .code-overflow-wrap }` next to the thre
 
 :::{.ai_box}
 ::::{.ai_box_header}
-How to prompt and validate an AI chatbot
+AI use considerations
 ::::
 ::::{.inner_block}
 
@@ -75,11 +75,11 @@ Provide guidance to learners on how they should check or validate the response t
 :::
 
 
-Finally, you may want to provide information about reproducibility considerations .... this box may be appropriate in several places throughout the case study, but perhaps you'll want a note right before summary. Use something like the following for such cases (though you may want to rename the header within `reproducibility_box_header` depending on your specific use case):
+Finally, you may want to provide information about reproducibility considerations .... this box may be appropriate in several places throughout the case study, but perhaps you'll want a note right before summary. Use something like the following for such cases:
 
 :::{.reproducibility_box}
 ::::{.reproducibility_box_header}
-Reproducibility consideration / connection
+Reproducibility considerations
 ::::
 ::::{.inner_block}
 Here you'll spotlight the reproducibility consideration or thought...This could be a note about needing a specific script or container or what reproducibility concept this is related to (e.g., file management, etc.)
