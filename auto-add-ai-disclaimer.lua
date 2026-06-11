@@ -11,7 +11,7 @@ function Div(el)
 * Be specific in your prompts and ask the chatbot to help you understand code not simply just provide it.
 * Be ready to iterate your prompt
 * Chatbots may produce inaccurate, out-of-date, or incomplete information. Always evaluate their responses critically, test generated code, and validate information using reliable sources.
-* Asking a chatbot the same question more than once (even with the same prompt!) can result in different answers, so keep that in mind for reproducibility considerations
+* Asking a chatbot the same question more than once (even with the same prompt!) can result in different answers, so be sure to document what you can for the sake of reproducibility.
     ]]
 
     -- Parse Markdown into Pandoc AST blocks
