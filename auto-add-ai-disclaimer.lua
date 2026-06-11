@@ -10,7 +10,7 @@ function Div(el)
 * Never provide sensitive data to a public AI chatbot.
 * Provide clear context about your question and why you are asking
 * Be ready to iterate your prompt
-* Chatbots often make mistakes so be sure to carefully consider their responses, test code / validate when possible
+* Chatbots may produce inaccurate, out-of-date, or incomplete information. Always evaluate their responses critically, test generated code, and validate information using reliable sources.
 * Asking a chatbot the same question more than once (even with the same prompt!) can result in different answers, so keep that in mind for reproducibility considerations
     ]]
 
