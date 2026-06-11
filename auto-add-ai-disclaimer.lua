@@ -7,7 +7,7 @@ function Div(el)
     local md = [[
 **AI chatbot use Disclaimer:**
 
-* Never provide sensitive data to an AI chatbot
+* Never provide sensitive data to a public AI chatbot.
 * Provide clear context about your question and why you are asking
 * Be ready to iterate your prompt
 * Chatbots often make mistakes so be sure to carefully consider their responses, test code / validate when possible
