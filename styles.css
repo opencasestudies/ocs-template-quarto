@@ -36,6 +36,14 @@
   background-color: RoyalBlue;
 }
 
+.emphasis_block {
+    padding: 1em;
+    padding-top: .5em;
+    border: 1px grey;
+    background: #E8E8E8;
+    color: black;
+}
+
 .main_question{
   margin: 1em 0;
   border: 3px solid #7ce364;
