@@ -1,10 +1,10 @@
 <!--
-Don't adjust the HTML in this file or the table header, only the markdown table contents
+Don't adjust the shortcode or the table header in this file, only the markdown table contents
 -->
 
-<div class="emphasis_block">
+::: {.emphasis_block}
 
-<details><summary>Summarizing answers to the main questions of the case study </summary>
+::: {.details summary="Summarizing answers to the main questions of the case study"}
 
 ## **Main Questions Revisited**
 
@@ -19,6 +19,6 @@ Don't adjust the HTML in this file or the table header, only the markdown table 
 Link to a cheatsheet / worksheet from OTTR Cheatsheets that educators can have learners fill out with what they think the answers are?
 -->
 
-</details>
+:::
 
-</div>
+:::

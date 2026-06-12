@@ -1,10 +1,10 @@
 <!--
-Don't adjust the HTML in this file or the table header, only the markdown table contents
+Don't adjust the shortcode or the table header in this file, only the markdown table contents
 -->
 
-<div class="emphasis_block">
+::: {.emphasis_block}
 
-<details><summary>Objectives map linking case study learning objectives to sections of the case study </summary>
+::: {.details summary="Objectives map linking case study learning objectives to sections of the case study"}
 
 ## **Objectives Map**
 
@@ -14,6 +14,6 @@ Don't adjust the HTML in this file or the table header, only the markdown table 
 | Another term                         | Description of its activity                                   | [Data Wrangling](https://www.opencasestudies.org/ocs-template-quarto/#data-wrangling) |
 | Another learning objective concept   | Another description of this one's activity                    | [Data Visualization](https://www.opencasestudies.org/ocs-template-quarto/#data-visualization) |
 
-</details>
+:::
 
-</div>
+:::
