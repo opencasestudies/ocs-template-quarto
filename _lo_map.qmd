@@ -1,3 +1,4 @@
+
 <div class="emphasis_block">
 
 <details><summary>Objectives map linking case study learning objectives to sections of the case study </summary>

@@ -1,3 +1,4 @@
+
 <div class="emphasis_block">
 
 <details><summary>Summarizing answers to the main questions of the case study </summary>
