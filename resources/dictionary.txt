@@ -1,6 +1,9 @@
 acknowledgements
+ai
 automations
 Bioinformatics
+chatbot
+Chatbots
 cheatsheet
 css
 custimization
@@ -30,6 +33,8 @@ prereq
 quarto
 qmd
 repo
+reproducibility
+Reproducibility
 Rmd
 RStudio
 subdir
