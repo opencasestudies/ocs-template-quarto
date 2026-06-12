@@ -22,12 +22,13 @@ include-sections:
 
 {{< include _ocs_frontmatter.qmd >}}
 
-
 {{< include _motivation.qmd >}}
 
 {{< include _main_question.qmd >}}
 
 {{< include _los.qmd >}}
+
+{{< include _lo_map.qmd >}}
 
 {{< include _packages.qmd >}}
 
@@ -70,6 +71,8 @@ include-sections:
 :::
 
 {{< include _summary.qmd >}}
+
+{{< include _main_qs_answers_table.qmd >}}
 
 {{< include _suggested_hw.qmd >}}
 
