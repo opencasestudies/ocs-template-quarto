@@ -1,4 +1,4 @@
-::: {.emphasis_block}
+<div class="emphasis_block">
 
 <details><summary>Summarizing answers to the main questions of the case study </summary>
 
@@ -17,4 +17,4 @@ Link to a cheatsheet / worksheet from OTTR Cheatsheets that educators can have l
 
 </details>
 
-:::
+</div>
