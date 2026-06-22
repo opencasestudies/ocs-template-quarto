@@ -48,4 +48,3 @@ format:
 
 filters:
   - auto-add-ai-disclaimer.lua
-  - details

@@ -3,13 +3,13 @@ title: "**Biomedical Open Case Studies: {Fill In Title}**"
 bibliography: resources/references.bib
 include-sections:
   stat-los: false
-  lo-map: false
+  lo-map: true
   data-import: true
   data-exploration: false
   data-wrangling: true
   data-viz: true
   data-analysis: true
-  main-q-table: false
+  main-q-table: true
 ---
 
 <!--
