@@ -2,9 +2,9 @@
 Don't adjust the shortcode or the table header in this file, only the markdown table contents
 -->
 
-::: {.details summary="Objectives map linking case study learning objectives to sections of the case study"}
-
 ## **Objectives Map**
+
+::: {.details summary="Objectives map linking case study learning objectives to sections of the case study"}
 
 | Learning objective concept           | You will practice this by ....                                | Section                |
 | :----------------------------------- | :-------------------------------------------------------------|:-----------------------|

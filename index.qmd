@@ -3,11 +3,13 @@ title: "**Biomedical Open Case Studies: {Fill In Title}**"
 bibliography: resources/references.bib
 include-sections:
   stat-los: false
+  lo-map: false
   data-import: true
   data-exploration: false
   data-wrangling: true
   data-viz: true
   data-analysis: true
+  main-q-table: false
 ---
 
 <!--
@@ -28,7 +30,11 @@ include-sections:
 
 {{< include _los.qmd >}}
 
+::: {.content-hidden unless-meta="include-sections.lo-map"}
+
 {{< include _lo_map.qmd >}}
+
+:::
 
 {{< include _packages.qmd >}}
 
@@ -72,7 +78,11 @@ include-sections:
 
 {{< include _summary.qmd >}}
 
+::: {.content-hidden unless-meta="include-sections.main-q-table"}
+
 {{< include _main_qs_answers_table.qmd >}}
+
+:::
 
 {{< include _suggested_hw.qmd >}}
 
