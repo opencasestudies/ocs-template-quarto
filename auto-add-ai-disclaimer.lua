@@ -9,7 +9,7 @@ function Div(el)
 
 * Follow any guidelines or policies for permitted AI use and disclosure as specified by your team, institution, funding organization, or publisher.
 * Keep track of the models you use (including versions) and be transparent about AI use in your work.
-* Never provide sensitive patient or student data to a public AI chatbot. Passwords, credentials, API keys, unpublished manuscripts or grants, and other proporietary code or internal documents should also not be provided to a public AI chatbot. 
+* Never provide sensitive data to a public AI chatbot. <details><summary>Examples of sensitive data include</summary> patient or student data, passwords, credentials, API keys, unpublished manuscripts or grants, and other proporietary code or internal documents.</details> 
 * Be specific in your prompts and ask the chatbot to help you understand code, instead of simply providing it. Do not include AI-generated code in production, analysis, or reporting without first reviewing, testing, and understanding it.
 * Exercise caution in testing and using AI-generated code that installs packages, accessess or modifies files or data, uses credentials, or sends information over the internet.
 * Chatbots may produce inaccurate, out-of-date, incomplete, or unnecessarily complicated information. All responses should be treated as unverified until checked critically. Always validate the existence and relevance of suggested citations or packages, test and simplify generated code or functions, and validate factual information using reliable sources.
