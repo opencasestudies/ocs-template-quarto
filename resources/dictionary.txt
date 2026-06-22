@@ -32,6 +32,7 @@ ottrproject
 prereq
 quarto
 qmd
+qs
 repo
 reproducibility
 Reproducibility
