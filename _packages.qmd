@@ -1,4 +1,5 @@
-# Packages and Setup
+# **Packages and Setup**
+***
 
 <!--
 load all the packages used in the case study analysis in the code chunk below
