@@ -7,6 +7,13 @@
     "text": "Prerequisites\n\n\nPrerequisites\n\n\nAdd a list of prerequisites here."
   },
   {
+    "objectID": "index.html#objectives-map",
+    "href": "index.html#objectives-map",
+    "title": "Biomedical Open Case Studies: {Fill In Title}",
+    "section": "Objectives Map",
+    "text": "Objectives Map\n\n\n\nObjectives map linking case study learning objectives to sections of the case study\n\n\n\n\nLearning objective concept\nYou will practice this by ….\nSection\n\n\n\n\nTerm related to a learning objective\nDescription of action or activity that will reinforce that LO\nData Import\n\n\nAnother term\nDescription of its activity\nData Wrangling\n\n\nAnother learning objective concept\nAnother description of this one’s activity\nData Visualization\n\n\n\n\n\n\n\nWe will begin by loading the packages that we will need:\n\n#add library() calls\nlibrary(here)\n\nhere() starts at /home\n\n\n\n\n\nPackage\nUse\n\n\n\n\n{Package Name}\n{Package use}\n\n\n{Package Name}\n{Package use}\n\n\n\nThe first time we use a function, we will use the :: to indicate which package we are using. Unless we have overlapping function names, this is not necessary, but we will include it here to be informative about where the functions we will use come from."
+  },
+  {
     "objectID": "index.html#synopsis",
     "href": "index.html#synopsis",
     "title": "Biomedical Open Case Studies: {Fill In Title}",
@@ -19,6 +26,13 @@
     "title": "Biomedical Open Case Studies: {Fill In Title}",
     "section": "Summary Plot",
     "text": "Summary Plot"
+  },
+  {
+    "objectID": "index.html#main-questions-revisited",
+    "href": "index.html#main-questions-revisited",
+    "title": "Biomedical Open Case Studies: {Fill In Title}",
+    "section": "Main Questions Revisited",
+    "text": "Main Questions Revisited\n\n\n\nSummarizing answers to the main questions of the case study\n\n\n\n\n\n\n\n\n\nQuestion\nCurrent answer\nCaveat\n\n\n\n\nReiteration or restatement of main question\nDescribe the answer based on case study activities\nList any important caveats potentially connecting to earlier limitations\n\n\nAnother main question\nDescription of its activity\nCaveats for this Q & A\n\n\nAnother of the main questions\nAnother description of this one’s activity\nQ & A specific caveats"
   },
   {
     "objectID": "index.html#advancement-exercises",

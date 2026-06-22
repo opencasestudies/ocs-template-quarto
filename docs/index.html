@@ -206,7 +206,10 @@ gtag('config', 'G-5R5B1JFCGE', { 'anonymize_ip': true});
   <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link active" data-scroll-target="#prerequisites">Prerequisites</a></li>
   <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation"><strong>Motivation</strong></a></li>
   <li><a href="#main-question" id="toc-main-question" class="nav-link" data-scroll-target="#main-question"><strong>Main Question</strong></a></li>
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives"><strong>Learning Objectives</strong></a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives"><strong>Learning Objectives</strong></a>
+  <ul class="collapse">
+  <li><a href="#objectives-map" id="toc-objectives-map" class="nav-link" data-scroll-target="#objectives-map"><strong>Objectives Map</strong></a></li>
+  </ul></li>
   <li><a href="#context" id="toc-context" class="nav-link" data-scroll-target="#context"><strong>Context</strong></a></li>
   <li><a href="#what-are-the-data" id="toc-what-are-the-data" class="nav-link" data-scroll-target="#what-are-the-data"><strong>What are the data?</strong></a></li>
   <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations"><strong>Limitations</strong></a></li>
@@ -219,6 +222,7 @@ gtag('config', 'G-5R5B1JFCGE', { 'anonymize_ip': true});
   <ul class="collapse">
   <li><a href="#synopsis" id="toc-synopsis" class="nav-link" data-scroll-target="#synopsis"><strong>Synopsis</strong></a></li>
   <li><a href="#summary-plot" id="toc-summary-plot" class="nav-link" data-scroll-target="#summary-plot"><strong>Summary Plot</strong></a></li>
+  <li><a href="#main-questions-revisited" id="toc-main-questions-revisited" class="nav-link" data-scroll-target="#main-questions-revisited"><strong>Main Questions Revisited</strong></a></li>
   </ul></li>
   <li><a href="#continued-learning" id="toc-continued-learning" class="nav-link" data-scroll-target="#continued-learning"><strong>Continued Learning</strong></a>
   <ul class="collapse">
@@ -416,7 +420,7 @@ Images or videos may be helpful so this includes an example of including an imag
 <p>Images are very helpful within this section….</p>
 <p><a href="img/motivation_map_of_monitors.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="img/motivation_map_of_monitors.jpg" class="img-fluid" alt="Map showing location of air pollution monitors across the US." width="800"></a></p>
 <p>In these background citations, you may want to reference information like <a href="https://doi.org/10.1093/comjnl/27.2.97">knuth, 1984</a> <span class="citation" data-cites="knuth84">(<a href="#ref-knuth84" role="doc-biblioref">Knuth 1984</a>)</span>. These will automatically be added into the References subsection of the Additional Information section near the end of the case study. It is good to also add a direct link the the reference where appropriate. See the <code>references.bib</code> file for where <code>@knuth84</code> came from. Tools like Zotero can help you get the bib version of the citation and some journals will help you copy paste it more readily.</p>
-<p>This template also utilizes a <a href="https://github.com/debruine/quarto-glossary">quarto extension</a> to enable some glossary functionality. <button class="glossary"><span class="def"></span>Term 1</button> is an example where if you click and hold “Term 1”, the definition stored in <code>glossary.yml</code> for “Term 1” will be displayed. <code></code> will unlock the same functionality for <code>Term2</code> also stored in <code>glossary.yml</code>. Adding terms to <code>glossary.yml</code> uses the following pattern. Note the two spaces at the beginning of each definition line.</p>
+<p>This template also utilizes a <a href="https://github.com/debruine/quarto-glossary">quarto extension</a> to enable some glossary functionality. <button class="glossary"><span class="def">Definition of Term 1</span>Term 1</button> is an example where if you click and hold “Term 1”, the definition stored in <code>glossary.yml</code> for “Term 1” will be displayed. <code></code> will unlock the same functionality for <code>Term2</code> also stored in <code>glossary.yml</code>. Adding terms to <code>glossary.yml</code> uses the following pattern. Note the two spaces at the beginning of each definition line.</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>glossary.yml</strong></pre>
@@ -488,6 +492,45 @@ Previous Open Case Studies do not have an example of this.
 </ol>
 <hr>
 <!--
+Don't adjust the shortcode or the table header in this file, only the markdown table contents
+-->
+<section id="objectives-map" class="level2">
+<h2 class="anchored" data-anchor-id="objectives-map"><strong>Objectives Map</strong></h2>
+<div class="emphasis_block">
+<details>
+<summary>
+Objectives map linking case study learning objectives to sections of the case study
+</summary>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Learning objective concept</th>
+<th style="text-align: left;">You will practice this by ….</th>
+<th style="text-align: left;">Section</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Term related to a learning objective</td>
+<td style="text-align: left;">Description of action or activity that will reinforce that LO</td>
+<td style="text-align: left;"><a href="https://www.opencasestudies.org/ocs-template-quarto/#data-import">Data Import</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Another term</td>
+<td style="text-align: left;">Description of its activity</td>
+<td style="text-align: left;"><a href="https://www.opencasestudies.org/ocs-template-quarto/#data-wrangling">Data Wrangling</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Another learning objective concept</td>
+<td style="text-align: left;">Another description of this one’s activity</td>
+<td style="text-align: left;"><a href="https://www.opencasestudies.org/ocs-template-quarto/#data-visualization">Data Visualization</a></td>
+</tr>
+</tbody>
+</table>
+</details>
+</div>
+<hr>
+<!--
 load all the packages used in the case study analysis in the code chunk below
 (try to use tidyverse over base R).
 Fill out the table and add rows as necessary providing a link to the source and briefly explaining its use for each package
@@ -523,6 +566,7 @@ Fill out the table and add rows as necessary providing a link to the source and 
 More details on the background on the case study topic as well its relation to biomedical science.
 Videos or images may be helpful so this includes an example of embedding a video.
 -->
+</section>
 </section>
 <section id="context" class="level1">
 <h1><strong>Context</strong></h1>
@@ -834,6 +878,51 @@ Connect back to the main questions and what answers the analysis might have
 construct a plot here that summarizes the conclusions found in the data, if applicable
 (connecting to a main question if possible)
 -->
+<hr>
+<!--
+Don't adjust the shortcode or the table header in this file, only the markdown table contents
+-->
+</section>
+<section id="main-questions-revisited" class="level2">
+<h2 class="anchored" data-anchor-id="main-questions-revisited"><strong>Main Questions Revisited</strong></h2>
+<div class="emphasis_block">
+<details>
+<summary>
+Summarizing answers to the main questions of the case study
+</summary>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 32%">
+<col style="width: 38%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question</th>
+<th style="text-align: left;">Current answer</th>
+<th style="text-align: left;">Caveat</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Reiteration or restatement of main question</td>
+<td style="text-align: left;">Describe the answer based on case study activities</td>
+<td style="text-align: left;">List any important caveats potentially connecting to earlier limitations</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Another main question</td>
+<td style="text-align: left;">Description of its activity</td>
+<td style="text-align: left;">Caveats for this Q &amp; A</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Another of the main questions</td>
+<td style="text-align: left;">Another description of this one’s activity</td>
+<td style="text-align: left;">Q &amp; A specific caveats</td>
+</tr>
+</tbody>
+</table>
+</details>
+</div>
 <hr>
 </section>
 </section>
