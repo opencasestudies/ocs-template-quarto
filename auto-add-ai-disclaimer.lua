@@ -8,7 +8,7 @@ function Div(el)
 **AI chatbot use Disclaimer:**
 
 * Follow any guidelines or policies for permitted AI use and disclosure as specified by your team, institution, funding organization, or publisher.
-* Keep track of the models you use (including versions) and be transparent about AI use in your work.
+* Keep track of the models you use (including versions) and [be transparent about AI use in your work](https://aiattribution.github.io/).
 * Never provide sensitive data to a public AI chatbot. <details><summary>Examples of sensitive data include</summary> patient or student data, passwords, credentials, API keys, unpublished manuscripts or grants, and other proporietary code or internal documents.</details> 
 * Be specific in your prompts and ask the chatbot to help you understand code, instead of simply providing it. Do not include AI-generated code in production, analysis, or reporting without first reviewing, testing, and understanding it.
 * Exercise caution in testing and using AI-generated code that installs packages, accessess or modifies files or data, uses credentials, or sends information over the internet.
