@@ -416,7 +416,7 @@ Images or videos may be helpful so this includes an example of including an imag
 <p>Images are very helpful within this section….</p>
 <p><a href="img/motivation_map_of_monitors.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="img/motivation_map_of_monitors.jpg" class="img-fluid" alt="Map showing location of air pollution monitors across the US." width="800"></a></p>
 <p>In these background citations, you may want to reference information like <a href="https://doi.org/10.1093/comjnl/27.2.97">knuth, 1984</a> <span class="citation" data-cites="knuth84">(<a href="#ref-knuth84" role="doc-biblioref">Knuth 1984</a>)</span>. These will automatically be added into the References subsection of the Additional Information section near the end of the case study. It is good to also add a direct link the the reference where appropriate. See the <code>references.bib</code> file for where <code>@knuth84</code> came from. Tools like Zotero can help you get the bib version of the citation and some journals will help you copy paste it more readily.</p>
-<p>This template also utilizes a <a href="https://github.com/debruine/quarto-glossary">quarto extension</a> to enable some glossary functionality. <button class="glossary"><span class="def"></span>Term 1</button> is an example where if you click and hold “Term 1”, the definition stored in <code>glossary.yml</code> for “Term 1” will be displayed. <code></code> will unlock the same functionality for <code>Term2</code> also stored in <code>glossary.yml</code>. Adding terms to <code>glossary.yml</code> uses the following pattern. Note the two spaces at the beginning of each definition line.</p>
+<p>This template also utilizes a <a href="https://github.com/debruine/quarto-glossary">quarto extension</a> to enable some glossary functionality. <button class="glossary"><span class="def">Definition of Term 1</span>Term 1</button> is an example where if you click and hold “Term 1”, the definition stored in <code>glossary.yml</code> for “Term 1” will be displayed. <code></code> will unlock the same functionality for <code>Term2</code> also stored in <code>glossary.yml</code>. Adding terms to <code>glossary.yml</code> uses the following pattern. Note the two spaces at the beginning of each definition line.</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>glossary.yml</strong></pre>
@@ -793,13 +793,21 @@ Explain how this analysis helps answer the main questions posed earlier in the c
 <div class="no-row-height column-margin column-container"><div class="">
 <p><strong>AI chatbot use Disclaimer:</strong></p>
 <ul>
-<li>Never provide sensitive data to a public AI chatbot.</li>
-<li>Be specific in your prompts and ask the chatbot to help you understand code, instead of simply providing it.</li>
+<li>Follow any guidelines or policies for permitted AI use and disclosure as specified by your team, institution, funding organization, or publisher.</li>
+<li>Keep track of the models you use (including versions) and <a href="https://aiattribution.github.io/">be transparent about AI use in your work</a>.</li>
+<li>Never provide sensitive data to a public AI chatbot.
+<details>
+<summary>
+Examples of sensitive data include
+</summary>
+patient or student data, passwords, credentials, API keys, unpublished manuscripts or grants, and other proporietary code or internal documents.
+</details></li>
+<li>Be specific in your prompts and ask the chatbot to help you understand code, instead of simply providing it. Do not include AI-generated code in production, analysis, or reporting without first reviewing, testing, and understanding it.</li>
+<li>Exercise caution in testing and using AI-generated code that installs packages, accessess or modifies files or data, uses credentials, or sends information over the internet.</li>
+<li>Chatbots may produce inaccurate, out-of-date, incomplete, or unnecessarily complicated information. All responses should be treated as unverified until checked critically. Always validate the existence and relevance of suggested citations or packages, test and simplify generated code or functions, and validate factual information using reliable sources.</li>
 <li>Recognize that you may need to iteratively improve your prompt to reach the desired output.</li>
 <li>The confidence of a chatbot does not indicate if its responses are correct. They may also agree with you when you are wrong.</li>
-<li>Chatbots may produce inaccurate, out-of-date, incomplete, or unnecessarily complicated information. Always evaluate their responses critically, test and simplify generated code, and validate information using reliable sources.</li>
 <li>Asking a chatbot the same question more than once (even with the same prompt!) can result in different answers, so be sure to document what you can for the sake of reproducibility.</li>
-<li>Keep track of the models you use (including versions) and be transparent about AI use in your work.</li>
 </ul>
 </div></div><p>Finally, you may want to provide information about reproducibility considerations …. this box may be appropriate in several places throughout the case study, but perhaps you’ll want a note right before summary. Use something like the following for such cases:</p>
 <div class="reproducibility_box">
@@ -933,7 +941,7 @@ Knuth, Donald E. 1984. <span>“Literate Programming.”</span> <em>Comput. J.</
  collate  en_US.UTF-8
  ctype    en_US.UTF-8
  tz       Etc/UTC
- date     2026-06-22
+ date     2026-06-29
  pandoc   3.1.1 @ /usr/local/bin/ (via rmarkdown)
 
 ─ Packages ───────────────────────────────────────────────────────────────────
