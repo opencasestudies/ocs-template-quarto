@@ -12,7 +12,7 @@ function Div(el)
 * Never provide sensitive data to a public AI chatbot. <details><summary>Examples</summary> Patient or student data, passwords, credentials, API keys, unpublished manuscripts or grants, and other proprietary code or internal documents.</details> 
 * Be specific in your prompts and ask the chatbot to help you understand code, instead of simply providing it. Do not include AI-generated code in production, analysis, or reporting without first reviewing, testing, and understanding it.
 * Exercise extra caution in testing and using AI-generated code in certain instances.
-details><summary>Examples </summary> Code that installs packages, accesses or modifies files or data, uses credentials, or sends information over the internet.</details> 
+<details><summary>Examples </summary> Code that installs packages, accesses or modifies files or data, uses credentials, or sends information over the internet.</details> 
 * Chatbots may produce inaccurate, out-of-date, incomplete, or unnecessarily complicated information. Check responses critically. 
  <details><summary>Examples </summary> Always validate the existence and relevance of suggested citations or packages, test and simplify generated code or functions, and validate factual information using reliable sources.</details> 
 * Recognize that you may need to iteratively improve your prompt to reach the desired output.
