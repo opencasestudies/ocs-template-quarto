@@ -5,7 +5,7 @@ function Div(el)
     -- Margin note (as Markdown) (no leading spaces so it will format during rendering)
 
     local md = [[
-**AI chatbot use Disclaimer:**
+**AI Use Disclaimer:**
 
 * Follow guidelines/policies for AI use as specified by your team, institution, funding organization, or publisher.
 * [Disclose](https://aiattribution.github.io/) your AI use (including model and versions)
