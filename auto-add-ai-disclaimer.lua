@@ -7,15 +7,17 @@ function Div(el)
     local md = [[
 **AI chatbot use Disclaimer:**
 
-* Follow any guidelines or policies for permitted AI use and disclosure as specified by your team, institution, funding organization, or publisher.
-* Keep track of the models you use (including versions) and [be transparent about AI use in your work](https://aiattribution.github.io/).
-* Never provide sensitive data to a public AI chatbot. <details><summary>Examples of sensitive data include</summary> patient or student data, passwords, credentials, API keys, unpublished manuscripts or grants, and other proporietary code or internal documents.</details> 
+* Follow guidelines/policies for AI use as specified by your team, institution, funding organization, or publisher.
+* [Disclose](https://aiattribution.github.io/) your AI use (including model and versions)
+* Never provide sensitive data to a public AI chatbot. <details><summary>Examples</summary> Patient or student data, passwords, credentials, API keys, unpublished manuscripts or grants, and other proprietary code or internal documents.</details> 
 * Be specific in your prompts and ask the chatbot to help you understand code, instead of simply providing it. Do not include AI-generated code in production, analysis, or reporting without first reviewing, testing, and understanding it.
-* Exercise caution in testing and using AI-generated code that installs packages, accessess or modifies files or data, uses credentials, or sends information over the internet.
-* Chatbots may produce inaccurate, out-of-date, incomplete, or unnecessarily complicated information. All responses should be treated as unverified until checked critically. Always validate the existence and relevance of suggested citations or packages, test and simplify generated code or functions, and validate factual information using reliable sources.
+* Exercise extra caution in testing and using AI-generated code in certain instances.
+details><summary>Examples </summary> Code that installs packages, accesses or modifies files or data, uses credentials, or sends information over the internet.</details> 
+* Chatbots may produce inaccurate, out-of-date, incomplete, or unnecessarily complicated information. Check responses critically. 
+ <details><summary>Examples </summary> Always validate the existence and relevance of suggested citations or packages, test and simplify generated code or functions, and validate factual information using reliable sources.</details> 
 * Recognize that you may need to iteratively improve your prompt to reach the desired output.
 * The confidence of a chatbot does not indicate if its responses are correct. They may also agree with you when you are wrong.
-* Asking a chatbot the same question more than once (even with the same prompt!) can result in different answers, so be sure to document what you can for the sake of reproducibility.
+* A chatbot may respond differently to the same repeated prompt. Be sure to document what you can for the sake of reproducibility.
      ]]
 
     -- Parse Markdown into Pandoc AST blocks
