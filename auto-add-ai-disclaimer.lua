@@ -12,12 +12,14 @@ function Div(el)
 
 * Check AI responses critically, as they may be inaccurate, out-of-date, incomplete, or unnecessarily complicated 
  <details><summary>Examples </summary> 
-
- - Always validate the existence and relevance of suggested citations or packages
- -  Review, test, possibly simplify, and work to understand generated code or functions
- - Validate factual information using reliable sources</details> 
- -  Exercise extra caution with code in certain instances: code that installs packages, accesses or modifies files or data, uses credentials, or sends information over the internet
- </details>
+ 
+ * Always validate the existence and relevance of suggested citations or packages
+ * Review, test, possibly simplify, and work to understand generated code or functions
+ * Validate factual information using reliable sources
+ 
+ </details> 
+ 
+* Exercise extra caution with code in certain instances: code that installs packages, accesses or modifies files or data, uses credentials, or sends information over the internet
 * [Disclose](https://aiattribution.github.io/) your AI use (including model and versions)
 * Never provide sensitive data to a public AI tool. <details><summary>Examples</summary> Patient or student data, passwords, credentials, API keys, unpublished manuscripts or grants, and other proprietary code or internal documents.</details> 
 * Be specific in your prompts and ask the chatbot and to help you understand the code
