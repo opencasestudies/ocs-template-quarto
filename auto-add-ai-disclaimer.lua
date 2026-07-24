@@ -20,6 +20,8 @@ function Div(el)
     </details> 
     
 * [Disclose](https://aiattribution.github.io/) your AI use (including model and versions).
+
+
 * Never provide sensitive data to a public AI tool. <details><summary>Examples</summary> Patient or student data, passwords, credentials, API keys, unpublished manuscripts or grants, and other proprietary code or internal documents.</details> 
 * Be specific in your prompts and ask the AI tool to help you understand the code.
 * The confidence of an AI tool does not indicate if its responses are correct. They may also agree with you when you are wrong.
