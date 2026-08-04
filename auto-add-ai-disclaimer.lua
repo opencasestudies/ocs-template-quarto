@@ -13,7 +13,7 @@ function Div(el)
 * Check AI responses critically, as they may be inaccurate, out-of-date, incomplete, or unnecessarily complicated.
 ::: {.callout-note collapse="true"}
  
-* Always validate the existence and relevance of suggested citations or packages.
+  * Always validate the existence and relevance of suggested citations or packages.
 * Review, test, possibly simplify, and work to understand generated code or functions.
 * Validate factual information using reliable sources.
 * Exercise extra caution with code in certain instances: code that installs packages, accesses or modifies files or data, uses credentials, or sends information over the internet.
