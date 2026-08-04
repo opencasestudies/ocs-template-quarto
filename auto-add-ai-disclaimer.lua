@@ -11,7 +11,7 @@ function Div(el)
 <details> <summary>Examples</summary> Your team or lab, institution, funding organization, or publisher. These requirements should take precedence over our suggestions. </details>
 
 * Check AI responses critically, as they may be inaccurate, out-of-date, incomplete, or unnecessarily complicated.
-    <details><summary>Examples </summary> 
+::: {.callout-note collapse="true"}
  
 * Always validate the existence and relevance of suggested citations or packages.
 * Review, test, possibly simplify, and work to understand generated code or functions.
