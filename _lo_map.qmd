@@ -4,11 +4,10 @@ Don't adjust the shortcode or the table header in this file, only the markdown t
 
 ## **Objectives Map**
 
-::: {.emphasis_block}
+::: {.callout-note collapse="true" title="Objectives Map: Where It Is Covered"}
 
-<details><summary>Objectives map linking case study learning objectives to sections of the case study</summary>
 
-| Learning objective concept           | You will practice this by ....                                | Section                |
+| Learning Goal          | Applications / Practice                            | Location                |
 | :----------------------------------- | :-------------------------------------------------------------|:-----------------------|
 | Term related to a learning objective | Description of action or activity that will reinforce that LO | [Data Import](https://www.opencasestudies.org/ocs-template-quarto/#data-import) |
 | Another term                         | Description of its activity                                   | [Data Wrangling](https://www.opencasestudies.org/ocs-template-quarto/#data-wrangling) |

@@ -4,7 +4,7 @@ Don't adjust the shortcode or the table header in this file, only the markdown t
 
 ## **Main Questions Revisited**
 
-::: {.emphasis_block}
+::: {.callout-note collapse="true" title="Main Questions Revisited: What Did We Learn"}
 
 <details><summary>Summarizing answers to the main questions of the case study</summary>
 

@@ -13,6 +13,7 @@ include-sections:
 ---
 
 <!--
+  Update above to exclude optional or new sections by changing from true to false.
   Update the various qmd documents below with each component of a Bio-OCS case study.
   Besides filling in the title in the header of this document, no other changes should be necessary within this file.
   Use the `include-sections` within the header to toggle section inclusion/exclusion as needed.
