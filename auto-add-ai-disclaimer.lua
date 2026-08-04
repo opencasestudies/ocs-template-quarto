@@ -16,7 +16,7 @@ function Div(el)
 * Always validate the existence and relevance of suggested citations or packages.
 * Review, test, possibly simplify, and work to understand generated code or functions.
     * Validate factual information using reliable sources.
-    * Exercise extra caution with code in certain instances: code that installs packages, accesses or modifies files or data, uses credentials, or sends information over the internet.
+* Exercise extra caution with code in certain instances: code that installs packages, accesses or modifies files or data, uses credentials, or sends information over the internet.
     </details> 
     
 * [Disclose](https://aiattribution.github.io/) your AI use (including model and versions).
