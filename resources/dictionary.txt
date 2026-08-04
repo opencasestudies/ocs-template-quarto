@@ -2,6 +2,7 @@ acknowledgements
 ai
 automations
 Bioinformatics
+callout
 chatbot
 Chatbots
 cheatsheet
