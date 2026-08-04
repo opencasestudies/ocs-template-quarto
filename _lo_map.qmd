@@ -13,7 +13,6 @@ Don't adjust the shortcode or the table header in this file, only the markdown t
 | Another term                         | Description of its activity                                   | [Data Wrangling](https://www.opencasestudies.org/ocs-template-quarto/#data-wrangling) |
 | Another learning objective concept   | Another description of this one's activity                    | [Data Visualization](https://www.opencasestudies.org/ocs-template-quarto/#data-visualization) |
 
-</details>
 
 :::
 
