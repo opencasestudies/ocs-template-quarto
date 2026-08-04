@@ -17,7 +17,7 @@ function Div(el)
   * Review, test, possibly simplify, and work to understand generated code or functions.
   * Validate factual information using reliable sources.
   * Exercise extra caution with code in certain instances: code that installs packages, accesses or modifies files or data, uses credentials, or sends information over the internet.
-:::
+  </details>
     
 * [Disclose](https://aiattribution.github.io/) your AI use (including model and versions).
 
