@@ -2,6 +2,7 @@ acknowledgements
 ai
 automations
 Bioinformatics
+callout
 chatbot
 Chatbots
 cheatsheet
@@ -32,6 +33,7 @@ ottrproject
 prereq
 quarto
 qmd
+qs
 repo
 reproducibility
 Reproducibility
