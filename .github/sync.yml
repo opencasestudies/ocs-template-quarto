@@ -28,6 +28,18 @@ group:
         dest: _brand.yml
       - source: styles.css
         dest: styles.css
+      - source: index.qmd
+        dest: index.qmd
+      - source: _packages.qmd
+        dest: _packages.qmd
+      - source: _lo_map.qmd
+        dest: _lo_map.qmd
+      - source: _main_qs_answers_table.qmd
+        dest: _main_qs_answers_table.qmd
+      - source: auto-add-ai-disclaimer.lua
+        dest: auto-add-ai-disclaimer.lua
+      - source: resources/dictionary.txt
+        dest: resources/dictionary.txt
   # Repositories to receive changes
     repos: |
       opencasestudies/ocs-bio-single-cell
