@@ -39,6 +39,7 @@ reproducibility
 Reproducibility
 Rmd
 RStudio
+shortcode
 subdir
 tabset
 th
