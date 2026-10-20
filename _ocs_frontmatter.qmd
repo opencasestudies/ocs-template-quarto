@@ -40,11 +40,11 @@ This work is funded through the National Institutes of Health, specifically the 
 ::::
 :::
 
-#### Citation
+#### Cite
 
 {{< include _cite.qmd >}}
 
-#### Access  
+#### GitHub  
 
 <!--
 UPDATE: ACCESS Information (github source and data)
@@ -93,7 +93,7 @@ Case study reviewers
 
 * [Reviewer 1] provided their expert review throughout the development of this case study for the __ topic.
 * [Reviewer 2] provided their expert review in the planning, analysis, and narrative phases of development of this case study for the __ topic.
-* Ethicist [Reviewer n] provided their expert review for the Ethical Considerations section.
+* Ethicist [Jodyn Platt] provided their expert review of the ethical considerations of the case study.
 * [Reviewer q] provided their expert review on the educational strategies used throughout this case study.
 
 <!--
@@ -102,7 +102,7 @@ Author information
 
 [Reviewer 1]: some_url.html
 [Reviewer 2]: some_other_url.html
-[Reviewer n]: another_url.html
+[Jodyn Platt]: https://sph.umich.edu/faculty-profiles/platt-jodyn.html 
 [Reviewer q]: final_url.html
 
 ::::
