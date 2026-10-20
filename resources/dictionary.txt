@@ -11,6 +11,7 @@ custimization
 cwrigh
 Dockerfile
 Dockerhub
+Ethicist
 favicon
 frontmatter
 GH
