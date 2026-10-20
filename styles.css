@@ -148,14 +148,23 @@
   background-image: url("assets/box_images/warning.png");
 }
 
-.license_box{
+.license_box,
+.reviewer_box{
   border: 3px solid #D6DCE5;
   border-left: 10px solid #D6DCE5;
 }
 
-.license_box_header{
+.license_box_header,
+.reviewer_box_header{
   background-color: #D6DCE5;
+}
+
+.license_box_header{
   background-image: url("assets/box_images/license.png");
+}
+
+.reviewer_box_header{
+  background-image: url("assets/box_images/thumbs_up.png");
 }
 
 .funding_box{
