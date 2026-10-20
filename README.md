@@ -27,6 +27,9 @@ This specific template sets up the style and content template for Biomedical Ope
     * [ ] line 11
     * [ ] line 28
 
+* [ ] Verify that within the content `.qmd` files, `***` is used for spacing lines under Level 1 (`#`) and Level 2 (`##`) section headers only.
+* [ ] Verify that within the content `.qmd` files, `***` is used for spacing lines at the end of sections that start with a Level 1 (`#`) section header before the next section with a Level 1 (`#`) section header (.e.g., at the end of the `_data_import.qmd` file. 
+
 The rest of these files will largely not need updated though a brief description of what each contains is provided.
 
 * `_bibliography.qmd` -- automatically adds the references that are included in `resources/references.bib` and referenced within the content `.qmd` files.
