@@ -40,11 +40,11 @@ This work is funded through the National Institutes of Health, specifically the 
 ::::
 :::
 
-#### Citation
+#### Cite
 
 {{< include _cite.qmd >}}
 
-#### GitHub Repository 
+#### GitHub  
 
 <!--
 UPDATE: ACCESS Information (github source and data)
@@ -79,6 +79,31 @@ Keywords
 * ...Keyword n
 
 <!-- Note that keywords should be the types of words that you'd use for a conference abstract or grant submission; focus on the emerging tech or best practice that is being covered as well as the specific part of the task/analysis/visualization that is being shown. Just a quick way to overview what skills/topics are part of the case study -->
+
+::::
+:::
+
+#### Reviewers
+
+:::{.reviewer_box}
+::::{.reviewer_box_header}
+Case study reviewers
+::::
+::::{.inner_block}
+
+* [Reviewer 1] provided their expert review throughout the development of this case study for the __ topic.
+* [Reviewer 2] provided their expert review in the planning, analysis, and narrative phases of development of this case study for the __ topic.
+* Ethicist [Jodyn Platt] provided their expert review of the ethical considerations of the case study.
+* [Reviewer q] provided their expert review on the educational strategies used throughout this case study.
+
+<!--
+Author information
+-->
+
+[Reviewer 1]: some_url.html
+[Reviewer 2]: some_other_url.html
+[Jodyn Platt]: https://sph.umich.edu/faculty-profiles/platt-jodyn.html 
+[Reviewer q]: final_url.html
 
 ::::
 :::
