@@ -4,6 +4,7 @@ This file creates a motivating resources reference box that lists citations moti
 For citations that you want in this box
 1. add the bib entry for the citation to the resources/motivational_refs.bib file
 2. Use the citation key or bib ID for that reference (the one you'd use with an at sign for an in text citation), together with a short topic note about the resource with the `addNoteBefore()` function call below to add a short bolded description in front of the rendered citation
+3. Ensure that each of your motivating references are referenced with the usual `@citation_key` approach within the `_motivation.qmd` file
 -->
 
 <!--
