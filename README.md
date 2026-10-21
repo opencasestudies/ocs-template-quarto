@@ -70,6 +70,7 @@ For the overall content of the Open Case Study, each portion of the case study i
   * Provides an example of citing a reference
   * Provides examples of using the glossary extension to define terms
   * Provides an example of labeling a code chunk with the filename of where that code is from
+  * [ ] Verify that you have referenced each motivating reference / resource within this section
 * [ ] _motivational_refs.qmd
   * [ ] Need to update the `addNoteBefore` function calls at the bottom of the file based on references in `resources/motivational_refs.bib`. Follow instructions at the top of the file to make sure citations are added to the box created by this file.
 * [ ] _main_question.qmd
