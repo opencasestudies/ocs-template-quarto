@@ -51,6 +51,7 @@
 .definition_box,
 .disclaimer_box,
 .license_box,
+.reviewer_box,
 .funding_box,
 .github_repo_box,
 .keyword_box,
@@ -84,6 +85,7 @@
 .definition_box_header,
 .disclaimer_box_header,
 .license_box_header,
+.reviewer_box_header,
 .funding_box_header,
 .github_repo_box_header,
 .keyword_box_header,
@@ -148,14 +150,23 @@
   background-image: url("assets/box_images/warning.png");
 }
 
-.license_box{
+.license_box,
+.reviewer_box{
   border: 3px solid #D6DCE5;
   border-left: 10px solid #D6DCE5;
 }
 
-.license_box_header{
+.license_box_header,
+.reviewer_box_header{
   background-color: #D6DCE5;
+}
+
+.license_box_header{
   background-image: url("assets/box_images/license.png");
+}
+
+.reviewer_box_header{
+  background-image: url("assets/box_images/thumbs_up.png");
 }
 
 .funding_box{
@@ -298,7 +309,17 @@
   background-color: #f08f9c;
 }
 
+/* 7. reviewers */
+.frontmatter-tabs .nav-tabs li:nth-child(7) a {
+  background-color: #D6DCE5;
+}
+
 /* Active tab styling */
 .frontmatter-tabs .nav-tabs li a.active {
   font-weight: bold;
+}
+
+/* Strip lines from under subheading anchor links */
+h1, h2, h3, h4, .anchored, .anchorjs-link {
+  border-bottom: none !important;
 }
