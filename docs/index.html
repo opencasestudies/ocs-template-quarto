@@ -440,8 +440,9 @@ Images or videos may be helpful so this includes an example of including an imag
 </div>
 <p>Images are very helpful within this section….</p>
 <p><a href="img/motivation_map_of_monitors.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="img/motivation_map_of_monitors.jpg" class="img-fluid" alt="Map showing location of air pollution monitors across the US." width="800"></a></p>
-<p>In these background citations, you may want to reference information like <a href="https://doi.org/10.1093/comjnl/27.2.97">knuth, 1984</a> <span class="citation" data-cites="knuth84">(<a href="#ref-knuth84" role="doc-biblioref">Knuth 1984</a>)</span>. These will automatically be added into the References subsection of the Additional Information section near the end of the case study. It is good to also add a direct link the the reference where appropriate. See the <code>references.bib</code> file for where <code>@knuth84</code> came from. Tools like Zotero can help you get the bib version of the citation and some journals will help you copy paste it more readily.</p>
-<p>This template also utilizes a <a href="https://github.com/debruine/quarto-glossary">quarto extension</a> to enable some glossary functionality. <button class="glossary"><span class="def"></span>Term 1</button> is an example where if you click and hold “Term 1”, the definition stored in <code>glossary.yml</code> for “Term 1” will be displayed. The shortcode used within the text that is rendered automatically by the extension is {{&lt; glossary “Term 1” &gt;}}. Similarly {{&lt; glossary Term2 &gt;}} will unlock the same functionality for <code>Term2</code> also stored in <code>glossary.yml</code>: <button class="glossary"><span class="def">Definition of Term 2</span>Term2</button>. Adding terms to <code>glossary.yml</code> uses the following pattern. Note the two spaces at the beginning of each definition line.</p>
+<p>In these background citations, you may want to reference information like <a href="https://doi.org/10.1093/comjnl/27.2.97">knuth, 1984</a> <span class="citation" data-cites="knuth84">(<a href="#ref-knuth84" role="doc-biblioref"><strong>knuth84?</strong></a>)</span>. These will automatically be added into the References subsection of the Additional Information section near the end of the case study. It is good to also add a direct link the the reference where appropriate. See the <code>references.bib</code> file for where <code>@knuth84</code> came from. Tools like Zotero can help you get the bib version of the citation and some journals will help you copy paste it more readily.</p>
+<p>If we do not reference the motivating references in this section, they <strong>will not</strong> appear in the references box at the end of the section <span class="citation" data-cites="Wright_etal_2024 Savonen_etal_2023">(<a href="#ref-Wright_etal_2024" role="doc-biblioref"><strong>Wright_etal_2024?</strong></a>; <a href="#ref-Savonen_etal_2023" role="doc-biblioref"><strong>Savonen_etal_2023?</strong></a>)</span></p>
+<p>This template also utilizes a <a href="https://github.com/debruine/quarto-glossary">quarto extension</a> to enable some glossary functionality. <button class="glossary"><span class="def">Definition of Term 1</span>Term 1</button> is an example where if you click and hold “Term 1”, the definition stored in <code>glossary.yml</code> for “Term 1” will be displayed. The shortcode used within the text that is rendered automatically by the extension is {{&lt; glossary “Term 1” &gt;}}. Similarly {{&lt; glossary Term2 &gt;}} will unlock the same functionality for <code>Term2</code> also stored in <code>glossary.yml</code>: <button class="glossary"><span class="def">Definition of Term 2</span>Term2</button>. Adding terms to <code>glossary.yml</code> uses the following pattern. Note the two spaces at the beginning of each definition line.</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>glossary.yml</strong></pre>
@@ -453,6 +454,76 @@ Images or videos may be helpful so this includes an example of including an imag
 </div>
 <p>We’ve added code to print out all of the terms stored in <code>glossary.yml</code> as a table within the Additional Information section before listing references. Note that this is in place of the table functionality from the extension and this will display every term in the <code>.yml</code> file whether it is referenced in the case study or not.</p>
 <hr>
+<!--
+This file creates a motivating resources reference box that lists citations motivating this case study.
+
+For citations that you want in this box:
+1. Add the bib entry for the citation to the resources/motivational_refs.bib file
+2. Use `addNoteBefore()` function call below to add a bold descriptive header in front of the rendered citation. Arguments should be (1) the citation key or bib ID for that reference (the one you'd use with '@' for an in-text citation) and (2) a short topic note about the resource. Example: `addNoteBefore('Wright_etal_2024', 'Open Case Studies project:');`
+3. Ensure that each of your motivating references are referenced with the usual `@citation_key` approach within the `_motivation.qmd` file
+4. Do not edit other content in this file
+-->
+<!--
+No edits are needed for this .reference_box section
+Note that this reference box and multiple bib file setup is supported by the multibib quarto extension
+-->
+<div class="reference_box">
+<div class="reference_box_header">
+<p>Motivating resources:</p>
+</div>
+<div class="inner_block">
+<p>This case study is motivated by these guiding resources to discuss the following topics:</p>
+<div id="refs-motivational" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Savonen_etal_2023" class="csl-entry" role="listitem">
+Savonen, Candace, Carrie Wright, Ava M. Hoffman, John Muschelli, Katherine Cox, Frederick J. Tan, and Jeffrey T. Leek. 2023. <span>“Open-Source Tools for Training Resources – OTTR.”</span> <em>Journal of Statistics and Data Science Education</em> 31 (1): 57–65. <a href="https://doi.org/10.1080/26939169.2022.2118646">https://doi.org/10.1080/26939169.2022.2118646</a>.
+</div>
+<div id="ref-Wright_etal_2024" class="csl-entry" role="listitem">
+Wright, Carrie, Qier Meng, Michael R. Breshock, Lyla Atta, Margaret A. Taub, Leah R. Jager, John Muschelli, and Stephanie C. Hicks. 2024. <span>“Open Case Studies: Statistics and Data Science Education Through Real-World Applications.”</span> <em>Journal of Statistics and Data Science Education</em> 32 (4): 331–44. <a href="https://doi.org/10.1080/26939169.2024.2394541">https://doi.org/10.1080/26939169.2024.2394541</a>.
+</div>
+</div>
+</div>
+</div>
+<!--
+Script suggested by Google Gemini with style updates from Ava
+Documentation written in collaboration with Google Gemini.
+
+Only edit the `addNoteBefore()` function calls within this script in the "//Inject your specific notes using the citation keys" portion of the script
+
+Script is below the reference box where quarto will render the citations so it makes changes to that rendered HTML material
+-->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  /**
+   * Helper function to inject bolded text cleanly above citations
+   * @param {string} refId - The citation key from your .bib file
+   * @param {string} text - the short label (topic) you want to display before the citation as bolded text
+   */
+  function addNoteBefore(refId, text) {
+    //Quarto adds 'ref-' to the front of citation keys when rendering the HTML elements
+    //search and find element in rendered document using the provided citation key from .bib file to find the combined ref- string
+    //that reference is named el
+    const el = document.getElementById('ref-' + refId);
+    // verify that an element corresponding to that citation key is found. Won't break rendering if citation key is missing, misspelled, etc.
+    if (el) {
+      // create a new, empty HTML div named noteDiv
+      const noteDiv = document.createElement('div');
+      // apply custom styling to the new div such as using display:block to force the label onto its own line above the citation and font-weight: bold to bold the label
+      noteDiv.style.cssText = "margin-top: 20px; color: #000000; font-size: 0.9em; text-indent: 0; padding-left: 0; display: block; font-weight: bold;";
+      // add label to noteDiv
+      noteDiv.innerHTML = text;
+      // insert the html div with the bolded label before the first child node of the reference (author's name)
+      el.insertBefore(noteDiv, el.firstChild);
+      el.style.cssText = "margin-left: -20px;";
+    }
+  }
+
+  // Inject specific notes using the corresponding citation keys by calling the function defined above
+  addNoteBefore('Wright_etal_2024', 'Open Case Studies project:');
+  addNoteBefore('Savonen_etal_2023', 'OTTR tool:');
+  // Add or remove citation notes here as needed for each reference in resources/motivational_refs.bib following the pattern addNoteBefore('{Reference ID from .bib file}', '{Topic description}:');
+
+});
+</script>
 <!--
 Describe the main biological questions for this case study.
 What will our analysis aim to answer? There can be more than 2.
@@ -1065,7 +1136,7 @@ Automatically include the packages table from _packages.qmd?
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
 <hr>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="refs-main" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-knuth84" class="csl-entry" role="listitem">
 Knuth, Donald E. 1984. <span>“Literate Programming.”</span> <em>Comput. J.</em> 27 (2): 97–111. <a href="https://doi.org/10.1093/comjnl/27.2.97">https://doi.org/10.1093/comjnl/27.2.97</a>.
 </div>
