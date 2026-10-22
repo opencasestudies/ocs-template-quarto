@@ -46,7 +46,8 @@ The rest of these files will largely not need updated though a brief description
 * `img/`: This is where images should go for the case study background, motivation, etc.
   - [ ] Replace the `mainplot.png` from the template with your main plot
   - [ ] Add any additional case study specific (non-template) images in this directory
-* `resources/`: Files related to OTTR checks (e.g., dictionary and a file of URLs to exclude/ignore from checking.). Also the `references.bib` file for citations.
+* `resources/`: Files related to OTTR checks (e.g., dictionary and a file of URLs to exclude/ignore from checking.). **Includes the `references.bib` file for overall citations and `motivational_refs.bib` for motivating resource specific citations.**
+* `extensions/`: Files associated with the glossary and multibib extensions that support some extended styling / functionality.
 * `.github/`: workflow files supporting the OTTR template automations
 * `docs/`: the rendered files that GitHub pages will use -- refreshed through OTTR template automations.
 
@@ -69,6 +70,9 @@ For the overall content of the Open Case Study, each portion of the case study i
   * Provides an example of citing a reference
   * Provides examples of using the glossary extension to define terms
   * Provides an example of labeling a code chunk with the filename of where that code is from
+  * [ ] Verify that you have referenced each motivating reference / resource within this section
+* [ ] _motivational_refs.qmd
+  * [ ] Need to update the `addNoteBefore` function calls at the bottom of the file based on references in `resources/motivational_refs.bib`. Follow instructions at the top of the file to make sure citations are added to the box created by this file.
 * [ ] _main_question.qmd
 * [ ] _los.qmd
   * [ ] _data_science_los.qmd
