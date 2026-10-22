@@ -98,9 +98,9 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1f5e8a4531b23126c45ce8230f2b000b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-1f5e8a4531b23126c45ce8230f2b000b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-1f5e8a4531b23126c45ce8230f2b000b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f38e40af2365a3388f3112a053437ac7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-f38e40af2365a3388f3112a053437ac7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f38e40af2365a3388f3112a053437ac7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/glossary/glossary.css" rel="stylesheet">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
@@ -279,16 +279,13 @@ gtag('config', 'G-5R5B1JFCGE', { 'anonymize_ip': true});
   For documentation on quarto syntax possibilities, use https://quarto.org/docs/authoring/markdown-basics.html.
   Examples in the documentation range from including images and videos to including margin notes, annotating code, and linking within a document.
 -->
-<section id="section" class="level4 outline">
-<h4 class="outline anchored" data-anchor-id="section"></h4>
+<div class="outline">
 <!--
 Replace the `img/mainplot.png` image with the appropriate case study image or consider using ottrpal::include_slide() with a publicly viewable slide deck as needed.
 See image here for example: https://www.opencasestudies.org/ocs-bp-school-shootings-dashboard/
 -->
 <p><a href="img/mainplot.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="img/mainplot.png" class="img-fluid" alt="Map showing amount of pollution across the US localized to monitors." width="800"></a></p>
-</section>
-<section id="section-1" class="level4">
-<h4 class="anchored" data-anchor-id="section-1"></h4>
+</div>
 <!--
 The disclaimer block, license block, and funding info generally will not need updated
 
@@ -400,7 +397,6 @@ Include bioOCSdata package information once ready/applicable
 </div>
 </div>
 </div>
-</section>
 <section id="prerequisites" class="level2">
 <h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
 <div class="prereq_box">
@@ -441,7 +437,7 @@ Images or videos may be helpful so this includes an example of including an imag
 <p>Images are very helpful within this section….</p>
 <p><a href="img/motivation_map_of_monitors.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="img/motivation_map_of_monitors.jpg" class="img-fluid" alt="Map showing location of air pollution monitors across the US." width="800"></a></p>
 <p>In these background citations, you may want to reference information like <a href="https://doi.org/10.1093/comjnl/27.2.97">knuth, 1984</a> <span class="citation" data-cites="knuth84">(<a href="#ref-knuth84" role="doc-biblioref">Knuth 1984</a>)</span>. These will automatically be added into the References subsection of the Additional Information section near the end of the case study. It is good to also add a direct link the the reference where appropriate. See the <code>references.bib</code> file for where <code>@knuth84</code> came from. Tools like Zotero can help you get the bib version of the citation and some journals will help you copy paste it more readily.</p>
-<p>This template also utilizes a <a href="https://github.com/debruine/quarto-glossary">quarto extension</a> to enable some glossary functionality. <button class="glossary"><span class="def"></span>Term 1</button> is an example where if you click and hold “Term 1”, the definition stored in <code>glossary.yml</code> for “Term 1” will be displayed. The shortcode used within the text that is rendered automatically by the extension is {{&lt; glossary “Term 1” &gt;}}. Similarly {{&lt; glossary Term2 &gt;}} will unlock the same functionality for <code>Term2</code> also stored in <code>glossary.yml</code>: <button class="glossary"><span class="def">Definition of Term 2</span>Term2</button>. Adding terms to <code>glossary.yml</code> uses the following pattern. Note the two spaces at the beginning of each definition line.</p>
+<p>This template also utilizes a <a href="https://github.com/debruine/quarto-glossary">quarto extension</a> to enable some glossary functionality. <button class="glossary"><span class="def">Definition of Term 1</span>Term 1</button> is an example where if you click and hold “Term 1”, the definition stored in <code>glossary.yml</code> for “Term 1” will be displayed. The shortcode used within the text that is rendered automatically by the extension is {{&lt; glossary “Term 1” &gt;}}. Similarly {{&lt; glossary Term2 &gt;}} will unlock the same functionality for <code>Term2</code> also stored in <code>glossary.yml</code>: <button class="glossary"><span class="def">Definition of Term 2</span>Term2</button>. Adding terms to <code>glossary.yml</code> uses the following pattern. Note the two spaces at the beginning of each definition line.</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>glossary.yml</strong></pre>
