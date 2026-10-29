@@ -323,3 +323,19 @@
 h1, h2, h3, h4, .anchored, .anchorjs-link {
   border-bottom: none !important;
 }
+
+/* Style all <details> dropdowns */
+details {
+  padding: 1em;
+  padding-top: 0.5em;
+  background: #F1F3F5;
+  color: black;
+  border-radius: 10px;
+}
+
+/* Style the clickable summary line */
+details summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
