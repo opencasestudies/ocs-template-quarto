@@ -42,7 +42,7 @@ This work is funded through the National Institutes of Health, specifically the 
 
 #### Cite
 
-{{< include _cite.qmd >}}
+{{< include content/background/_02a_cite.qmd >}}
 
 #### GitHub  
 
