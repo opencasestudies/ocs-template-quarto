@@ -147,6 +147,7 @@ This work is funded through the National Institutes of Health, specifically the 
 ### Acknowledgments
 
 - [ ] Fill in reviewers for your case study (and links for their websites).
+- [ ] Remove acknowledgment of iconpacks or avataars if not used, include any other websites that you used for images.
 
 We would like to acknowledge [expert 1](website for expert 1), [expert 2](link for expert 2), [expert 3](link for expert 3), ..., and ethicist [Jodyn Platt](https://medschool.umich.edu/profile/3774/jodyn-platt) for their expert review of this case study.
 
