@@ -13,7 +13,7 @@ To cite this case study, please use:
 
 **Author attributions**
 
-Specific attributions are defined in [this document](https://zenodo.org/records/18421449).
+Attributions follow the CRediT framework and are defined in [this document](https://zenodo.org/records/18421449).
 
 - **Author 1**: Conceptualization (equal); formal analysis (lead); methodology (lead); writing - original draft (lead).
 - **Author 2**: 
