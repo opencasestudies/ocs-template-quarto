@@ -108,7 +108,7 @@ For the overall content of the Open Case Study, each portion of the case study i
     
 ## Case study specific README template
 
-Use this template to create a README specific to your case study (removing all of the content above). Confirm that you have done each task listed with a checkbox, and then delete all checkbox task lines.
+Use this template to create a README specific to your case study (removing all of the content above). Confirm that you have done each task listed with a checkbox, and then delete all checkbox task lines. Rename the file to reflect the case study's title rather than referring to the template.
 
 ### Useful Links
 
