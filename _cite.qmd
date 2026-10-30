@@ -10,3 +10,14 @@ To cite this case study, please use:
 {Fill In Authors}. {(YEAR)}. {github source url}. {Title} {(Version)}.
 ::::
 :::
+
+**Author attributions**
+
+Attributions follow the CRediT framework and are defined in [this document](https://zenodo.org/records/18421449).
+
+- **Author 1**: Conceptualization (equal); formal analysis (lead); methodology (lead); writing - original draft (lead).
+- **Author 2**: 
+- **Author 3**: 
+- ... 
+- **Ava Hoffman**: Funding acquisition (support); supervision (equal); writing - review and editing (equal).
+- **Carrie Wright**: Conceptualization (equal); funding acquisition (lead); supervision (equal); writing - review and editing (equal). 
