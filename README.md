@@ -112,7 +112,7 @@ Use this template to create a README specific to your case study (removing all o
 
 ### Useful Links
 
-- [ ] replace "your-url-here" with the correct URL for your case study.
+- [ ] replace "your-url-here" with the correct URLs for your case study.
 
 -   HTML: <https://www.opencasestudies.org/your-url-here/>
 -   GitHub:
