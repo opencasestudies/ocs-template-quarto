@@ -105,3 +105,174 @@ For the overall content of the Open Case Study, each portion of the case study i
   * [ ] Every image ....
     * [ ] has accompanying alt text (using `{fig-alt=""}`)
     * [ ] has lightbox capability enabled (using `{.lightbox}`) so that images can be opened in a larger preview
+    
+## Case study specific README template
+
+Use this template to create a README specific to your case study (removing all of the content above). Confirm that you have done each task listed with a checkbox, and then delete all checkbox task lines. Rename the file to reflect the case study's title rather than referring to the template.
+
+### Useful Links
+
+- [ ] replace "your-url-here" with the correct URLs for your case study.
+
+-   HTML: <https://www.opencasestudies.org/your-url-here/>
+-   GitHub:
+    <https://github.com/opencasestudies/your-url-here>
+
+### Disclaimer
+
+The purpose of the [Open Case
+Studies](https://opencasestudies.github.io) project is **to demonstrate
+the use of various data science methods, tools, and software in the
+context of messy, real-world data**. A given case study does not cover all 
+aspects of the research process, is not claiming to be the most appropriate 
+way to analyze a given data set, and should not be used in the context of 
+making policy or clinical decisions without external consultation from scientific 
+experts or medical care professionals. In addition, due to size constraints, 
+datasets used within a case study may be a subset of the original/full dataset.
+
+### License
+
+This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 [(CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/deed.en) United States License unless otherwise noted.
+
+### Citation
+
+To cite this case study:
+
+- [ ] Add your citation here.
+
+### Funding
+
+This work is funded through the National Institutes of Health, specifically the National Institute of General Medical Sciences: Grant Number 1R25GM160622.
+
+### Acknowledgments
+
+- [ ] Fill in reviewers for your case study (and links for their websites).
+- [ ] Remove acknowledgment of iconpacks or avataars if not used, include any other websites that you used for images.
+
+We would like to acknowledge [expert 1](website for expert 1), [expert 2](link for expert 2), [expert 3](link for expert 3), ..., and ethicist [Jodyn Platt](https://medschool.umich.edu/profile/3774/jodyn-platt) for their expert review of this case study.
+
+We would also like to acknowledge the National Institute of General Medical Sciences for funding this work (1R25GM160622).
+
+Icons are from [iconpacks](https://www.iconpacks.net).
+
+Avatars are from [getavataaars](https://getavataaars.com).
+
+### Title
+
+- [ ] Fill in your title. 
+
+### Prerequisites
+
+- [ ] Fill in your prerequisities.
+
+### Target Audience
+
+- [ ] Fill in your target audience.
+
+### Motivation
+
+- [ ] Fill in short overview of motivation 
+
+### Main Questions
+
+- [ ] Fill in your main questions below. 
+
+The main questions in this case study are the following:
+
+1. ...
+1. ...
+1. ... 
+
+### Learning Objectives
+
+- [ ] Fill in your learning objectives below.
+- [ ] Delete a section if you do not have any learning objectives for that section.
+
+The learning objectives of this case study are the following:
+
+<u>**Data Science Learning Objectives**</u>
+
+1. ...
+1. ...
+1. ...
+
+<u>**Biological/Topical Objectives:**</u>
+
+1. ...
+1. ...
+
+<u>**Statistical Objectives:**</u>
+
+1. ...
+1. ...
+
+### Context 
+
+- [ ] Add an overview of your context here. 
+
+### What are the Data?
+
+- [ ] Add link to data source. 
+- [ ] Include your variables in the table below.
+
+In this case study, we will investigate data about samples from [this data source](data_source_URL) of ...  
+The variables that we will use to answer our questions include:
+
+Variable | Details
+-------- | -------
+**Variable 1** | Description
+**Variable 2** | Description 
+**Variable 3** | Description
+
+### Limitations
+
+- [ ] Give brief overview of limitations here.
+
+### Ethical Considerations
+
+- [ ] Give brief overview of ethical considerations here.
+
+### Packages used in this case study
+
+- [ ] Include your packages in the table below.
+
+Package    | Use
+---------- |-------------
+[package1](package_link1) | Description 
+[package2](package_link2) | Description 
+[package3](package_link3) | Description 
+
+
+### Data Import
+
+- [ ] Provide brief overview of learner tasks in data import here.
+
+### Data Exploration
+
+- [ ] Provide brief overview of learner tasks in data exploration here.
+
+### Data Wrangling
+
+- [ ] Provide brief overview of learner tasks in data wrangling here.
+
+### Data Visualization
+
+- [ ] Provide brief overview of learner tasks in data visualization here.
+
+### Data Analysis
+
+- [ ] Provide brief overview of learner tasks in data analysis here.
+
+### Summary 
+
+- [ ] Provide brief summary of case study here. 
+- [ ] Mention the summary plot here. 
+
+### Continued Learning
+
+- [ ] Note what types of continued learning activities are included here. 
+
+### Other notes and resources
+
+- [ ] Add helpful links here. 
+
