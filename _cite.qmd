@@ -19,5 +19,5 @@ Specific attributions are defined in [this document](https://zenodo.org/records/
 - **Author 2**: 
 - **Author 3**: 
 - ... 
-- **Ava Hoffman**: Funding acquisition (support); supervision (equal); writing - review and editing (equal).
-- **Carrie Wright**: Conceptualization (equal); funding acquisition (lead); supervision (equal); writing - review and editing (equal). 
+- **Ava Hoffman**: Funding acquisition (equal); supervision (equal); writing - review and editing (equal).
+- **Carrie Wright**: Conceptualization (equal); funding acquisition (equal); supervision (equal); writing - review and editing (equal). 
