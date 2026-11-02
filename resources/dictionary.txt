@@ -6,6 +6,7 @@ callout
 chatbot
 Chatbots
 cheatsheet
+CRediT
 css
 custimization
 cwrigh
