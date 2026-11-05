@@ -47,6 +47,9 @@ The rest of these files will largely not need updated though a brief description
   - [ ] Replace the `mainplot.png` from the template with your main plot
   - [ ] Add any additional case study specific (non-template) images in this directory
 * `resources/`: Files related to OTTR checks (e.g., dictionary and a file of URLs to exclude/ignore from checking.). **Includes the `references.bib` file for overall citations, `motivational_refs.bib` for motivating resource specific citations, and `glossary.yml` for a list of glossary terms.**
+    * - [ ] references: updated to include references used in the case study
+    * - [ ] motivational references: updated to include the motivational references used in the case study
+    * - [ ] glossary file: updated definition of terms (if defined and referenced, learners can click on the term and see the definition)
 * `extensions/`: Files associated with the glossary and multibib extensions that support some extended styling / functionality.
 * `.github/`: workflow files supporting the OTTR template automations
 * `docs/`: the rendered files that GitHub pages will use -- refreshed through OTTR template automations.
@@ -82,6 +85,7 @@ All sub-compound .qmd files are in sub-folders within the content folder.
       * [ ] _05a_data_science_los.qmd
       * [ ] _05b_statistical_los.qmd
       * [ ] _05c_biological_los.qmd
+    * [ ] _05d_lo_map.qmd  
     * [ ] _06_context.qmd
       * Provides an example of including a video with Quarto
   * setup_descriptions
@@ -107,8 +111,7 @@ All sub-compound .qmd files are in sub-folders within the content folder.
     * [ ] _19_additional_info.qmd
     * [ ] _19b_glossary_table.qmd
     * [ ] _20_bibliography.qmd
-    * [ ] _21acknowledgements.qmd
-* [ ] glossary.yml: stores terms to be defined where users can click on the term and see the definition.
+    * [ ] _21_acknowledgements.qmd
 
 
 * [ ] **Verify**
