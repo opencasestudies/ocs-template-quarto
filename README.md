@@ -46,7 +46,10 @@ The rest of these files will largely not need updated though a brief description
 * `img/`: This is where images should go for the case study background, motivation, etc.
   - [ ] Replace the `mainplot.png` from the template with your main plot
   - [ ] Add any additional case study specific (non-template) images in this directory
-* `resources/`: Files related to OTTR checks (e.g., dictionary and a file of URLs to exclude/ignore from checking.). **Includes the `references.bib` file for overall citations and `motivational_refs.bib` for motivating resource specific citations.**
+* `resources/`: Files related to OTTR checks (e.g., dictionary and a file of URLs to exclude/ignore from checking.). **Includes the `references.bib` file for overall citations, `motivational_refs.bib` for motivating resource specific citations, and `glossary.yml` for a list of glossary terms.**
+    * - [ ] references: updated to include references used in the case study
+    * - [ ] motivational references: updated to include the motivational references used in the case study
+    * - [ ] glossary file: updated definition of terms (if defined and referenced, learners can click on the term and see the definition)
 * `extensions/`: Files associated with the glossary and multibib extensions that support some extended styling / functionality.
 * `.github/`: workflow files supporting the OTTR template automations
 * `docs/`: the rendered files that GitHub pages will use -- refreshed through OTTR template automations.
@@ -56,49 +59,59 @@ The rest of these files will largely not need updated though a brief description
 
 For the overall content of the Open Case Study, each portion of the case study is split into individual `.qmd` files. They are included in order within the `index.qmd` file. Certain case studies will not have every component, and so we can toggle those on and off using short code and header booleans.  This is mostly for others using our case studies to teach, as they might want to have a version that only has part of the case study.  For our core team, we will likely have all components for our case studies. Below is a list of all of the sub-component `.qmd` files in checklist form. Besides the listed changes below, `index.qmd` should not need updated.
 
+All sub-compound .qmd files are in sub-folders within the content folder. 
+
 * [ ] `index.qmd`
   * [ ] Update Case Study Title
   * [ ] Update any header booleans for section inclusion or add additional short code content-hidden sections as necessary
-* [ ] _main_image.qmd
-  * Provides an example of including images with Quarto
-  * [ ] switch out `mainplot.png` within the `img` directory to be the case study main plot.
-* [ ] _ocs_frontmatter.qmd
-* [ ] _cite.qmd
-* [ ] _motivation.qmd
-  * Provides an example of including images with Quarto (including those that you can click to open in a larger preview)
-  * Provides an example of a custom definition box
-  * Provides an example of citing a reference
-  * Provides examples of using the glossary extension to define terms
-  * Provides an example of labeling a code chunk with the filename of where that code is from
-  * [ ] Verify that you have referenced each motivating reference / resource within this section
-* [ ] _motivational_refs.qmd
-  * [ ] Need to update the `addNoteBefore` function calls at the bottom of the file based on references in `resources/motivational_refs.bib`. Follow instructions at the top of the file to make sure citations are added to the box created by this file.
-* [ ] _main_question.qmd
-* [ ] _los.qmd
-  * [ ] _data_science_los.qmd
-  * [ ] _statistical_los.qmd
-  * [ ] _biological_los.qmd
-* [ ] _packages.qmd
-* [ ] _context.qmd
-  * Provides an example of including a video with Quarto
-* [ ] _data_description.qmd
-* [ ] _limitations.qmd
-* [ ] _bioethics.qmd
-* [ ] _data_import.qmd
-* [ ] _data_exploration.qmd
-* [ ] _data_wrangling.qmd
-  * Provides an example of including code annotations with Quarto
-* [ ] _data_visualization.qmd
-* [ ] _data_analysis.qmd
-  * Provides an example of using a column margin note with Quarto
-  * Provides an example of a custom question opportunity box
-  * Provides an example of a custom AI box
-  * Provides an example of a custom Reproducibility consideration box
-* [ ] _summary.qmd
-* [ ] _suggested_hw.qmd
-* [ ] _additional_info.qmd
-* [ ] _acknowledgements.qmd
-* [ ] glossary.yml: stores terms to be defined where users can click on the term and see the definition.
+* contents
+  * background
+    * [ ] _01_main_image.qmd
+      * Provides an example of including images with Quarto
+      * [ ] switch out `mainplot.png` within the `img` directory to be the case study main plot.
+    * [ ] _02_ocs_frontmatter.qmd
+    * [ ] _02a_cite.qmd
+    * [ ] _03_motivation.qmd
+      * Provides an example of including images with Quarto (including those that you can click to open in a larger preview)
+      * Provides an example of a custom definition box
+      * Provides an example of citing a reference
+      * Provides examples of using the glossary extension to define terms
+      * Provides an example of labeling a code chunk with the filename of where that code is from
+      * [ ] Verify that you have referenced each motivating reference / resource within this section
+    * [ ] _03b_motivational_refs.qmd
+      * [ ] Need to update the `addNoteBefore` function calls at the bottom of the file based on references in `resources/motivational_refs.bib`. Follow instructions at the top of the file to make sure citations are added to the box created by this file.
+    * [ ] _04_main_question.qmd
+    * [ ] _05_los.qmd
+      * [ ] _05a_data_science_los.qmd
+      * [ ] _05b_statistical_los.qmd
+      * [ ] _05c_biological_los.qmd
+    * [ ] _05d_lo_map.qmd  
+    * [ ] _06_context.qmd
+      * Provides an example of including a video with Quarto
+  * setup_descriptions
+    * [ ] _07_data_description.qmd
+    * [ ] _08_limitations.qmd
+    * [ ] _09_bioethics.qmd
+    * [ ] _10_packages.qmd
+  * data_handling
+    * [ ] _11_data_import.qmd
+    * [ ] _12_data_exploration.qmd
+    * [ ] _13_data_wrangling.qmd
+      * Provides an example of including code annotations with Quarto
+    * [ ] _14_data_visualization.qmd
+    * [ ] _15_data_analysis.qmd
+      * Provides an example of using a column margin note with Quarto
+      * Provides an example of a custom question opportunity box
+      * Provides an example of a custom AI box
+      * Provides an example of a custom Reproducibility consideration box
+  * summary_additional_info 
+    * [ ] _16_summary.qmd
+    * [ ] _17_main_qs_answers_table.qmd
+    * [ ] _18_suggested_hw.qmd
+    * [ ] _19_additional_info.qmd
+    * [ ] _19b_glossary_table.qmd
+    * [ ] _20_bibliography.qmd
+    * [ ] _21_acknowledgements.qmd
 
 
 * [ ] **Verify**

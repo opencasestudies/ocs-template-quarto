@@ -7,7 +7,7 @@
 
 library(yaml)
 
-glossary_table <- function(path = "glossary.yml") {
+glossary_table <- function(path = "resources/glossary.yml") {
 
   g <- yaml::read_yaml(path)
   g_sorted <- g[order(names(g))]
@@ -28,5 +28,5 @@ glossary_table <- function(path = "glossary.yml") {
   knitr::asis_output(paste(out, collapse = "\n"))
 }
 
-glossary_table("glossary.yml")
+glossary_table()
 ```

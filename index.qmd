@@ -23,79 +23,79 @@ include-sections:
   Examples in the documentation range from including images and videos to including margin notes, annotating code, and linking within a document.
 -->
 
-{{< include _main_image.qmd >}}
+{{< include content/background/_01_main_image.qmd >}}
 
-{{< include _ocs_frontmatter.qmd >}}
+{{< include content/background/_02_ocs_frontmatter.qmd >}}
 
-{{< include _motivation.qmd >}}
+{{< include content/background/_03_motivation.qmd >}}
 
-{{< include _motivational_refs.qmd >}}
+{{< include content/background/_03b_motivational_refs.qmd >}}
 
-{{< include _main_question.qmd >}}
+{{< include content/background/_04_main_question.qmd >}}
 
-{{< include _los.qmd >}}
+{{< include content/background/_05_los.qmd >}}
 
 ::: {.content-hidden unless-meta="include-sections.lo-map"}
 
-{{< include _lo_map.qmd >}}
+{{< include content/background/_05d_lo_map.qmd >}}
 
 :::
 
-{{< include _packages.qmd >}}
+{{< include content/setup_descriptions/_10_packages.qmd >}}
 
-{{< include _context.qmd >}}
+{{< include content/background/_06_context.qmd >}}
 
-{{< include _data_description.qmd >}}
+{{< include content/setup_descriptions/_07_data_description.qmd >}}
 
-{{< include _limitations.qmd >}}
+{{< include content/setup_descriptions/_08_limitations.qmd >}}
 
-{{< include _bioethics.qmd >}}
+{{< include content/setup_descriptions/_09_bioethics.qmd >}}
 
 ::: {.content-hidden unless-meta="include-sections.data-import"}
 
-{{< include _data_import.qmd >}}
+{{< include content/data_handling/_11_data_import.qmd >}}
 
 :::
 
 ::: {.content-hidden unless-meta="include-sections.data-exploration"}
 
-{{< include _data_exploration.qmd >}}
+{{< include content/data_handling/_12_data_exploration.qmd >}}
 
 :::
 
 ::: {.content-hidden unless-meta="include-sections.data-wrangling"}
 
-{{< include _data_wrangling.qmd >}}
+{{< include content/data_handling/_13_data_wrangling.qmd >}}
 
 :::
 
 ::: {.content-hidden unless-meta="include-sections.data-viz"}
 
-{{< include _data_visualization.qmd >}}
+{{< include content/data_handling/_14_data_visualization.qmd >}}
 
 :::
 
 ::: {.content-hidden unless-meta="include-sections.data-analysis"}
 
-{{< include _data_analysis.qmd >}}
+{{< include content/data_handling/_15_data_analysis.qmd >}}
 
 :::
 
-{{< include _summary.qmd >}}
+{{< include content/summary_additional_info/_16_summary.qmd >}}
 
 ::: {.content-hidden unless-meta="include-sections.main-q-table"}
 
-{{< include _main_qs_answers_table.qmd >}}
+{{< include content/summary_additional_info/_17_main_qs_answers_table.qmd >}}
 
 :::
 
-{{< include _suggested_hw.qmd >}}
+{{< include content/summary_additional_info/_18_suggested_hw.qmd >}}
 
-{{< include _additional_info.qmd >}}
+{{< include content/summary_additional_info/_19_additional_info.qmd >}}
 
-{{< include _glossary_table.qmd >}}
+{{< include content/summary_additional_info/_19b_glossary_table.qmd >}}
 
-{{< include _bibliography.qmd >}}
+{{< include content/summary_additional_info/_20_bibliography.qmd >}}
 
 ## **Session Info**
 ***
@@ -104,4 +104,4 @@ include-sections:
 devtools::session_info()
 ```
 
-{{< include _acknowledgements.qmd >}}
+{{< include content/summary_additional_info/_21_acknowledgements.qmd >}}
