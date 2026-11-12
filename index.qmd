@@ -1,5 +1,6 @@
 ---
 title: "**Biomedical Open Case Studies: {Fill In Title}**"
+lightbox: true
 bibliography: 
   main: resources/references.bib
   motivational: resources/motivational_refs.bib
