@@ -150,7 +150,7 @@ This work is funded through the National Institutes of Health, specifically the 
 - [ ] Remove acknowledgment of iconpacks or avataars if not used, include any other websites that you used for images.
 
 We would like to acknowledge [expert 1](website for expert 1), [expert 2](link for expert 2), [expert 3](link for expert 3), ..., and ethicist [Jodyn Platt](https://medschool.umich.edu/profile/3774/jodyn-platt) for their expert review of this case study.
-
+We would also like to acknowledge Allison Peters for her contributions as project manager for the Bio Open Case Studies.
 We would also like to acknowledge the National Institute of General Medical Sciences for funding this work (1R25GM160622).
 
 Icons are from [iconpacks](https://www.iconpacks.net).
