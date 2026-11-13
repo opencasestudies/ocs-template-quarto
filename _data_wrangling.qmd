@@ -27,7 +27,7 @@ load(here::here("data", "imported", "pm25_data_imported.rda"))
 ```{python}
 pm = pd.read_hdf("data/imported/pm_data_imported.h5", key = "pm")
 ```
-
+ 
 :::
 
 ***
