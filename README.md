@@ -27,9 +27,15 @@ This specific template sets up the style and content template for Biomedical Ope
     * [ ] line 11
     * [ ] line 28
 
+* [ ] Verify that within the content `.qmd` files, `***` is used for spacing lines under Level 1 (`#`) and Level 2 (`##`) section headers only.
+* [ ] Verify that within the content `.qmd` files, `***` is used for spacing lines at the end of sections that start with a Level 1 (`#`) section header before the next section with a Level 1 (`#`) section header (.e.g., at the end of the `_data_import.qmd` file. 
+
 The rest of these files will largely not need updated though a brief description of what each contains is provided.
 
+* `_bibliography.qmd` -- automatically adds the references that are included in `resources/references.bib` and referenced within the content `.qmd` files.
+* `_glossary_table.qmd` -- automatically builds the glossary table for **all** terms that are included in the `glossary.yml` file whether they are defined with the `{{< glossary term >}}` syntax within the content or not.
 * styles.css -- Defines html elements
+* `auto-add-ai-disclaimer.lua` -- this is a lua filter that during rendering automatically adds an AI use disclaimer (defined within the lua filter) as a column margin note next to AI boxes (the element `.ai_box` element defined `styles.css`)
 * _brand.yml -- Logo and favicon definition
 * config_automation.yml	-- Configurations for the OTTR Template automations. Update this file to toggle spelling or url check as well as minimum errors allowed for those checks or to update the docker image.
 
@@ -48,7 +54,8 @@ The rest of these files will largely not need updated though a brief description
 * `img/`: This is where images should go for the case study background, motivation, etc.
   - [ ] Replace the `mainplot.png` from the template with your main plot
   - [ ] Add any additional case study specific (non-template) images in this directory
-* `resources/`: Files related to OTTR checks (e.g., dictionary and a file of URLs to exclude/ignore from checking.).
+* `resources/`: Files related to OTTR checks (e.g., dictionary and a file of URLs to exclude/ignore from checking.). **Includes the `references.bib` file for overall citations and `motivational_refs.bib` for motivating resource specific citations.**
+* `extensions/`: Files associated with the glossary and multibib extensions that support some extended styling / functionality.
 * `.github/`: workflow files supporting the OTTR template automations
 * `docs/`: the rendered files that GitHub pages will use -- refreshed through OTTR template automations.
 
@@ -68,6 +75,12 @@ For the overall content of the Open Case Study, each portion of the case study i
 * [ ] _motivation.qmd
   * Provides an example of including images with Quarto (including those that you can click to open in a larger preview)
   * Provides an example of a custom definition box
+  * Provides an example of citing a reference
+  * Provides examples of using the glossary extension to define terms
+  * Provides an example of labeling a code chunk with the filename of where that code is from
+  * [ ] Verify that you have referenced each motivating reference / resource within this section
+* [ ] _motivational_refs.qmd
+  * [ ] Need to update the `addNoteBefore` function calls at the bottom of the file based on references in `resources/motivational_refs.bib`. Follow instructions at the top of the file to make sure citations are added to the box created by this file.
 * [ ] _main_question.qmd
 * [ ] _los.qmd
   * [ ] _data_science_los.qmd
@@ -87,10 +100,14 @@ For the overall content of the Open Case Study, each portion of the case study i
 * [ ] _data_analysis.qmd
   * Provides an example of using a column margin note with Quarto
   * Provides an example of a custom question opportunity box
+  * Provides an example of a custom AI box
+  * Provides an example of a custom Reproducibility consideration box
 * [ ] _summary.qmd
 * [ ] _suggested_hw.qmd
 * [ ] _additional_info.qmd
 * [ ] _acknowledgements.qmd
+* [ ] glossary.yml: stores terms to be defined where users can click on the term and see the definition.
+
 
 * [ ] **Verify**
   * [ ] Every image ....
