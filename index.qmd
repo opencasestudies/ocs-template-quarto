@@ -24,6 +24,16 @@ include-sections:
   Examples in the documentation range from including images and videos to including margin notes, annotating code, and linking within a document.
 -->
 
+```{css, echo = FALSE}
+.panel-tabset .tab-content{
+  background-color: lightyellow;
+```
+
+```{css, echo = FALSE}
+.panel-tabset.white .tab-content{
+  background-color: white;
+```
+
 {{< include _main_image.qmd >}}
 
 {{< include _ocs_frontmatter.qmd >}}
