@@ -58,7 +58,9 @@
 .prereq_box,
 .ai_box,
 .reproducibility_box,
-.next_steps_box {
+.next_steps_box,
+.decision_point_box,
+.troubleshooting_box {
   margin: 1em 0;
   border-radius: 10px;
   background-color: white;
@@ -92,7 +94,9 @@
 .prereq_box_header,
 .ai_box_header,
 .reproducibility_box_header,
-.next_steps_box_header {
+.next_steps_box_header,
+.decision_point_box_header,
+.troubleshooting_box_header {
   margin-left: 0em;
   padding-left: 60px;
   padding-top: 5px;
@@ -237,6 +241,26 @@
 .next_steps_box_header{
   background-color: #f08f9c;
   background-image: url("assets/box_images/stairs.png");
+}
+
+.decision_point_box{
+  border: 3px solid #bdeffc;
+  border-left: 10px solid #bdeffc;
+}
+
+.decision_point_box_header{
+  background-color: #bdeffc;
+  background-image: url("assets/box_images/path.png");
+}
+
+.troubleshooting_box{
+  border: 3px solid #b5a8d6;
+  border-left: 10px solid #b5a8d6;
+}
+
+.troubleshooting_box_header{
+  background-color: #b5a8d6;
+  background-image: url("assets/box_images/wrench.png");
 }
 
 .scrollable {
