@@ -114,7 +114,7 @@ For the overall content of the Open Case Study, each portion of the case study i
     * [ ] has accompanying alt text (using `{fig-alt=""}`)
     * [ ] has lightbox capability enabled (using `{.lightbox}`) so that images can be opened in a larger preview
     
-## Case study specific README template
+# Case study specific README template
 
 Use this template to create a README specific to your case study (removing all of the content above). Confirm that you have done each task listed with a checkbox, and then delete all checkbox task lines. Update the L1 heading to reflect the case study's title rather than referring to the template.
 
