@@ -56,6 +56,21 @@ pm.to_hdf("data/imported/pm_data_imported.h5", key='pm', format='table')
 
 :::
 
+:::{.decision_point_box}
+::::{.decision_point_box_header}
+Decision point
+::::
+::::{.inner_block}
+Short description of decision point...
+<details>
+<summary>Considerations for this decision point</summary>
+
+More information about this decision point... 
+</details>
+::::
+:::
+
+
 <!--
 NOTE that depending on the size of the data for Bio-OCS, the data may not be in the case study project folder directly
 and may need to be imported from an external source
