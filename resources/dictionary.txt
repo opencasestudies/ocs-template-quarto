@@ -2,10 +2,12 @@ acknowledgements
 ai
 automations
 Bioinformatics
+BioOCS
 callout
 chatbot
 Chatbots
 cheatsheet
+CRediT
 css
 custimization
 cwrigh
@@ -45,6 +47,7 @@ RStudio
 shortcode
 subdir
 tabset
+Teichman
 th
 www
 Zotero
