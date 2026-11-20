@@ -24,6 +24,10 @@ include-sections:
   Examples in the documentation range from including images and videos to including margin notes, annotating code, and linking within a document.
 -->
 
+<!-- 
+The following css code enables the tabset sections to have light yellow by default and white if we use .white when we initiate it the disclaimer tabset section shows how 
+-->
+
 ```{css, echo = FALSE}
 .panel-tabset .tab-content{
   background-color: lightyellow;
