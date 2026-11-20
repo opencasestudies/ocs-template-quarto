@@ -95,8 +95,10 @@ For the overall content of the Open Case Study, each portion of the case study i
 * [ ] _data_import.qmd
 * [ ] _data_exploration.qmd
 * [ ] _data_wrangling.qmd
+  * Provides an example of a click-to-expand box
   * Provides an example of including code annotations with Quarto
 * [ ] _data_visualization.qmd
+  * Provides an example of a click-to-expand box with basic styling
 * [ ] _data_analysis.qmd
   * Provides an example of using a column margin note with Quarto
   * Provides an example of a custom question opportunity box
