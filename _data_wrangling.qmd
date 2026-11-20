@@ -81,8 +81,9 @@ pm.to_csv("data/wrangled/wrangled_data_py.csv")
 Troubleshooting
 ::::
 ::::{.inner_block}
+Short description of issue... 
 <details>
-<summary>Short description of issue </summary>
+<summary>How to troubleshoot </summary>
 
 More information how to troubleshoot... 
 </details>

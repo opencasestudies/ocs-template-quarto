@@ -61,8 +61,9 @@ pm.to_hdf("data/imported/pm_data_imported.h5", key='pm', format='table')
 Decision point
 ::::
 ::::{.inner_block}
+Short description of decision point...
 <details>
-<summary>Short description of decision point </summary>
+<summary>Considerations for this decision point</summary>
 
 More information about this decision point... 
 </details>
