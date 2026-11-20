@@ -71,6 +71,7 @@ For the overall content of the Open Case Study, each portion of the case study i
   * Provides an example of including images with Quarto
   * [ ] switch out `mainplot.png` within the `img` directory to be the case study main plot.
 * [ ] _ocs_frontmatter.qmd
+  * Provides an example of including images a white tabset section that isn't yellow
 * [ ] _cite.qmd
 * [ ] _motivation.qmd
   * Provides an example of including images with Quarto (including those that you can click to open in a larger preview)
