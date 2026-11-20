@@ -25,7 +25,7 @@ include-sections:
 -->
 
 <!-- 
-The following css code enables the tabset sections to have light yellow by default and white if we use .white when we initiate it the disclaimer tabset section shows how 
+The following css code enables the tabset sections to have light yellow by default and white if we use .white when we initiate it the disclaimer tabset section shows how. Note that this needs to be done here in the index qmd files, not the css file, as quarto overrides it otherwise. So please do not remove the css code below. 
 -->
 
 ```{css, echo = FALSE}
