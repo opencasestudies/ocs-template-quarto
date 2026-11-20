@@ -339,3 +339,16 @@ details summary {
   font-weight: bold;
 }
 
+/* Return to details defaults as needed */
+details.details-basic {
+  padding: revert;
+  background: revert;
+  color: revert;
+  border-radius: revert;
+}
+
+details.details-basic summary {
+  cursor: revert;
+  font-weight: revert;
+}
+
