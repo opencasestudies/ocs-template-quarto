@@ -93,9 +93,11 @@ For the overall content of the Open Case Study, each portion of the case study i
 * [ ] _limitations.qmd
 * [ ] _bioethics.qmd
 * [ ] _data_import.qmd
+  * Provides an example of a custom decision point box 
 * [ ] _data_exploration.qmd
 * [ ] _data_wrangling.qmd
   * Provides an example of including code annotations with Quarto
+  * Provides an example of a custom troubleshooting box 
 * [ ] _data_visualization.qmd
 * [ ] _data_analysis.qmd
   * Provides an example of using a column margin note with Quarto
