@@ -1,7 +1,7 @@
 -- expandable_boxes.lua
 local box_info = {
   ["troubleshooting"] = {
-    icon = "?",
+    icon = "🔧",
     title = "Troubleshooting"
   },
 
