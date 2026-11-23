@@ -90,6 +90,12 @@ More information how to troubleshoot...
 ::::
 :::
 
+:::{.troubleshooting}
+
+Include troubleshooting content here...
+
+:::
+
 <!--
 Replace `pm` above with the name of the data object created at the end of data wrangling.
 -->

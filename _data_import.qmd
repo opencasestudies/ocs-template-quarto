@@ -70,6 +70,12 @@ More information about this decision point...
 ::::
 :::
 
+:::{.decision-point}
+
+Include decision point content here...
+
+:::
+
 
 <!--
 NOTE that depending on the size of the data for Bio-OCS, the data may not be in the case study project folder directly

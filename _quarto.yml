@@ -49,5 +49,6 @@ format:
 filters:
   - auto-add-ai-disclaimer.lua
   - multibib
+  - expandable-boxes.lua
 validate-yaml: false
 citeproc: false
