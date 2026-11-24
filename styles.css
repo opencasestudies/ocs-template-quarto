@@ -392,6 +392,13 @@ details.expandable-box[open] summary {
   margin-bottom: 0.75rem;
 }
 
+.expandable-box-icon {
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  margin-right: 0.4em;
+}
+
 /* Troubleshooting */
 
 details.troubleshooting {

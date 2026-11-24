@@ -34,11 +34,11 @@ function Div(el)
         blocks,
         pandoc.RawBlock(
           "html",
-          string.format(
-            '<summary>%s %s</summary>',
-            info.icon,
-            info.title
-          )
+          '<summary><img src="' ..
+            info.icon ..
+            '" class="expandable-box-icon"> ' ..
+            info.title ..
+            '</summary>'
         )
       )
 
