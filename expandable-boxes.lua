@@ -19,14 +19,27 @@ function Div(el)
 
       local blocks = {}
 
+      local is_open = el.classes:includes("open")
+
+      local details_tag
+      
+      if is_open then
+        details_tag = string.format(
+          '<details class="%s expandable-box" open>',
+          class_name
+        )
+      else
+        details_tag = string.format(
+          '<details class="%s expandable-box">',
+          class_name
+        )
+      end
+      
       table.insert(
         blocks,
         pandoc.RawBlock(
           "html",
-          string.format(
-            '<details class="%s expandable-box">',
-            class_name
-          )
+          details_tag
         )
       )
 

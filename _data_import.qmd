@@ -29,7 +29,7 @@ pm <-readr::read_csv(here("data", "raw", "pm25_data.csv"))
 
 ## Python
 
-```{python}
+```{python, eval = FALSE}
 pm = pd.read_csv("data/raw/pm25_data.csv")
 ```
 
@@ -50,7 +50,7 @@ save(pm, file = here::here("data", "imported", "pm25_data_imported.rda"))
 
 ## Python
 
-```{python}
+```{python, eval = FALSE}
 pm.to_hdf("data/imported/pm_data_imported.h5", key='pm', format='table')
 ```
 
@@ -73,6 +73,12 @@ More information about this decision point...
 :::{.decision-point}
 
 Include decision point content here...
+
+:::
+
+:::{.decision-point .open}
+
+Include decision point content here that is open by default...
 
 :::
 
