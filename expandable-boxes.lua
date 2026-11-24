@@ -1,12 +1,12 @@
 -- expandable_boxes.lua
 local box_info = {
   ["troubleshooting"] = {
-    icon = "🔧",
+    icon = "assets/box_images/wrench.png",
     title = "Troubleshooting"
   },
 
   ["decision-point"] = {
-    icon = "🤔",
+    icon = "assets/box_images/path.png",
     title = "Decision Point"
   }
 }
