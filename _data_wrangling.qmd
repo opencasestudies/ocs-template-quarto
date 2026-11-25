@@ -76,23 +76,15 @@ pm.to_csv("data/wrangled/wrangled_data_py.csv")
 
 :::
 
-:::{.troubleshooting_box}
-::::{.troubleshooting_box_header}
-Troubleshooting
-::::
-::::{.inner_block}
-Short description of issue... 
-<details>
-<summary>How to troubleshoot </summary>
-
-More information how to troubleshoot... 
-</details>
-::::
-:::
-
 :::{.troubleshooting}
 
 Include troubleshooting content here...
+
+:::
+
+:::{.troubleshooting .open}
+
+Include troubleshooting content here that is open by default...
 
 :::
 

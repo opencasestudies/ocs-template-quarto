@@ -56,23 +56,15 @@ pm.to_hdf("data/imported/pm_data_imported.h5", key='pm', format='table')
 
 :::
 
-:::{.decision_point_box}
-::::{.decision_point_box_header}
-Decision point
-::::
-::::{.inner_block}
-Short description of decision point...
-<details>
-<summary>Considerations for this decision point</summary>
-
-More information about this decision point... 
-</details>
-::::
-:::
-
 :::{.decision-point}
 
 Include decision point content here...
+
+:::
+
+:::{.decision-point .open}
+
+Include decision point content here that is open by default...
 
 :::
 
