@@ -76,6 +76,18 @@ pm.to_csv("data/wrangled/wrangled_data_py.csv")
 
 :::
 
+:::{.troubleshooting}
+
+Include troubleshooting content here...
+
+:::
+
+:::{.troubleshooting .open}
+
+Include troubleshooting content here that is open by default...
+
+:::
+
 <!--
 Replace `pm` above with the name of the data object created at the end of data wrangling.
 -->
