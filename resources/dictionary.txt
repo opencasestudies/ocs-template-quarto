@@ -36,6 +36,7 @@ OTTR
 ottrproject
 Platt
 prereq
+px
 quarto
 qmd
 qs
