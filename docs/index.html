@@ -133,6 +133,7 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-5R5B1JFCGE', { 'anonymize_ip': true});
 </script>
+<script src="ai-disclaimer-sync.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -837,6 +838,18 @@ to allow users to stop and pick up where they left off:
 </div>
 </div>
 </div>
+<details class="decision-point expandable-box">
+<summary><img src="assets/box_images/path.png" class="expandable-box-icon"> Decision Point</summary>
+<div class="expandable-box-content">
+<p>Include decision point content here…</p>
+</div>
+</details>
+<details class="decision-point expandable-box" open="">
+<summary><img src="assets/box_images/path.png" class="expandable-box-icon"> Decision Point</summary>
+<div class="expandable-box-content">
+<p>Include decision point content here that is open by default…</p>
+</div>
+</details>
 <!--
 NOTE that depending on the size of the data for Bio-OCS, the data may not be in the case study project folder directly
 and may need to be imported from an external source
@@ -920,6 +933,18 @@ Note that with this code annotation example, we've used a new line to space the 
 </div>
 </div>
 </div>
+<details class="troubleshooting expandable-box">
+<summary><img src="assets/box_images/wrench.png" class="expandable-box-icon"> Troubleshooting</summary>
+<div class="expandable-box-content">
+<p>Include troubleshooting content here…</p>
+</div>
+</details>
+<details class="troubleshooting expandable-box" open="">
+<summary><img src="assets/box_images/wrench.png" class="expandable-box-icon"> Troubleshooting</summary>
+<div class="expandable-box-content">
+<p>Include troubleshooting content here that is open by default…</p>
+</div>
+</details>
 <!--
 Replace `pm` above with the name of the data object created at the end of data wrangling.
 -->
@@ -1006,7 +1031,100 @@ Explain how this analysis helps answer the main questions posed earlier in the c
 </ul>
 <p>So, we have developed an AI box that you can pop in whenever you want to do something like this. Note that <strong>every time</strong> an <code>.ai_box</code> is used throughout the case study, a <code>lua</code> filter will automatically add an AI use disclaimer/margin note to accompany the box during rendering.</p>
 <p>You will want to the use the <code>{ .default .code-overflow-wrap }</code> next to the three backticks exactly to make sure that the suggested prompts have a copy button and have wrapped text instead of scroll text</p>
-<div class="ai_box">
+<details class="ai-considerations expandable-box">
+<summary><img src="assets/box_images/ai.png" class="expandable-box-icon"> AI use considerations</summary>
+<div class="expandable-box-content">
+<p><u>Context:</u> Provide context here</p>
+<p>Note if there is any context (e.g., a script) that the learner should also provide the chatbot in addition to the prompt</p>
+<p><u>Suggested Prompt:</u></p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode default code-overflow-wrap code-with-copy"><code class="sourceCode default"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>Suggested prompt that learners will be able to copy and paste</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><u>Validation:</u> Provide guidance to learners on how they should check or validate the response they have received from AI</p>
+</div>
+</details>
+
+<div class="no-row-height column-margin column-container"><div class="ai-disclaimer">
+<p><strong>AI Use Disclaimer:</strong></p>
+<ul>
+<li><p>Follow any relevant required guidelines/policies for AI use.</p>
+<details>
+<summary>
+<p>Examples</p>
+</summary>
+<p>Your team or lab, institution, funding organization, or publisher. These requirements should take precedence over our suggestions.</p>
+</details></li>
+<li><p>Check AI responses critically, as they may be inaccurate, out-of-date, incomplete, or unnecessarily complicated.</p>
+<details>
+<summary>
+<p>Examples</p>
+</summary>
+<ul>
+<li>Always validate the existence and relevance of suggested citations or packages.</li>
+<li>Review, test, possibly simplify, and work to understand generated code or functions.</li>
+<li>Validate factual information using reliable sources.</li>
+<li>Exercise extra caution with code in certain instances: code that installs packages, accesses or modifies files or data, uses credentials, or sends information over the internet.</li>
+</ul>
+</details></li>
+<li><p><a href="https://aiattribution.github.io/">Disclose</a> your AI use (including model and versions).</p></li>
+<li><p>Never provide sensitive data to a public AI tool.</p>
+<details>
+<summary>
+<p>Examples</p>
+</summary>
+<p>Patient or student data, passwords, credentials, API keys, unpublished manuscripts or grants, and other proprietary code or internal documents.</p>
+</details></li>
+<li><p>Be specific in your prompts and ask the AI tool to help you understand the code.</p></li>
+<li><p>The confidence of an AI tool does not indicate if its responses are correct. They may also agree with you when you are wrong.</p></li>
+<li><p>AI may respond differently to the same repeated prompt. Be sure to document what you can for the sake of reproducibility.</p></li>
+<li><p>Recognize that you may need to iteratively improve your prompt to reach the desired output.</p></li>
+</ul>
+</div></div><details class="ai-considerations expandable-box" open="">
+<summary><img src="assets/box_images/ai.png" class="expandable-box-icon"> AI use considerations</summary>
+<div class="expandable-box-content">
+<p>Here you will provide information about the AI use consideration, using the <code>.open</code> attribute if you want this box to be open by default.</p>
+<p><u>Context:</u> Provide context here</p>
+<p>Note if there is any context (e.g., a script) that the learner should also provide the chatbot in addition to the prompt</p>
+<p><u>Suggested Prompt:</u></p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode default code-overflow-wrap code-with-copy"><code class="sourceCode default"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>Suggested prompt that learners will be able to copy and paste</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><u>Validation:</u> Provide guidance to learners on how they should check or validate the response they have received from AI</p>
+</div>
+</details>
+
+<div class="no-row-height column-margin column-container"><div class="ai-disclaimer">
+<p><strong>AI Use Disclaimer:</strong></p>
+<ul>
+<li><p>Follow any relevant required guidelines/policies for AI use.</p>
+<details>
+<summary>
+<p>Examples</p>
+</summary>
+<p>Your team or lab, institution, funding organization, or publisher. These requirements should take precedence over our suggestions.</p>
+</details></li>
+<li><p>Check AI responses critically, as they may be inaccurate, out-of-date, incomplete, or unnecessarily complicated.</p>
+<details>
+<summary>
+<p>Examples</p>
+</summary>
+<ul>
+<li>Always validate the existence and relevance of suggested citations or packages.</li>
+<li>Review, test, possibly simplify, and work to understand generated code or functions.</li>
+<li>Validate factual information using reliable sources.</li>
+<li>Exercise extra caution with code in certain instances: code that installs packages, accesses or modifies files or data, uses credentials, or sends information over the internet.</li>
+</ul>
+</details></li>
+<li><p><a href="https://aiattribution.github.io/">Disclose</a> your AI use (including model and versions).</p></li>
+<li><p>Never provide sensitive data to a public AI tool.</p>
+<details>
+<summary>
+<p>Examples</p>
+</summary>
+<p>Patient or student data, passwords, credentials, API keys, unpublished manuscripts or grants, and other proprietary code or internal documents.</p>
+</details></li>
+<li><p>Be specific in your prompts and ask the AI tool to help you understand the code.</p></li>
+<li><p>The confidence of an AI tool does not indicate if its responses are correct. They may also agree with you when you are wrong.</p></li>
+<li><p>AI may respond differently to the same repeated prompt. Be sure to document what you can for the sake of reproducibility.</p></li>
+<li><p>Recognize that you may need to iteratively improve your prompt to reach the desired output.</p></li>
+</ul>
+</div></div><div class="ai_box">
 <div class="ai_box_header">
 <p>AI use considerations</p>
 </div>
@@ -1014,7 +1132,7 @@ Explain how this analysis helps answer the main questions posed earlier in the c
 <p><u>Context:</u> Provide context here</p>
 <p>Note if there is any context (e.g., a script) that the learner should also provide the chatbot in addition to the prompt</p>
 <p><u>Suggested Prompt:</u></p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode default code-overflow-wrap code-with-copy"><code class="sourceCode default"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>Suggested prompt that learners will be able to copy and paste</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode default code-overflow-wrap code-with-copy"><code class="sourceCode default"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>Suggested prompt that learners will be able to copy and paste</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><u>Validation:</u> Provide guidance to learners on how they should check or validate the response they have received from AI</p>
 </div>
 </div>
@@ -1055,6 +1173,18 @@ Explain how this analysis helps answer the main questions posed earlier in the c
 <li><p>Recognize that you may need to iteratively improve your prompt to reach the desired output.</p></li>
 </ul>
 </div></div><p>Finally, you may want to provide information about reproducibility considerations …. this box may be appropriate in several places throughout the case study, but perhaps you’ll want a note right before summary. Use something like the following for such cases:</p>
+<details class="reproducibility expandable-box">
+<summary><img src="assets/box_images/reproducibility.png" class="expandable-box-icon"> Reproducibility considerations</summary>
+<div class="expandable-box-content">
+<p>Here you’ll spotlight the reproducibility consideration or thought…This could be a note about needing a specific script or container or what reproducibility concept this is related to (e.g., file management, etc.)</p>
+</div>
+</details>
+<details class="reproducibility expandable-box" open="">
+<summary><img src="assets/box_images/reproducibility.png" class="expandable-box-icon"> Reproducibility considerations</summary>
+<div class="expandable-box-content">
+<p>Here you’ll spotlight the reproducibility consideration or thought, using the <code>.open</code> attribute if you want the box to be open by default.</p>
+</div>
+</details>
 <div class="reproducibility_box">
 <div class="reproducibility_box_header">
 <p>Reproducibility considerations</p>
@@ -1227,7 +1357,7 @@ Knuth, Donald E. 1984. <span>“Literate Programming.”</span> <em>Comput. J.</
 <h2 class="anchored" data-anchor-id="session-info"><strong>Session Info</strong></h2>
 <hr>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">session_info</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">session_info</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>─ Session info ───────────────────────────────────────────────────────────────
  setting  value
@@ -1239,7 +1369,7 @@ Knuth, Donald E. 1984. <span>“Literate Programming.”</span> <em>Comput. J.</
  collate  en_US.UTF-8
  ctype    en_US.UTF-8
  tz       Etc/UTC
- date     2026-11-20
+ date     2026-11-25
  pandoc   3.1.1 @ /usr/local/bin/ (via rmarkdown)
 
 ─ Packages ───────────────────────────────────────────────────────────────────
@@ -1777,7 +1907,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"zoom","openEffect":"zoom","loop":false,"selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","loop":false,"descPosition":"bottom","openEffect":"zoom","closeEffect":"zoom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {
