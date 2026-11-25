@@ -5,7 +5,7 @@ Please update the access information (e.g., github link and data access)
 as well as any system or server requirements to work with the data
 -->
 
-::: {.panel-tabset .frontmatter-tabs}
+::: {.panel-tabset .white .frontmatter-tabs}
 
 #### Disclaimer
 
@@ -125,7 +125,114 @@ Add a list of prerequisites here.
 ::::
 :::
 
+## How to Use This Case Study 
 
+::: {style="border: 4px solid black; padding: 1em;"}
+
+The purpose of this collection of case studies is to provide an educational resource of experiential guides to demonstrate how to work through the full process of a specific type of data analysis (or use of a data science best practice). 
+
+This case study is modular, which means that you can work through the full case study as written, or choose sections that focus on the desired skills that you would like to learn and practice. The [learning objective map](add link to objective map here!) can be used to determine which sections of the case study correspond with each learning objective. The [continued learning section](add link to continued learning section) at the end of the case study will provide next steps and additional tasks to practice the skills learned in the case study.
+
+<details><summary>Click here to learn more about the format of this case study:</summary>
+
+:::: {.panel-tabset}
+
+## Instructions
+
+Instructions will appear in yellow tabs throughout the case study.
+::::
+
+::::{.definition_box}
+:::::{.definition_box_header}
+Definition
+:::::
+:::::{.inner_block}
+Definition boxes will define key terms for the case study. Other terms that may be unfamiliar will be included in the glossary. These terms will appear in the case study highlighted with purple text, and can be clicked on to see the definition, such as {{< glossary "Term 1" >}}.
+:::::
+::::
+
+::::{.think_question}
+:::::{.think_question_header}
+Question opportunity
+:::::
+:::::{.inner_block}
+Question opportunities will give you the chance to test your comprehension.
+
+<details><summary>Answer</summary>
+Some questions will have answers that can be clicked-to-expand to evaluate your own responses.
+</details>
+:::::
+::::
+
+::::{.reproducibility_box}
+:::::{.reproducibility_box_header}
+Reproducibility considerations
+:::::
+:::::{.inner_block}
+Reproducibility boxes will highlight specific reproducibility guidelines or best practices as they come up within the case study.
+:::::
+::::
+
+::::{.decision-point}
+
+Decision point boxes can be expanded to describe considerations around a decision that must be made in a specific step of the case study. The full set of decision points will be summarized in the [decision point map](link to decision point map).
+
+::::
+
+::::{.troubleshooting}
+
+Troubleshooting boxes can be expanded to describe a common problem that may occur at a specific step of the case study, as well as ways to troubleshoot the problem.
+
+::::
+
+:::{.ai-considerations}
+
+AI use consideration boxes will note when AI can be used for a specific task (or cases in which AI should only be used with caution).
+
+<u>Context:</u>
+
+Context for the specific AI use will be provided here.
+
+<u>Suggested Prompt:</u>
+
+```{ .default .code-overflow-wrap }
+Suggested prompts to be copied and pasted will be provided here. 
+```
+
+<u>Validation:</u>
+Additional guidance to check or validate the AI response will be provided here. 
+
+:::
+
+</details>
+
+While these case studies follow similar formats and include the same sections and components, they each have some unique elements. This case study... *Describe what is unique about this case study, or remove this paragraph!*
+
+:::
+
+:::{.ai_box}
+::::{.ai_box_header}
+AI use considerations
+::::
+::::{.inner_block}
+
+AI use consideration boxes will note when AI can be used for a specific task (or cases in which AI should only be used with caution).
+
+<u>Context:</u>
+
+Context for the specific AI use will be provided here.
+
+<u>Suggested Prompt:</u>
+
+```{ .default .code-overflow-wrap }
+Suggested prompts to be copied and pasted will be provided here. 
+```
+
+<u>Validation:</u>
+Additional guidance to check or validate the AI response will be provided here. 
+
+::::
+:::
 
 <!--
 UPDATE: SYSTEM, SERVER, or MOCK COMPUTING Information:

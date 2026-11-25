@@ -45,9 +45,13 @@ format:
     toc: true
     toc-location: left
     license: "CC BY-NC 4.0"
+    include-in-header:
+      text: |
+        <script src="ai-disclaimer-sync.js"></script>
 
 filters:
   - auto-add-ai-disclaimer.lua
   - multibib
+  - expandable-boxes.lua
 validate-yaml: false
 citeproc: false
