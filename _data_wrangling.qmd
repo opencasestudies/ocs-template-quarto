@@ -24,7 +24,6 @@ load(here::here("data", "imported", "pm25_data_imported.rda"))
 ```
 ## Python
 
-```{python, eval = FALSE}
 pm = pd.read_hdf("data/imported/pm_data_imported.h5", key = "pm")
 ```
  
@@ -69,7 +68,6 @@ Note that with this code annotation example, we've used a new line to space the 
 
 ## Python
 
-```{python, eval = FALSE}
 pm.to_hdf("data/wrangled/wrangled_data.h5", key = 'pm', format='table')
 pm.to_csv("data/wrangled/wrangled_data_py.csv")
 ```
