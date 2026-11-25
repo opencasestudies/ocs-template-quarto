@@ -133,8 +133,6 @@ The purpose of this collection of case studies is to provide an educational reso
 
 This case study is modular, which means that you can work through the full case study as written, or choose sections that focus on the desired skills that you would like to learn and practice. The [learning objective map](add link to objective map here!) can be used to determine which sections of the case study correspond with each learning objective. The [continued learning section](add link to continued learning section) at the end of the case study will provide next steps and additional tasks to practice the skills learned in the case study.
 
-As you work through the case study, you will come across the following components:
-
 <details><summary>Click here to learn more about the format of this case study:</summary>
 
 :::: {.panel-tabset}
@@ -187,7 +185,24 @@ Troubleshooting boxes can be expanded to describe a common problem that may occu
 
 ::::
 
+:::{.ai-considerations}
 
+AI use consideration boxes will note when AI can be used for a specific task (or cases in which AI should only be used with caution).
+
+<u>Context:</u>
+
+Context for the specific AI use will be provided here.
+
+<u>Suggested Prompt:</u>
+
+```{ .default .code-overflow-wrap }
+Suggested prompts to be copied and pasted will be provided here. 
+```
+
+<u>Validation:</u>
+Additional guidance to check or validate the AI response will be provided here. 
+
+:::
 
 </details>
 
