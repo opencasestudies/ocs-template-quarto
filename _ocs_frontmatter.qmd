@@ -135,11 +135,7 @@ This case study is modular, which means that you can work through the full case 
 
 As you work through the case study, you will come across the following components:
 
-
-<details><summary>Click-to-expand boxes will hold additional information</summary>
-
-When clicked on, these boxes will expand to provide additional information on specific topics.
-
+<details><summary>Click here to learn more about the format of this case study:</summary>
 
 :::: {.panel-tabset}
 
@@ -190,6 +186,8 @@ Decision point boxes can be expanded to describe considerations around a decisio
 Troubleshooting boxes can be expanded to describe a common problem that may occur at a specific step of the case study, as well as ways to troubleshoot the problem.
 
 ::::
+
+
 
 </details>
 
