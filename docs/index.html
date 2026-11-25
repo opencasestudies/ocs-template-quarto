@@ -133,6 +133,7 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-5R5B1JFCGE', { 'anonymize_ip': true});
 </script>
+<script src="ai-disclaimer-sync.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -191,6 +192,7 @@ gtag('config', 'G-5R5B1JFCGE', { 'anonymize_ip': true});
    
   <ul>
   <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link active" data-scroll-target="#prerequisites">Prerequisites</a></li>
+  <li><a href="#how-to-use-this-case-study" id="toc-how-to-use-this-case-study" class="nav-link" data-scroll-target="#how-to-use-this-case-study">How to Use This Case Study</a></li>
   <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation"><strong>Motivation</strong></a></li>
   <li><a href="#main-question" id="toc-main-question" class="nav-link" data-scroll-target="#main-question"><strong>Main Question</strong></a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives"><strong>Learning Objectives</strong></a>
@@ -266,6 +268,21 @@ gtag('config', 'G-5R5B1JFCGE', { 'anonymize_ip': true});
   For documentation on quarto syntax possibilities, use https://quarto.org/docs/authoring/markdown-basics.html.
   Examples in the documentation range from including images and videos to including margin notes, annotating code, and linking within a document.
 -->
+<!-- 
+The following css code enables the tabset sections to have light yellow by default and white if we use .white when we initiate it the disclaimer tabset section shows how. Note that this needs to be done here in the index qmd files, not the css file, as quarto overrides it otherwise. So please do not remove the css code below. 
+-->
+<div class="cell">
+<style type="text/css">
+.panel-tabset .tab-content{
+  background-color: lightyellow;
+</style>
+</div>
+<div class="cell">
+<style type="text/css">
+.panel-tabset.white .tab-content{
+  background-color: white;
+</style>
+</div>
 <section id="section" class="level4 outline">
 <h4 class="outline anchored" data-anchor-id="section"></h4>
 <!--
@@ -282,9 +299,9 @@ The disclaimer block, license block, and funding info generally will not need up
 Please update the access information (e.g., github link and data access)
 as well as any system or server requirements to work with the data
 -->
-<div class="tabset-margin-container"></div><div class="panel-tabset frontmatter-tabs">
+<div class="tabset-margin-container"></div><div class="panel-tabset white frontmatter-tabs">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Disclaimer</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">License</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Funding</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Cite</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">GitHub</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-6" role="tab" aria-controls="tabset-1-6" aria-selected="false">Keywords</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-7" role="tab" aria-controls="tabset-1-7" aria-selected="false">Reviewers</a></li></ul>
-<div class="tab-content frontmatter-tabs">
+<div class="tab-content white frontmatter-tabs">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="disclaimer_box">
 <div class="disclaimer_box_header">
@@ -413,6 +430,130 @@ Include bioOCSdata package information once ready/applicable
 <p>Add a list of prerequisites here.</p>
 </div>
 </div>
+</section>
+<section id="how-to-use-this-case-study" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="how-to-use-this-case-study">How to Use This Case Study</h2>
+<div style="border: 4px solid black; padding: 1em;" class="page-columns page-full">
+<p>The purpose of this collection of case studies is to provide an educational resource of experiential guides to demonstrate how to work through the full process of a specific type of data analysis (or use of a data science best practice).</p>
+<p>This case study is modular, which means that you can work through the full case study as written, or choose sections that focus on the desired skills that you would like to learn and practice. The <a href="add link to objective map here!">learning objective map</a> can be used to determine which sections of the case study correspond with each learning objective. The <a href="add link to continued learning section">continued learning section</a> at the end of the case study will provide next steps and additional tasks to practice the skills learned in the case study.</p>
+<details class="page-columns page-full">
+<summary>
+Click here to learn more about the format of this case study:
+</summary>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Instructions</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>Instructions will appear in yellow tabs throughout the case study.</p>
+</div>
+</div>
+</div>
+<div class="definition_box">
+<div class="definition_box_header">
+<p>Definition</p>
+</div>
+<div class="inner_block">
+<p>Definition boxes will define key terms for the case study. Other terms that may be unfamiliar will be included in the glossary. These terms will appear in the case study highlighted with purple text, and can be clicked on to see the definition, such as <button class="glossary"><span class="def">Definition of Term 1</span>Term 1</button>.</p>
+</div>
+</div>
+<div class="think_question">
+<div class="think_question_header">
+<p>Question opportunity</p>
+</div>
+<div class="inner_block">
+<p>Question opportunities will give you the chance to test your comprehension.</p>
+<details>
+<summary>
+Answer
+</summary>
+Some questions will have answers that can be clicked-to-expand to evaluate your own responses.
+</details>
+</div>
+</div>
+<div class="reproducibility_box">
+<div class="reproducibility_box_header">
+<p>Reproducibility considerations</p>
+</div>
+<div class="inner_block">
+<p>Reproducibility boxes will highlight specific reproducibility guidelines or best practices as they come up within the case study.</p>
+</div>
+</div>
+<details class="decision-point expandable-box">
+<summary><img src="assets/box_images/path.png" class="expandable-box-icon"> Decision Point</summary>
+<div class="expandable-box-content">
+<p>Decision point boxes can be expanded to describe considerations around a decision that must be made in a specific step of the case study. The full set of decision points will be summarized in the <a href="link to decision point map">decision point map</a>.</p>
+</div>
+</details>
+<details class="troubleshooting expandable-box">
+<summary><img src="assets/box_images/wrench.png" class="expandable-box-icon"> Troubleshooting</summary>
+<div class="expandable-box-content">
+<p>Troubleshooting boxes can be expanded to describe a common problem that may occur at a specific step of the case study, as well as ways to troubleshoot the problem.</p>
+</div>
+</details>
+<details class="ai-considerations expandable-box">
+<summary><img src="assets/box_images/ai.png" class="expandable-box-icon"> AI use considerations</summary>
+<div class="expandable-box-content">
+<p>AI use consideration boxes will note when AI can be used for a specific task (or cases in which AI should only be used with caution).</p>
+<p><u>Context:</u></p>
+<p>Context for the specific AI use will be provided here.</p>
+<p><u>Suggested Prompt:</u></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode default code-overflow-wrap code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Suggested prompts to be copied and pasted will be provided here. </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><u>Validation:</u> Additional guidance to check or validate the AI response will be provided here.</p>
+</div>
+</details>
+
+<div class="no-row-height column-margin column-container"><div class="ai-disclaimer">
+<p><strong>AI Use Disclaimer:</strong></p>
+<ul>
+<li><p>Follow any relevant required guidelines/policies for AI use.</p>
+<details>
+<summary>
+<p>Examples</p>
+</summary>
+<p>Your team or lab, institution, funding organization, or publisher. These requirements should take precedence over our suggestions.</p>
+</details></li>
+<li><p>Check AI responses critically, as they may be inaccurate, out-of-date, incomplete, or unnecessarily complicated.</p>
+<details>
+<summary>
+<p>Examples</p>
+</summary>
+<ul>
+<li>Always validate the existence and relevance of suggested citations or packages.</li>
+<li>Review, test, possibly simplify, and work to understand generated code or functions.</li>
+<li>Validate factual information using reliable sources.</li>
+<li>Exercise extra caution with code in certain instances: code that installs packages, accesses or modifies files or data, uses credentials, or sends information over the internet.</li>
+</ul>
+</details></li>
+<li><p><a href="https://aiattribution.github.io/">Disclose</a> your AI use (including model and versions).</p></li>
+<li><p>Never provide sensitive data to a public AI tool.</p>
+<details>
+<summary>
+<p>Examples</p>
+</summary>
+<p>Patient or student data, passwords, credentials, API keys, unpublished manuscripts or grants, and other proprietary code or internal documents.</p>
+</details></li>
+<li><p>Be specific in your prompts and ask the AI tool to help you understand the code.</p></li>
+<li><p>The confidence of an AI tool does not indicate if its responses are correct. They may also agree with you when you are wrong.</p></li>
+<li><p>AI may respond differently to the same repeated prompt. Be sure to document what you can for the sake of reproducibility.</p></li>
+<li><p>Recognize that you may need to iteratively improve your prompt to reach the desired output.</p></li>
+</ul>
+</div></div></details>
+<p>While these case studies follow similar formats and include the same sections and components, they each have some unique elements. This case study… <em>Describe what is unique about this case study, or remove this paragraph!</em></p>
+</div>
+<div class="ai_box">
+<div class="ai_box_header">
+<p>AI use considerations</p>
+</div>
+<div class="inner_block">
+<p>AI use consideration boxes will note when AI can be used for a specific task (or cases in which AI should only be used with caution).</p>
+<p><u>Context:</u></p>
+<p>Context for the specific AI use will be provided here.</p>
+<p><u>Suggested Prompt:</u></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode default code-overflow-wrap code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Suggested prompts to be copied and pasted will be provided here. </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><u>Validation:</u> Additional guidance to check or validate the AI response will be provided here.</p>
+</div>
+</div>
+
 <!--
 UPDATE: SYSTEM, SERVER, or MOCK COMPUTING Information:
 
@@ -427,7 +568,42 @@ Include relevant explanatory images and references throughout.
 See this previous case study as an example: https://www.opencasestudies.org/ocs-bp-co2-emissions/#Motivation
 Images or videos may be helpful so this includes an example of including an image.
 -->
-</section>
+<div class="no-row-height column-margin column-container"><div class="">
+<p><strong>AI Use Disclaimer:</strong></p>
+<ul>
+<li><p>Follow any relevant required guidelines/policies for AI use.</p>
+<details>
+<summary>
+<p>Examples</p>
+</summary>
+<p>Your team or lab, institution, funding organization, or publisher. These requirements should take precedence over our suggestions.</p>
+</details></li>
+<li><p>Check AI responses critically, as they may be inaccurate, out-of-date, incomplete, or unnecessarily complicated.</p>
+<details>
+<summary>
+<p>Examples</p>
+</summary>
+<ul>
+<li>Always validate the existence and relevance of suggested citations or packages.</li>
+<li>Review, test, possibly simplify, and work to understand generated code or functions.</li>
+<li>Validate factual information using reliable sources.</li>
+<li>Exercise extra caution with code in certain instances: code that installs packages, accesses or modifies files or data, uses credentials, or sends information over the internet.</li>
+</ul>
+</details></li>
+<li><p><a href="https://aiattribution.github.io/">Disclose</a> your AI use (including model and versions).</p></li>
+<li><p>Never provide sensitive data to a public AI tool.</p>
+<details>
+<summary>
+<p>Examples</p>
+</summary>
+<p>Patient or student data, passwords, credentials, API keys, unpublished manuscripts or grants, and other proprietary code or internal documents.</p>
+</details></li>
+<li><p>Be specific in your prompts and ask the AI tool to help you understand the code.</p></li>
+<li><p>The confidence of an AI tool does not indicate if its responses are correct. They may also agree with you when you are wrong.</p></li>
+<li><p>AI may respond differently to the same repeated prompt. Be sure to document what you can for the sake of reproducibility.</p></li>
+<li><p>Recognize that you may need to iteratively improve your prompt to reach the desired output.</p></li>
+</ul>
+</div></div></section>
 <section id="motivation" class="level1">
 <h1><strong>Motivation</strong></h1>
 <hr>
@@ -449,10 +625,10 @@ Images or videos may be helpful so this includes an example of including an imag
 <div class="code-with-filename-file">
 <pre><strong>glossary.yml</strong></pre>
 </div>
-<div class="sourceCode" id="cb1" data-filename="glossary.yml"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Term 1: |</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  Definition of Term 1</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Term2: |</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  Definition of Term2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3" data-filename="glossary.yml"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>Term 1: |</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  Definition of Term 1</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>Term2: |</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  Definition of Term2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>We’ve added code to print out all of the terms stored in <code>glossary.yml</code> as a table within the Additional Information section before listing references. Note that this is in place of the table functionality from the extension and this will display every term in the <code>.yml</code> file whether it is referenced in the case study or not.</p>
 <hr>
@@ -644,12 +820,12 @@ Fill out the table and add rows as necessary providing a link to the source and 
 -->
 <p>We will begin by loading the packages that we will need:</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Python</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Python</a></li></ul>
 <div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#add library() calls</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#add library() calls</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>here() starts at /home</code></pre>
 </div>
@@ -674,9 +850,9 @@ Fill out the table and add rows as necessary providing a link to the source and 
 </table>
 <p>The first time we use a function, we will use the <code>::</code> to indicate which package we are using. Unless we have overlapping function names, this is not necessary, but we will include it here to be informative about where the functions we will use come from.</p>
 </div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <table class="caption-top table">
 <thead>
@@ -794,11 +970,11 @@ put the data files as they came from the source into a 'data/raw/' subfolder
 and use the `here` package. See the following example and update with your data:
 -->
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Python</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Python</a></li></ul>
 <div class="tab-content">
-<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>pm <span class="ot">&lt;-</span>readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"raw"</span>, <span class="st">"pm25_data.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>pm <span class="ot">&lt;-</span>readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"raw"</span>, <span class="st">"pm25_data.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Rows: 876 Columns: 50
 ── Column specification ────────────────────────────────────────────────────────
@@ -811,9 +987,9 @@ dbl (47): id, value, fips, lat, lon, CMAQ, zcta, zcta_area, zcta_pop, imp_a5...
 </div>
 </div>
 </div>
-<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>pm <span class="op">=</span> pd.read_csv(<span class="st">"data/raw/pm25_data.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>pm <span class="op">=</span> pd.read_csv(<span class="st">"data/raw/pm25_data.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -823,20 +999,32 @@ At the end of the data import section, save the imported data as .rda files
 to allow users to stop and pick up where they left off:
 -->
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Python</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false">Python</a></li></ul>
 <div class="tab-content">
-<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(pm, <span class="at">file =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"imported"</span>, <span class="st">"pm25_data_imported.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(pm, <span class="at">file =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"imported"</span>, <span class="st">"pm25_data_imported.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
-<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>pm.to_hdf(<span class="st">"data/imported/pm_data_imported.h5"</span>, key<span class="op">=</span><span class="st">'pm'</span>, <span class="bu">format</span><span class="op">=</span><span class="st">'table'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>pm.to_hdf(<span class="st">"data/imported/pm_data_imported.h5"</span>, key<span class="op">=</span><span class="st">'pm'</span>, <span class="bu">format</span><span class="op">=</span><span class="st">'table'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 </div>
+<details class="decision-point expandable-box">
+<summary><img src="assets/box_images/path.png" class="expandable-box-icon"> Decision Point</summary>
+<div class="expandable-box-content">
+<p>Include decision point content here…</p>
+</div>
+</details>
+<details class="decision-point expandable-box" open="">
+<summary><img src="assets/box_images/path.png" class="expandable-box-icon"> Decision Point</summary>
+<div class="expandable-box-content">
+<p>Include decision point content here that is open by default…</p>
+</div>
+</details>
 <!--
 NOTE that depending on the size of the data for Bio-OCS, the data may not be in the case study project folder directly
 and may need to be imported from an external source
@@ -857,16 +1045,16 @@ At the end of this section, save incremental data so that users can pause and co
 <hr>
 <p>If you have been following along but stopped, we could load our imported data like so:</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false">Python</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false">Python</a></li></ul>
 <div class="tab-content">
-<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
+<div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"imported"</span>, <span class="st">"pm25_data_imported.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"imported"</span>, <span class="st">"pm25_data_imported.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
-<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
+<div id="tabset-6-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-2-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>pm <span class="op">=</span> pd.read_hdf(<span class="st">"data/imported/pm_data_imported.h5"</span>, key <span class="op">=</span> <span class="st">"pm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>pm <span class="op">=</span> pd.read_hdf(<span class="st">"data/imported/pm_data_imported.h5"</span>, key <span class="op">=</span> <span class="st">"pm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -878,7 +1066,7 @@ If you skipped the data import section click here.
 </summary>
 <p>An RDA version (stands for R data) of the data can be found <a href="https://github.com//opencasestudies/ocs-bp-co2-emissions/tree/master/data/imported">here</a> or slightly more directly <a href="https://raw.githubusercontent.com/opencasestudies/ocs-bp-co2-emissions/master/data/imported/co2_data_imported.rda">here</a>. Download this file and then place it in your current working directory within a subdirectory called “imported” within a directory called “data” to use the following code. We used an RStudio project and the <a href="https://github.com/jennybc/here_here"><code>here</code> package</a> to navigate to the file more easily.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"imported"</span>, <span class="st">"co2_data_imported.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"imported"</span>, <span class="st">"co2_data_imported.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </details>
 <hr>
@@ -888,22 +1076,22 @@ This includes an example of code annotation with Quarto. See the documentation f
 -->
 <p>To allow users to skip import and wrangling we will save the data as an RDA file as well as a CSV file as this is often useful to send our data to collaborators. We will save this in a “wrangled” subdirectory of our “data” directory of our working directory.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false">Python</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-7-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-1" role="tab" aria-controls="tabset-7-1" aria-selected="true">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-2" role="tab" aria-controls="tabset-7-2" aria-selected="false">Python</a></li></ul>
 <div class="tab-content">
-<div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
+<div id="tabset-7-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-7-1-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-15"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><a class="code-annotation-anchor" data-target-cell="annotated-cell-15" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-15-1" class="code-annotation-target"><a href="#annotated-cell-15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(pm, <span class="at">file =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-15" data-target-annotation="2" onclick="event.preventDefault();">2</a><span id="annotated-cell-15-2" class="code-annotation-target"><a href="#annotated-cell-15-2" aria-hidden="true" tabindex="-1"></a>readr<span class="sc">::</span><span class="fu">write_csv</span>(pm, <span class="at">file =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>,<span class="st">"wrangled"</span>,</span>
-<span id="annotated-cell-15-3"><a href="#annotated-cell-15-3" aria-hidden="true" tabindex="-1"></a>                                       <span class="st">"wrangled_data.csv"</span>))</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-17"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><a class="code-annotation-anchor" data-target-cell="annotated-cell-17" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-17-1" class="code-annotation-target"><a href="#annotated-cell-17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(pm, <span class="at">file =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-17" data-target-annotation="2" onclick="event.preventDefault();">2</a><span id="annotated-cell-17-2" class="code-annotation-target"><a href="#annotated-cell-17-2" aria-hidden="true" tabindex="-1"></a>readr<span class="sc">::</span><span class="fu">write_csv</span>(pm, <span class="at">file =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>,<span class="st">"wrangled"</span>,</span>
+<span id="annotated-cell-17-3"><a href="#annotated-cell-17-3" aria-hidden="true" tabindex="-1"></a>                                       <span class="st">"wrangled_data.csv"</span>))</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-15" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-17" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-15" data-code-lines="1" data-code-annotation="1">saving the data as an RDA file within the wrangled data subdirectory</span>
+<span data-code-cell="annotated-cell-17" data-code-lines="1" data-code-annotation="1">saving the data as an RDA file within the wrangled data subdirectory</span>
 </dd>
-<dt data-target-cell="annotated-cell-15" data-target-annotation="2">2</dt>
+<dt data-target-cell="annotated-cell-17" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-15" data-code-lines="2,3" data-code-annotation="2">saving the data as a CSV file within the wrangled data subdirectory</span>
+<span data-code-cell="annotated-cell-17" data-code-lines="2,3" data-code-annotation="2">saving the data as a CSV file within the wrangled data subdirectory</span>
 </dd>
 </dl>
 </div>
@@ -912,14 +1100,26 @@ This includes an example of code annotation with Quarto. See the documentation f
 Note that with this code annotation example, we've used a new line to space the code so that the annotation doesn't overlay the code
 -->
 </div>
-<div id="tabset-6-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-2-tab">
+<div id="tabset-7-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-2-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>pm.to_hdf(<span class="st">"data/wrangled/wrangled_data.h5"</span>, key <span class="op">=</span> <span class="st">'pm'</span>, <span class="bu">format</span><span class="op">=</span><span class="st">'table'</span>)</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>pm.to_csv(<span class="st">"data/wrangled/wrangled_data_py.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>pm.to_hdf(<span class="st">"data/wrangled/wrangled_data.h5"</span>, key <span class="op">=</span> <span class="st">'pm'</span>, <span class="bu">format</span><span class="op">=</span><span class="st">'table'</span>)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>pm.to_csv(<span class="st">"data/wrangled/wrangled_data_py.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 </div>
+<details class="troubleshooting expandable-box">
+<summary><img src="assets/box_images/wrench.png" class="expandable-box-icon"> Troubleshooting</summary>
+<div class="expandable-box-content">
+<p>Include troubleshooting content here…</p>
+</div>
+</details>
+<details class="troubleshooting expandable-box" open="">
+<summary><img src="assets/box_images/wrench.png" class="expandable-box-icon"> Troubleshooting</summary>
+<div class="expandable-box-content">
+<p>Include troubleshooting content here that is open by default…</p>
+</div>
+</details>
 <!--
 Replace `pm` above with the name of the data object created at the end of data wrangling.
 -->
@@ -936,7 +1136,7 @@ At the end of this section, save incremental data so that users can pause and co
 <hr>
 <p>If you have been following along but stopped, we could load our wrangled data like so:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <hr>
 <details class="details-basic">
@@ -945,7 +1145,7 @@ If you skipped the data import section click here.
 </summary>
 <p>An RDA file (stands for R data) of the data can be found <a href="https://github.com//opencasestudies/ocs-bp-co2-emissions/tree/master/data/wrangled">here</a> or slightly more directly <a href="https://raw.githubusercontent.com/opencasestudies/ocs-bp-co2-emissions/master/data/wrangled/wrangled_data.rda">here</a>. Download this file and then place it in your current working directory within a subdirectory called “wrangled” within a subdirectory called “data” to use the following code. We used an RStudio project and the <a href="https://github.com/jennybc/here_here"><code>here</code> package</a> to navigate to the file more easily.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </details>
 <hr>
@@ -964,7 +1164,7 @@ please save the most recent version of the data similar to previous sections.
 <hr>
 <p>If you have been following along but stopped, we could load our wrangled data like so:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <hr>
 <details>
@@ -973,7 +1173,7 @@ If you skipped the data import section click here.
 </summary>
 <p>An RDA file (stands for R data) of the data can be found <a href="https://github.com//opencasestudies/ocs-bp-co2-emissions/tree/master/data/wrangled">here</a> or slightly more directly <a href="https://raw.githubusercontent.com/opencasestudies/ocs-bp-co2-emissions/master/data/wrangled/wrangled_data.rda">here</a>. Download this file and then place it in your current working directory within a subdirectory called “wrangled” within a subdirectory called “data” to use the following code. We used an RStudio project and the <a href="https://github.com/jennybc/here_here"><code>here</code> package</a> to navigate to the file more easily.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"wrangled"</span>, <span class="st">"wrangled_data.rda"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </details>
 <hr>
@@ -1006,7 +1206,100 @@ Explain how this analysis helps answer the main questions posed earlier in the c
 </ul>
 <p>So, we have developed an AI box that you can pop in whenever you want to do something like this. Note that <strong>every time</strong> an <code>.ai_box</code> is used throughout the case study, a <code>lua</code> filter will automatically add an AI use disclaimer/margin note to accompany the box during rendering.</p>
 <p>You will want to the use the <code>{ .default .code-overflow-wrap }</code> next to the three backticks exactly to make sure that the suggested prompts have a copy button and have wrapped text instead of scroll text</p>
-<div class="ai_box">
+<details class="ai-considerations expandable-box">
+<summary><img src="assets/box_images/ai.png" class="expandable-box-icon"> AI use considerations</summary>
+<div class="expandable-box-content">
+<p><u>Context:</u> Provide context here</p>
+<p>Note if there is any context (e.g., a script) that the learner should also provide the chatbot in addition to the prompt</p>
+<p><u>Suggested Prompt:</u></p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode default code-overflow-wrap code-with-copy"><code class="sourceCode default"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>Suggested prompt that learners will be able to copy and paste</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><u>Validation:</u> Provide guidance to learners on how they should check or validate the response they have received from AI</p>
+</div>
+</details>
+
+<div class="no-row-height column-margin column-container"><div class="ai-disclaimer">
+<p><strong>AI Use Disclaimer:</strong></p>
+<ul>
+<li><p>Follow any relevant required guidelines/policies for AI use.</p>
+<details>
+<summary>
+<p>Examples</p>
+</summary>
+<p>Your team or lab, institution, funding organization, or publisher. These requirements should take precedence over our suggestions.</p>
+</details></li>
+<li><p>Check AI responses critically, as they may be inaccurate, out-of-date, incomplete, or unnecessarily complicated.</p>
+<details>
+<summary>
+<p>Examples</p>
+</summary>
+<ul>
+<li>Always validate the existence and relevance of suggested citations or packages.</li>
+<li>Review, test, possibly simplify, and work to understand generated code or functions.</li>
+<li>Validate factual information using reliable sources.</li>
+<li>Exercise extra caution with code in certain instances: code that installs packages, accesses or modifies files or data, uses credentials, or sends information over the internet.</li>
+</ul>
+</details></li>
+<li><p><a href="https://aiattribution.github.io/">Disclose</a> your AI use (including model and versions).</p></li>
+<li><p>Never provide sensitive data to a public AI tool.</p>
+<details>
+<summary>
+<p>Examples</p>
+</summary>
+<p>Patient or student data, passwords, credentials, API keys, unpublished manuscripts or grants, and other proprietary code or internal documents.</p>
+</details></li>
+<li><p>Be specific in your prompts and ask the AI tool to help you understand the code.</p></li>
+<li><p>The confidence of an AI tool does not indicate if its responses are correct. They may also agree with you when you are wrong.</p></li>
+<li><p>AI may respond differently to the same repeated prompt. Be sure to document what you can for the sake of reproducibility.</p></li>
+<li><p>Recognize that you may need to iteratively improve your prompt to reach the desired output.</p></li>
+</ul>
+</div></div><details class="ai-considerations expandable-box" open="">
+<summary><img src="assets/box_images/ai.png" class="expandable-box-icon"> AI use considerations</summary>
+<div class="expandable-box-content">
+<p>Here you will provide information about the AI use consideration, using the <code>.open</code> attribute if you want this box to be open by default.</p>
+<p><u>Context:</u> Provide context here</p>
+<p>Note if there is any context (e.g., a script) that the learner should also provide the chatbot in addition to the prompt</p>
+<p><u>Suggested Prompt:</u></p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode default code-overflow-wrap code-with-copy"><code class="sourceCode default"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>Suggested prompt that learners will be able to copy and paste</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><u>Validation:</u> Provide guidance to learners on how they should check or validate the response they have received from AI</p>
+</div>
+</details>
+
+<div class="no-row-height column-margin column-container"><div class="ai-disclaimer">
+<p><strong>AI Use Disclaimer:</strong></p>
+<ul>
+<li><p>Follow any relevant required guidelines/policies for AI use.</p>
+<details>
+<summary>
+<p>Examples</p>
+</summary>
+<p>Your team or lab, institution, funding organization, or publisher. These requirements should take precedence over our suggestions.</p>
+</details></li>
+<li><p>Check AI responses critically, as they may be inaccurate, out-of-date, incomplete, or unnecessarily complicated.</p>
+<details>
+<summary>
+<p>Examples</p>
+</summary>
+<ul>
+<li>Always validate the existence and relevance of suggested citations or packages.</li>
+<li>Review, test, possibly simplify, and work to understand generated code or functions.</li>
+<li>Validate factual information using reliable sources.</li>
+<li>Exercise extra caution with code in certain instances: code that installs packages, accesses or modifies files or data, uses credentials, or sends information over the internet.</li>
+</ul>
+</details></li>
+<li><p><a href="https://aiattribution.github.io/">Disclose</a> your AI use (including model and versions).</p></li>
+<li><p>Never provide sensitive data to a public AI tool.</p>
+<details>
+<summary>
+<p>Examples</p>
+</summary>
+<p>Patient or student data, passwords, credentials, API keys, unpublished manuscripts or grants, and other proprietary code or internal documents.</p>
+</details></li>
+<li><p>Be specific in your prompts and ask the AI tool to help you understand the code.</p></li>
+<li><p>The confidence of an AI tool does not indicate if its responses are correct. They may also agree with you when you are wrong.</p></li>
+<li><p>AI may respond differently to the same repeated prompt. Be sure to document what you can for the sake of reproducibility.</p></li>
+<li><p>Recognize that you may need to iteratively improve your prompt to reach the desired output.</p></li>
+</ul>
+</div></div><div class="ai_box">
 <div class="ai_box_header">
 <p>AI use considerations</p>
 </div>
@@ -1014,7 +1307,7 @@ Explain how this analysis helps answer the main questions posed earlier in the c
 <p><u>Context:</u> Provide context here</p>
 <p>Note if there is any context (e.g., a script) that the learner should also provide the chatbot in addition to the prompt</p>
 <p><u>Suggested Prompt:</u></p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode default code-overflow-wrap code-with-copy"><code class="sourceCode default"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>Suggested prompt that learners will be able to copy and paste</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode default code-overflow-wrap code-with-copy"><code class="sourceCode default"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>Suggested prompt that learners will be able to copy and paste</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><u>Validation:</u> Provide guidance to learners on how they should check or validate the response they have received from AI</p>
 </div>
 </div>
@@ -1055,6 +1348,18 @@ Explain how this analysis helps answer the main questions posed earlier in the c
 <li><p>Recognize that you may need to iteratively improve your prompt to reach the desired output.</p></li>
 </ul>
 </div></div><p>Finally, you may want to provide information about reproducibility considerations …. this box may be appropriate in several places throughout the case study, but perhaps you’ll want a note right before summary. Use something like the following for such cases:</p>
+<details class="reproducibility expandable-box">
+<summary><img src="assets/box_images/reproducibility.png" class="expandable-box-icon"> Reproducibility considerations</summary>
+<div class="expandable-box-content">
+<p>Here you’ll spotlight the reproducibility consideration or thought…This could be a note about needing a specific script or container or what reproducibility concept this is related to (e.g., file management, etc.)</p>
+</div>
+</details>
+<details class="reproducibility expandable-box" open="">
+<summary><img src="assets/box_images/reproducibility.png" class="expandable-box-icon"> Reproducibility considerations</summary>
+<div class="expandable-box-content">
+<p>Here you’ll spotlight the reproducibility consideration or thought, using the <code>.open</code> attribute if you want the box to be open by default.</p>
+</div>
+</details>
 <div class="reproducibility_box">
 <div class="reproducibility_box_header">
 <p>Reproducibility considerations</p>
@@ -1227,7 +1532,7 @@ Knuth, Donald E. 1984. <span>“Literate Programming.”</span> <em>Comput. J.</
 <h2 class="anchored" data-anchor-id="session-info"><strong>Session Info</strong></h2>
 <hr>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">session_info</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">session_info</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>─ Session info ───────────────────────────────────────────────────────────────
  setting  value
@@ -1239,7 +1544,7 @@ Knuth, Donald E. 1984. <span>“Literate Programming.”</span> <em>Comput. J.</
  collate  en_US.UTF-8
  ctype    en_US.UTF-8
  tz       Etc/UTC
- date     2026-11-20
+ date     2026-11-25
  pandoc   3.1.1 @ /usr/local/bin/ (via rmarkdown)
 
 ─ Packages ───────────────────────────────────────────────────────────────────
@@ -1777,7 +2082,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"zoom","openEffect":"zoom","loop":false,"selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"loop":false,"closeEffect":"zoom","selector":".lightbox","descPosition":"bottom","openEffect":"zoom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {
