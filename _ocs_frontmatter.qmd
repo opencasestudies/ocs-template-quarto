@@ -126,7 +126,8 @@ Add a list of prerequisites here.
 :::
 
 ## How to Use This Case Study 
-***
+
+::: {style="border: 4px solid black; padding: 1em;"}
 
 The purpose of this collection of case studies is to provide an educational resource of experiential guides to demonstrate how to work through the full process of a specific type of data analysis (or use of a data science best practice). 
 
@@ -134,59 +135,65 @@ This case study is modular, which means that you can work through the full case 
 
 As you work through the case study, you will come across the following components:
 
-::: {.panel-tabset}
-
-## Instructions
-
-Instructions will appear in yellow tabs throughout the case study.
-:::
 
 <details><summary>Click-to-expand boxes will hold additional information</summary>
 
 When clicked on, these boxes will expand to provide additional information on specific topics.
 
-</details>
 
-:::{.definition_box}
-::::{.definition_box_header}
+:::: {.panel-tabset}
+
+## Instructions
+
+Instructions will appear in yellow tabs throughout the case study.
+::::
+
+::::{.definition_box}
+:::::{.definition_box_header}
 Definition
-::::
-::::{.inner_block}
+:::::
+:::::{.inner_block}
 Definition boxes will define key terms for the case study. Other terms that may be unfamiliar will be included in the glossary. These terms will appear in the case study highlighted with purple text, and can be clicked on to see the definition, such as {{< glossary "Term 1" >}}.
+:::::
 ::::
-:::
 
-:::{.think_question}
-::::{.think_question_header}
+::::{.think_question}
+:::::{.think_question_header}
 Question opportunity
-::::
-::::{.inner_block}
+:::::
+:::::{.inner_block}
 Question opportunities will give you the chance to test your comprehension.
 
 <details><summary>Answer</summary>
 Some questions will have answers that can be clicked-to-expand to evaluate your own responses.
 </details>
+:::::
 ::::
-:::
 
-:::{.reproducibility_box}
-::::{.reproducibility_box_header}
+::::{.reproducibility_box}
+:::::{.reproducibility_box_header}
 Reproducibility considerations
-::::
-::::{.inner_block}
+:::::
+:::::{.inner_block}
 Reproducibility boxes will highlight specific reproducibility guidelines or best practices as they come up within the case study.
+:::::
 ::::
-:::
 
-:::{.decision-point}
+::::{.decision-point}
 
 Decision point boxes can be expanded to describe considerations around a decision that must be made in a specific step of the case study. The full set of decision points will be summarized in the [decision point map](link to decision point map).
 
-:::
+::::
 
-:::{.troubleshooting}
+::::{.troubleshooting}
 
 Troubleshooting boxes can be expanded to describe a common problem that may occur at a specific step of the case study, as well as ways to troubleshoot the problem.
+
+::::
+
+</details>
+
+While these case studies follow similar formats and include the same sections and components, they each have some unique elements. This case study... *Describe what is unique about this case study, or remove this paragraph!*
 
 :::
 
@@ -213,9 +220,6 @@ Additional guidance to check or validate the AI response will be provided here.
 
 ::::
 :::
-
-
-While these case studies follow similar formats and include the same sections and components, they each have some unique elements. This case study... *Describe what is unique about this case study, or remove this paragraph!*
 
 <!--
 UPDATE: SYSTEM, SERVER, or MOCK COMPUTING Information:
